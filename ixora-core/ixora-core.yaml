@@ -1,6 +1,6 @@
-intellispaces: 0.0.0
+intellispaces: 0.0
 info:
-  title: The ixora core space declaration
+  title: Ixora core space declaration
 ontology:
   spaces:
     intellispaces.ixora.core:
@@ -22,11 +22,11 @@ ontology:
         - intellispaces.ixora.core.Number
 
     intellispaces.ixora.core.Point:
-      description: The domain of objects represented semantic space points
+      description: The domain of objects representing semantic space points
       did: 01909034-27be-70d5-8033-7967d56fd62d
 
     intellispaces.ixora.core.Domain:
-      description: The domain of objects represented semantic space domains
+      description: The domain of objects representing semantic space domains
       did: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       parents:
         - intellispaces.ixora.core.Point
@@ -36,7 +36,7 @@ ontology:
             cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
 
     intellispaces.ixora.core.Channel:
-      description: The domain of objects represented semantic space channel
+      description: The domain of objects representing semantic space channel
       did: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       parents:
         - intellispaces.ixora.core.Point

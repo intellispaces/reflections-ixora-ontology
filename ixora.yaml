@@ -1,6 +1,6 @@
-intellispaces: 0.0.0
+intellispaces: 0.0
 info:
-  title: The ixora space declaration
+  title: Ixora space declaration
 ontology:
   spaces:
     intellispaces.ixora:
