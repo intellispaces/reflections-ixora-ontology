@@ -1,0 +1,7 @@
+intellispaces: 0.0.0
+info:
+  title: The ixora space declaration
+ontology:
+  spaces:
+    intellispaces.ixora:
+      sid: 1a382171-3645-4dfc-a051-027c3b62068a
