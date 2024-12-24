@@ -20,6 +20,10 @@ ontology:
       did: 9b83b952-370c-4bc5-beb6-c02af713ef31
       parents:
         - intellispaces.ixora.core.Number
+      channels:
+        - alias: asNumber
+          target.name: intellispaces.ixora.core.Number
+          cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
 
     intellispaces.ixora.core.Point:
       description: The domain of objects representing semantic space points
@@ -30,20 +34,20 @@ ontology:
       did: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       parents:
         - intellispaces.ixora.core.Point
-      projections:
-        - intellispaces.ixora.core.Point:
-            alias: asPoint
-            cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
+      channels:
+        - alias: asPoint
+          target.name: intellispaces.ixora.core.Point
+          cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
 
     intellispaces.ixora.core.Channel:
       description: The domain of objects representing semantic space channel
       did: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       parents:
         - intellispaces.ixora.core.Point
-      projections:
-        - intellispaces.ixora.core.Point:
-            alias: asPoint
-            cid: 708c11b9-df80-43ef-a820-2d976ff779b6
-        - intellispaces.ixora.core.String:
-            alias: cid
-            cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
+      channels:
+        - alias: asPoint
+          target.name: intellispaces.ixora.core.Point
+          cid: 708c11b9-df80-43ef-a820-2d976ff779b6
+        - alias: cid
+          target.name: intellispaces.ixora.core.String
+          cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
