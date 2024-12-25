@@ -18,7 +18,7 @@ ontology:
           qualifiers:
             - name: string
               domain.name: intellispaces.ixora.core.String
-          allowedTraverses: Moving
+          allowedTraverses: [ Moving ]
         - alias: print
           name: ConsolePrintIntegerChannel
           target.name: intellispaces.ixora.cli.Console
@@ -26,7 +26,7 @@ ontology:
           qualifiers:
             - name: number
               domain.name: intellispaces.ixora.core.Integer32
-          allowedTraverses: Moving
+          allowedTraverses: [ Moving ]
         - alias: println
           name: ConsolePrintlnStringChannel
           target.name: intellispaces.ixora.cli.Console
@@ -34,7 +34,7 @@ ontology:
           qualifiers:
             - name: string
               domain.name: intellispaces.ixora.core.String
-          allowedTraverses: Moving
+          allowedTraverses: [ Moving ]
         - alias: println
           name: ConsolePrintlnIntegerChannel
           target.name: intellispaces.ixora.cli.Console
@@ -42,4 +42,4 @@ ontology:
           qualifiers:
             - name: number
               domain.name: intellispaces.ixora.core.Integer32
-          allowedTraverses: Moving
+          allowedTraverses: [ Moving ]
