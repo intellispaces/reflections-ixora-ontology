@@ -12,7 +12,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>intellispaces-ixora-core</module>
+        <module>intellispaces-ixora-core-ontology</module>
+        <module>intellispaces-ixora-system-ontology</module>
+        <module>intellispaces-ixora-cli-ontology</module>
     </modules>
 
     <dependencies>
