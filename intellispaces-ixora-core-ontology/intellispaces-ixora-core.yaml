@@ -22,7 +22,7 @@ ontology:
         - intellispaces.ixora.core.Number
       channels:
         - alias: asNumber
-          target.name: intellispaces.ixora.core.Number
+          target.domain.name: intellispaces.ixora.core.Number
           cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
 
     intellispaces.ixora.core.Point:
@@ -36,7 +36,7 @@ ontology:
         - intellispaces.ixora.core.Point
       channels:
         - alias: asPoint
-          target.name: intellispaces.ixora.core.Point
+          target.domain.name: intellispaces.ixora.core.Point
           cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
 
     intellispaces.ixora.core.Channel:
@@ -46,8 +46,8 @@ ontology:
         - intellispaces.ixora.core.Point
       channels:
         - alias: asPoint
-          target.name: intellispaces.ixora.core.Point
+          target.domain.name: intellispaces.ixora.core.Point
           cid: 708c11b9-df80-43ef-a820-2d976ff779b6
         - alias: cid
-          target.name: intellispaces.ixora.core.String
+          target.domain.name: intellispaces.ixora.core.String
           cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
