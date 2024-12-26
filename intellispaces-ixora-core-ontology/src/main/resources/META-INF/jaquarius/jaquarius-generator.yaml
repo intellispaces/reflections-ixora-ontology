@@ -1,9 +1,12 @@
-classmapping: [
+domains: [
   {
-    domain: "intellispaces.ixora.core.String",
-    class: "java.lang.String"
+    name: intellispaces.ixora.core.String,
+    purpose: String
   }, {
-    domain: "intellispaces.ixora.core.Integer32",
-    class: "java.lang.int"
+    name: intellispaces.ixora.core.Integer32,
+    purpose: Integer
+  }, {
+    name: intellispaces.ixora.core.Domain,
+    purpose: Domain
   }
 ]
