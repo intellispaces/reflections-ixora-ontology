@@ -1,0 +1,51 @@
+intellispaces: "0.0"
+info:
+  title: Ixora collection space ontology
+ontology:
+  spaces:
+    intellispaces.ixora.data.collection:
+      sid: 15cebbe3-7068-4e12-9637-711c27401e34
+
+  domains:
+    intellispaces.ixora.data.collection.Collection:
+      did: 715d235a-b6ee-4a0a-8166-dd908d6bf026
+      description: The homogeneous collection of elements
+      genericQualifiers:
+        - E:
+          description: The element domain
+      channels:
+        - elementDomain:
+          cid: 855a617e-1281-4f23-ac3b-be45e045b337
+          target:
+            domain.name: intellispaces.ixora.core.Domain
+            value.ref: E
+        - size:
+          cid: ac251f1d-ecd8-45a0-bd05-972c71ed26aa
+          target.domain.name: intellispaces.ixora.core.data.Integer32
+
+    intellispaces.ixora.data.collection.List:
+      did: f260fb9d-fd6f-4421-a609-71c672c8fffc
+      description: The homogeneous ordered list of elements
+      genericQualifiers:
+        - E:
+          description: The element domain
+      parents:
+        intellispaces.ixora.data.collection.Collection:
+          qualifiers.generic:
+            - E:
+              value.ref: E
+      channels:
+        - asCollection:
+          cid: 01909079-ab91-75ba-8fd0-4a2cb5391791
+          target.domain:
+            name: intellispaces.ixora.data.collection.Collection
+            genericQualifiers:
+              - E:
+                value.ref: E
+        - get:
+          cid: a8b23e74-2f8a-41eb-9427-a50e8274dc09
+          name: ListToElementChannel
+          target.domain.ref: E
+          valueQualifiers:
+            - index:
+              domain.name: intellispaces.ixora.core.data.Integer32
