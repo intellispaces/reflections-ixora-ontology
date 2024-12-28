@@ -5,50 +5,54 @@ ontology:
   spaces:
     intellispaces.ixora.core:
       sid: 00135a20-5574-4c20-aff7-fe21a0dd81cd
+    intellispaces.ixora.core.data:
+      sid: 09faf587-906e-4739-bfac-259ae7dd88d6
+    intellispaces.ixora.core.space:
+      sid: 3e897da3-f85d-42e2-b3c4-b92571d38f64
 
   domains:
-    intellispaces.ixora.core.String:
+    intellispaces.ixora.core.data.String:
       did: f498a206-6b7f-4cad-81eb-e9859a56c8b1
       description: The domain of strings
 
-    intellispaces.ixora.core.Number:
+    intellispaces.ixora.core.data.Number:
       did: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of numbers
 
-    intellispaces.ixora.core.Integer32:
+    intellispaces.ixora.core.data.Integer32:
       did: 9b83b952-370c-4bc5-beb6-c02af713ef31
       description: The domain of 32 bit integer numbers
       parents:
-        - intellispaces.ixora.core.Number
+        - intellispaces.ixora.core.data.Number
       channels:
         - asNumber:
           cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
-          target.domain.name: intellispaces.ixora.core.Number
+          target.domain.name: intellispaces.ixora.core.data.Number
 
-    intellispaces.ixora.core.Point:
+    intellispaces.ixora.core.space.Point:
       did: 01909034-27be-70d5-8033-7967d56fd62d
       description: The domain of objects representing semantic space points
 
-    intellispaces.ixora.core.Domain:
+    intellispaces.ixora.core.space.Domain:
       did: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       description: The domain of objects representing semantic space domains
       parents:
-        - intellispaces.ixora.core.Point
+        - intellispaces.ixora.core.space.Point
       channels:
         - asPoint:
           cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
-          target.domain.name: intellispaces.ixora.core.Point
+          target.domain.name: intellispaces.ixora.core.space.Point
 
-    intellispaces.ixora.core.Channel:
+    intellispaces.ixora.core.space.Channel:
       did: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       description: The domain of objects representing semantic space channel
       parents:
-        - intellispaces.ixora.core.Point
+        - intellispaces.ixora.core.space.Point
       channels:
         - asPoint:
           cid: 708c11b9-df80-43ef-a820-2d976ff779b6
-          target.domain.name: intellispaces.ixora.core.Point
+          target.domain.name: intellispaces.ixora.core.space.Point
         - channelId:
           alias: cid
           cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
-          target.domain.name: intellispaces.ixora.core.String
+          target.domain.name: intellispaces.ixora.core.data.String

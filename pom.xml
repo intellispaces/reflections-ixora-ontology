@@ -15,6 +15,7 @@
         <module>intellispaces-ixora-core-ontology</module>
         <module>intellispaces-ixora-system-ontology</module>
         <module>intellispaces-ixora-cli-ontology</module>
+        <module>intellispaces-ixora-data-ontology</module>
     </modules>
 
     <dependencies>

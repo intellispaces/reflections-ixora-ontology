@@ -1,9 +1,9 @@
 domains: [
   {
-    name: intellispaces.ixora.core.String,
+    name: intellispaces.ixora.core.data.String,
     purpose: String
   }, {
-    name: intellispaces.ixora.core.Integer32,
+    name: intellispaces.ixora.core.data.Integer32,
     purpose: Integer
   }, {
     name: intellispaces.ixora.core.Domain,
