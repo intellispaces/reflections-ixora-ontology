@@ -31,7 +31,7 @@ ontology:
           description: The element domain
       parents:
         intellispaces.ixora.data.collection.Collection:
-          qualifiers.generic:
+          genericQualifiers:
             - E:
               value.ref: E
       channels:
