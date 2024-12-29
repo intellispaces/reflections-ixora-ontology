@@ -2,7 +2,7 @@ intellispaces: "0.0"
 info:
   title: Ixora data space ontology
 imports:
-  - "collection/intellispaces-ixora-collection.yaml"
+  - "intellispaces-ixora-collection.yaml"
 ontology:
   spaces:
     intellispaces.ixora.data:
