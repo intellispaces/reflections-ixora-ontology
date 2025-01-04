@@ -15,7 +15,7 @@ ontology:
           cid: e09d266d-9568-44fd-8ed2-cf27da326a37
           name: ConsolePrintStringChannel
           target.domain.name: intellispaces.ixora.cli.Console
-          valueQualifiers:
+          qualifiers.value:
             - string:
               domain.name: intellispaces.ixora.core.data.String
           allowedTraverses: [ Moving ]
@@ -23,7 +23,7 @@ ontology:
           cid: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
           name: ConsolePrintIntegerChannel
           target.domain.name: intellispaces.ixora.cli.Console
-          valueQualifiers:
+          qualifiers.value:
             - number:
               domain.name: intellispaces.ixora.core.data.Integer32
           allowedTraverses: [ Moving ]
@@ -31,7 +31,7 @@ ontology:
           cid: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
           name: ConsolePrintlnStringChannel
           target.domain.name: intellispaces.ixora.cli.Console
-          valueQualifiers:
+          qualifiers.value:
             - string:
               domain.name: intellispaces.ixora.core.data.String
           allowedTraverses: [ Moving ]
@@ -39,7 +39,7 @@ ontology:
           cid: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
           name: ConsolePrintlnIntegerChannel
           target.domain.name: intellispaces.ixora.cli.Console
-          valueQualifiers:
+          qualifiers.value:
             - number:
               domain.name: intellispaces.ixora.core.data.Integer32
           allowedTraverses: [ Moving ]
