@@ -10,15 +10,15 @@ ontology:
     intellispaces.ixora.data.collection.Collection:
       did: 715d235a-b6ee-4a0a-8166-dd908d6bf026
       description: The homogeneous collection of elements
-      genericQualifiers:
+      qualifiers.generic:
         - E:
           description: The element domain
       channels:
         - elementDomain:
           cid: 855a617e-1281-4f23-ac3b-be45e045b337
           target:
-            domain.name: intellispaces.ixora.core.Domain
-            value.ref: E
+            domain.name: intellispaces.ixora.core.space.Domain
+            value.alias: E
         - size:
           cid: ac251f1d-ecd8-45a0-bd05-972c71ed26aa
           target.domain.name: intellispaces.ixora.core.data.Integer32
@@ -26,26 +26,56 @@ ontology:
     intellispaces.ixora.data.collection.List:
       did: f260fb9d-fd6f-4421-a609-71c672c8fffc
       description: The homogeneous ordered list of elements
-      genericQualifiers:
+      qualifiers.generic:
         - E:
           description: The element domain
       parents:
-        intellispaces.ixora.data.collection.Collection:
-          genericQualifiers:
+        - name: intellispaces.ixora.data.collection.Collection
+          qualifiers.generic:
             - E:
-              value.ref: E
+              domain.alias: E
       channels:
         - asCollection:
           cid: 01909079-ab91-75ba-8fd0-4a2cb5391791
           target.domain:
             name: intellispaces.ixora.data.collection.Collection
-            genericQualifiers:
+            qualifiers.generic:
               - E:
-                value.ref: E
+                domain.alias: E
         - get:
           cid: a8b23e74-2f8a-41eb-9427-a50e8274dc09
           name: ListToElementChannel
-          target.domain.ref: E
+          target.domain.alias: E
           valueQualifiers:
             - index:
               domain.name: intellispaces.ixora.core.data.Integer32
+
+    intellispaces.ixora.data.collection.NumberList:
+      did: 01908c74-4692-7fe2-8f51-375bda2efc40
+      description: |
+        List of numbers.</p>
+        Alias for the domain ListDomain&lt;Number&gt;.
+      qualifiers.generic:
+        - N:
+          description: The element domain.
+          extends:
+            - domain.name: intellispaces.ixora.core.data.Number
+      parents:
+        - name: intellispaces.ixora.data.collection.List
+          qualifiers.generic:
+            - E:
+              domain.alias: N
+      channels:
+        - asCollection:
+          cid: 390f8f03-3622-4bbf-8df4-11e48c897d94
+          description: Downgrade mapping.
+          target.domain:
+            name: intellispaces.ixora.data.collection.Collection
+            qualifiers.generic:
+              - E:
+                domain.alias: N
+        - elementDomain:
+          cid: 2c16d0ca-619d-4a17-a680-655bd98d78f1
+          target:
+            domain.name: intellispaces.ixora.core.space.Domain
+            value.alias: N
