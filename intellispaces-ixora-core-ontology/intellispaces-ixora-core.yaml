@@ -11,24 +11,6 @@ ontology:
       sid: 3e897da3-f85d-42e2-b3c4-b92571d38f64
 
   domains:
-    intellispaces.ixora.core.data.String:
-      did: f498a206-6b7f-4cad-81eb-e9859a56c8b1
-      description: The domain of strings
-
-    intellispaces.ixora.core.data.Number:
-      did: b4fef548-b446-4cae-ae98-63883a6326b8
-      description: The domain of numbers
-
-    intellispaces.ixora.core.data.Integer32:
-      did: 9b83b952-370c-4bc5-beb6-c02af713ef31
-      description: The domain of 32 bit integer numbers
-      parents:
-        - name: intellispaces.ixora.core.data.Number
-      channels:
-        - asNumber:
-          cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
-          target.domain.name: intellispaces.ixora.core.data.Number
-
     intellispaces.ixora.core.space.Point:
       did: 01909034-27be-70d5-8033-7967d56fd62d
       description: The domain of objects representing semantic space points
@@ -36,30 +18,52 @@ ontology:
     intellispaces.ixora.core.space.Domain:
       did: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       description: The domain of objects representing semantic space domains
-      qualifiers.generic:
-        - D:
-          description: The domain.
-      parents:
-        - name: intellispaces.ixora.core.space.Point
+      superDomains:
+        - intellispaces.ixora.core.space.Point
       channels:
         - asPoint:
           cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
-          target.domain.name: intellispaces.ixora.core.space.Point
+          target.domain: intellispaces.ixora.core.space.Point
 
     intellispaces.ixora.core.space.Channel:
       did: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       description: The domain of objects representing semantic space channel
-      qualifiers.generic:
-        - S:
-          description: The source domain.
-        - T:
-          description: The target domain.
-      parents:
-        - name: intellispaces.ixora.core.space.Point
+      superDomains:
+        - intellispaces.ixora.core.space.Point
       channels:
+        - sourceDomain:
+          cid: e38873a2-2e49-46bc-849d-b56f76bdb9d5
+          description: The source domain
+          target:
+            domain: intellispaces.ixora.core.space.Domain
+            alias: S
+        - targetDomain:
+          cid: bcacb1d5-0981-4646-8534-c769bd4c9ddc
+          description: The target domain
+          target:
+            domain: intellispaces.ixora.core.space.Domain
+            alias: T
         - asPoint:
           cid: 708c11b9-df80-43ef-a820-2d976ff779b6
-          target.domain.name: intellispaces.ixora.core.space.Point
+          target.domain: intellispaces.ixora.core.space.Point
         - alias: cid
           cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
-          target.domain.name: intellispaces.ixora.core.data.String
+          target.domain: intellispaces.ixora.core.data.String
+
+    intellispaces.ixora.core.data.Number:
+      did: b4fef548-b446-4cae-ae98-63883a6326b8
+      description: The domain of objects considered as numbers
+
+    intellispaces.ixora.core.data.Integer32:
+      did: 9b83b952-370c-4bc5-beb6-c02af713ef31
+      description: The domain of objects considered as 32 bit integer numbers
+      superDomains:
+        - intellispaces.ixora.core.data.Number
+      channels:
+        - asNumber:
+          cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
+          target.domain: intellispaces.ixora.core.data.Number
+
+    intellispaces.ixora.core.data.String:
+      did: f498a206-6b7f-4cad-81eb-e9859a56c8b1
+      description: The domain of strings
