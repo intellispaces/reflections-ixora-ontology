@@ -5,10 +5,10 @@ ontology:
   spaces:
     intellispaces.ixora.core:
       sid: 00135a20-5574-4c20-aff7-fe21a0dd81cd
-    intellispaces.ixora.core.data:
-      sid: 09faf587-906e-4739-bfac-259ae7dd88d6
     intellispaces.ixora.core.space:
       sid: 3e897da3-f85d-42e2-b3c4-b92571d38f64
+    intellispaces.ixora.core.data:
+      sid: 09faf587-906e-4739-bfac-259ae7dd88d6
 
   domains:
     intellispaces.ixora.core.space.Point:

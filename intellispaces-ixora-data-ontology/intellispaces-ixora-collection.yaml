@@ -49,7 +49,7 @@ ontology:
           projections:
             - index:
               domain: intellispaces.ixora.core.data.Integer32
-          target.domain:
+          target:
             equivalences:
               - matchedProjection: elementDomain
 
@@ -68,7 +68,9 @@ ontology:
           cid: 8a4c61e7-26c6-4d70-b70f-e0784ed6770c
           description: The list element domain
           target:
-            domain.bounds.superDomains:
+            domain:
+              name: intellispaces.ixora.core.space.Domain
+              bounds.superDomains:
               - intellispaces.ixora.core.data.Number
             alias: N
         - asCollection:
