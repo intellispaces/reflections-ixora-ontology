@@ -68,8 +68,10 @@ ontology:
           cid: 8a4c61e7-26c6-4d70-b70f-e0784ed6770c
           description: The list element domain
           target:
-            domain.bounds.superDomains:
-              - intellispaces.ixora.core.data.Number
+            domain:
+              name: intellispaces.ixora.core.space.Domain
+              bounds.superDomains:
+                - intellispaces.ixora.core.data.Number
             alias: N
         - asCollection:
           cid: 390f8f03-3622-4bbf-8df4-11e48c897d94
