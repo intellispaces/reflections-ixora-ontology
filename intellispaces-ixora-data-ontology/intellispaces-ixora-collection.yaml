@@ -49,7 +49,7 @@ ontology:
           projections:
             - index:
               domain: intellispaces.ixora.core.data.Integer32
-          target.domain:
+          target:
             equivalences:
               - matchedProjection: elementDomain
 
