@@ -33,13 +33,13 @@ ontology:
       channels:
         - sourceDomain:
           cid: e38873a2-2e49-46bc-849d-b56f76bdb9d5
-          description: The source domain
+          description: The channel source domain
           target:
             domain: intellispaces.ixora.core.space.Domain
             alias: S
         - targetDomain:
           cid: bcacb1d5-0981-4646-8534-c769bd4c9ddc
-          description: The target domain
+          description: The channel target domain
           target:
             domain: intellispaces.ixora.core.space.Domain
             alias: T

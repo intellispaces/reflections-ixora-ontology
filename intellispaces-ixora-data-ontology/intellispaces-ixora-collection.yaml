@@ -65,7 +65,7 @@ ontology:
               matchedProjection: elementDomain
       channels:
         - elementDomain:
-          cid: 8a4c61e7-26c6-4d70-b70f-e0784ed6770c
+          cid: 2c16d0ca-619d-4a17-a680-655bd98d78f1
           description: The list element domain
           target:
             domain:
