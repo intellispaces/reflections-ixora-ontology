@@ -54,6 +54,16 @@ ontology:
       did: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of objects considered as numbers
 
+    intellispaces.ixora.core.data.Integer8:
+      did: 97bc971e-1b2e-4e93-9042-bd19d8c98d9a
+      description: The domain of objects considered as 8 bit integer numbers
+      superDomains:
+        - intellispaces.ixora.core.data.Number
+      channels:
+        - asNumber:
+          cid: e6c59876-1b43-41cc-ba98-93922a80c775
+          target.domain: intellispaces.ixora.core.data.Number
+
     intellispaces.ixora.core.data.Integer32:
       did: 9b83b952-370c-4bc5-beb6-c02af713ef31
       description: The domain of objects considered as 32 bit integer numbers
