@@ -11,25 +11,17 @@ ontology:
       sid: 09faf587-906e-4739-bfac-259ae7dd88d6
 
   domains:
-    intellispaces.ixora.core.space.Point:
-      did: 01909034-27be-70d5-8033-7967d56fd62d
-      description: The domain of objects representing semantic space points
-
     intellispaces.ixora.core.space.Domain:
       did: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       description: The domain of objects representing semantic space domains
-      superDomains:
-        - intellispaces.ixora.core.space.Point
       channels:
-        - asPoint:
-          cid: 1d9a3eaf-cb88-4d0a-84a1-5e6b21235aa9
-          target.domain: intellispaces.ixora.core.space.Point
+        - name:
+          cid: 8776e3d7-2327-4936-b4be-4a916b44cb16
+          target.domain: intellispaces.ixora.core.data.String
 
     intellispaces.ixora.core.space.Channel:
       did: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       description: The domain of objects representing semantic space channel
-      superDomains:
-        - intellispaces.ixora.core.space.Point
       channels:
         - sourceDomain:
           cid: e38873a2-2e49-46bc-849d-b56f76bdb9d5
@@ -43,9 +35,6 @@ ontology:
           target:
             domain: intellispaces.ixora.core.space.Domain
             alias: T
-        - asPoint:
-          cid: 708c11b9-df80-43ef-a820-2d976ff779b6
-          target.domain: intellispaces.ixora.core.space.Point
         - alias: cid
           cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
           target.domain: intellispaces.ixora.core.data.String
