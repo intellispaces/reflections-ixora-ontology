@@ -26,7 +26,7 @@
                 <configuration>
                     <inputSpec>${project.basedir}/intellispaces-ixora-data.yaml</inputSpec>
                     <repositories>
-                        <repository>file:///intellispaces-ixora-core-ontology/intellispaces-ixora-core.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/intellispaces-ixora-core.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
