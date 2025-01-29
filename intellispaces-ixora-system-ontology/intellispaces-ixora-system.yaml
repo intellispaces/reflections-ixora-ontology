@@ -26,6 +26,8 @@ ontology:
     intellispaces.ixora.system.InboundModulePort:
       did: b923e0b3-58fc-4bff-be34-8555049604dd
       description: The system module inbound port
+      superDomains:
+        - intellispaces.ixora.system.ModulePort:
       channels:
         - asModulePort:
           cid: e7d5352b-cc31-47b8-ad05-7c472ea0d9dd
@@ -34,6 +36,8 @@ ontology:
     intellispaces.ixora.system.OutboundModulePort:
       did: 002efd3a-d5ec-4fd0-954a-07cd93e45786
       description: The system module outbound port
+      superDomains:
+        - intellispaces.ixora.system.ModulePort:
       channels:
         - asModulePort:
           cid: b044f77f-5a71-4c03-a316-b6928e35fa0d
