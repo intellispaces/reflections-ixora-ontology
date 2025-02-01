@@ -63,6 +63,16 @@ ontology:
           cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
           target.domain: intellispaces.ixora.core.data.Number
 
+    intellispaces.ixora.core.data.Float64:
+      did: 66fad657-c4ab-48a9-9c1b-c1c9f8b4bffe
+      description: The domain of objects considered as 64 bit float numbers
+      superDomains:
+        - intellispaces.ixora.core.data.Number
+      channels:
+        - asNumber:
+          cid: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
+          target.domain: intellispaces.ixora.core.data.Number
+
     intellispaces.ixora.core.data.String:
       did: f498a206-6b7f-4cad-81eb-e9859a56c8b1
       description: The domain of strings
