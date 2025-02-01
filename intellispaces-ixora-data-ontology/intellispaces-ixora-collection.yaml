@@ -112,6 +112,68 @@ ontology:
           projections:
             - index:
               domain: intellispaces.ixora.core.data.Integer32
+          target.domain: intellispaces.ixora.core.data.Integer8
+
+    intellispaces.ixora.data.collection.IntegerList:
+      did: 019081b8-bfb3-7089-9d6c-6537ab3fca07
+      description: |
+        The list of any objects considered as integer numbers. This is the alias for the domain ListDomain&lt;Integer&gt;
+      superDomains:
+        - intellispaces.ixora.data.collection.NumberList:
+          equivalences:
+            - projection: elementDomain
+              matchedProjection: elementDomain
+      channels:
+        - elementDomain:
+          cid: a3299ab9-f126-45ce-af23-e2d7be814bce
+          description: The list element domain
           target:
+            domain: intellispaces.ixora.core.space.Domain
+            value: intellispaces.ixora.core.data.Integer32
+        - asCollection:
+          cid: 01909080-8b2e-798a-8467-150465a39848
+          description: Downgrade mapping
+          target:
+            domain: intellispaces.ixora.data.collection.Collection
             equivalences:
-              - matchedProjection: elementDomain
+              - projection: elementDomain
+                matchedProjection: elementDomain
+        - get:
+          cid: fa8d530a-7e9d-49e1-a7f3-0956d3460ac5
+          name: IntegerListToElementChannel
+          projections:
+            - index:
+              domain: intellispaces.ixora.core.data.Integer32
+          target.domain: intellispaces.ixora.core.data.Integer32
+
+    intellispaces.ixora.data.collection.DoubleList:
+      did: 019081ff-e48c-773d-b6af-f6f3ec15ced9
+      description: |
+        The list of any objects considered as double float numbers. This is the alias for the domain ListDomain&lt;Double&gt;
+      superDomains:
+        - intellispaces.ixora.data.collection.NumberList:
+          equivalences:
+            - projection: elementDomain
+              matchedProjection: elementDomain
+      channels:
+        - elementDomain:
+          cid: 7e733832-f05f-46ce-abf3-b13ea4d53316
+          description: The list element domain
+          target:
+            domain: intellispaces.ixora.core.space.Domain
+            value: intellispaces.ixora.core.data.Float64
+        - asCollection:
+          cid: 01909080-c97f-77f1-9a5a-f20dba6ed8a6
+          description: Downgrade mapping
+          target:
+            domain: intellispaces.ixora.data.collection.Collection
+            equivalences:
+              - projection: elementDomain
+                matchedProjection: elementDomain
+        - get:
+          cid: 7f2c28d4-a738-432b-8afa-f47e7e00a933
+          name: DoubleListToElementChannel
+          projections:
+            - index:
+              domain: intellispaces.ixora.core.data.Integer32
+          target.domain: intellispaces.ixora.core.data.Float64
