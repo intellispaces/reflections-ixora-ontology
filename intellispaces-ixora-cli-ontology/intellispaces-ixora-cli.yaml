@@ -17,7 +17,7 @@ ontology:
           target.domain: intellispaces.ixora.cli.Console
           projections:
             - string:
-              domain: intellispaces.ixora.core.data.String
+              target.domain: intellispaces.ixora.core.data.String
           allowedTraverses: [ Moving ]
         - print:
           cid: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
@@ -25,7 +25,7 @@ ontology:
           target.domain: intellispaces.ixora.cli.Console
           projections:
             - number:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           allowedTraverses: [ Moving ]
         - println:
           cid: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
@@ -33,7 +33,7 @@ ontology:
           target.domain: intellispaces.ixora.cli.Console
           projections:
             - string:
-              domain: intellispaces.ixora.core.data.String
+              target.domain: intellispaces.ixora.core.data.String
           allowedTraverses: [ Moving ]
         - println:
           cid: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
@@ -41,5 +41,5 @@ ontology:
           target.domain: intellispaces.ixora.cli.Console
           projections:
             - number:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           allowedTraverses: [ Moving ]

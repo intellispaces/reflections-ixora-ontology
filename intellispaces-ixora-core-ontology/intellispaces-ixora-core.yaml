@@ -39,6 +39,9 @@ ontology:
           cid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
           target.domain: intellispaces.ixora.core.data.String
 
+    intellispaces.ixora.core.data.Boolean:
+      did: 64c08bfa-e4d3-411d-a465-0aec0ce3849e
+
     intellispaces.ixora.core.data.Number:
       did: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of objects considered as numbers
