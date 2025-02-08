@@ -28,8 +28,8 @@ ontology:
         - intellispaces.ixora.data.collection.Collection:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+              - this thru elementDomain
+              - base thru elementDomain
       channels:
         - elementDomain:
           cid: 93099ab8-37c6-4c53-8b4f-554924e46856
@@ -50,7 +50,7 @@ ontology:
           name: ListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target:
             constraints:
               - equivalence.paths:
@@ -117,7 +117,7 @@ ontology:
           name: ByteListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer8
 
     intellispaces.ixora.data.collection.IntegerList:
@@ -127,9 +127,9 @@ ontology:
       superDomains:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
-            - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+          - equivalence.paths:
+              - this thru elementDomain
+              - base thru elementDomain
       channels:
         - elementDomain:
           cid: a3299ab9-f126-45ce-af23-e2d7be814bce
@@ -151,7 +151,7 @@ ontology:
           name: IntegerListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer32
 
     intellispaces.ixora.data.collection.DoubleList:
@@ -185,5 +185,5 @@ ontology:
           name: DoubleListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Float64
