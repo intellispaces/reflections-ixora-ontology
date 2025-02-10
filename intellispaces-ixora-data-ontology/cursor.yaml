@@ -1,0 +1,60 @@
+intellispaces: "0.1"
+info:
+  title: Ixora data space ontology
+ontology:
+  spaces:
+    intellispaces.ixora.data.cursor:
+      sid: 9690394e-b754-443b-b9f9-fd5ee6de9b9e
+
+  domains:
+    intellispaces.ixora.data.cursor.Cursor:
+      did: 3826cfd5-1b2a-4441-86b7-6ff0a9b2a7cd
+      description: The one-sided cursor
+      channels:
+        - elementDomain:
+          cid: 8816842b-3aa7-4421-b2c5-3ac5b3da9b24
+          description: The cursor element domain
+          target:
+            domain: intellispaces.ixora.core.space.Domain
+            alias: E
+        - collection:
+          cid: 4d445fd4-4088-49a5-b0ba-fffd8c443b13
+          target:
+            domain: intellispaces.ixora.data.collection.Collection
+            constraints:
+              - equivalence.paths:
+                  - this thru elementDomain
+                  - base thru elementDomain
+        - hasNext:
+          cid: 493c84b9-36cc-4312-b887-a37f8e21123e
+          name: HasCursorNextElementChannel
+          target.domain: intellispaces.ixora.core.data.Boolean
+        - next:
+          cid: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
+          name: CursorNextElementChannel
+          description: Moves cursor to the next item in the collection and return next item
+          target:
+            constraints:
+              - equivalence.paths:
+                  - this to intellispaces.ixora.core.space.Domain
+                  - base thru elementDomain
+          allowedTraverses: [ MappingOfMoving ]
+
+    intellispaces.ixora.data.cursor.ByteCursor:
+      did: d280760e-013f-4dbb-a817-8b784561d058
+      superDomains:
+        - intellispaces.ixora.data.cursor.Cursor:
+          constraints:
+            - equivalence.paths:
+                - this thru elementDomain
+                - base thru elementDomain
+      channels:
+        - elementDomain:
+          cid: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4
+          description: The cursor element domain
+          target:
+            domain: intellispaces.ixora.core.space.Domain
+            instance: intellispaces.ixora.core.data.Integer8
+        - next:
+          cid: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
+          target.domain: intellispaces.ixora.core.data.Integer8

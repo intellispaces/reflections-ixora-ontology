@@ -28,8 +28,8 @@ ontology:
         - intellispaces.ixora.data.collection.Collection:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+              - this thru elementDomain
+              - base thru elementDomain
       channels:
         - elementDomain:
           cid: 93099ab8-37c6-4c53-8b4f-554924e46856
@@ -50,7 +50,7 @@ ontology:
           name: ListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target:
             constraints:
               - equivalence.paths:
@@ -117,19 +117,19 @@ ontology:
           name: ByteListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer8
 
-    intellispaces.ixora.data.collection.IntegerList:
+    intellispaces.ixora.data.collection.Integer32List:
       did: 019081b8-bfb3-7089-9d6c-6537ab3fca07
       description: |
-        The list of any objects considered as integer numbers. This is the alias for the domain ListDomain&lt;Integer&gt;
+        The list of any objects considered as 32-bits integer numbers. This is the alias for the domain ListDomain&lt;Integer&gt;
       superDomains:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
-            - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+          - equivalence.paths:
+              - this thru elementDomain
+              - base thru elementDomain
       channels:
         - elementDomain:
           cid: a3299ab9-f126-45ce-af23-e2d7be814bce
@@ -148,16 +148,16 @@ ontology:
                   - base thru elementDomain
         - get:
           cid: fa8d530a-7e9d-49e1-a7f3-0956d3460ac5
-          name: IntegerListToElementChannel
+          name: Integer32ListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer32
 
-    intellispaces.ixora.data.collection.DoubleList:
+    intellispaces.ixora.data.collection.Float64List:
       did: 019081ff-e48c-773d-b6af-f6f3ec15ced9
       description: |
-        The list of any objects considered as double float numbers. This is the alias for the domain ListDomain&lt;Double&gt;
+        The list of any objects considered as 64-bits float numbers. This is the alias for the domain ListDomain&lt;Double&gt;
       superDomains:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
@@ -182,8 +182,8 @@ ontology:
                   - base thru elementDomain
         - get:
           cid: 7f2c28d4-a738-432b-8afa-f47e7e00a933
-          name: DoubleListToElementChannel
+          name: Float64ListToElementChannel
           projections:
             - index:
-              domain: intellispaces.ixora.core.data.Integer32
+              target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Float64
