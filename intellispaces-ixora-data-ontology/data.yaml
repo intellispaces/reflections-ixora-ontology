@@ -1,0 +1,13 @@
+intellispaces: "0.1"
+info:
+  title: Ixora data space ontology
+imports:
+  - "collection.yaml"
+  - "cursor.yaml"
+  - "streams.yaml"
+  - "association.yaml"
+  - "dictionary.yaml"
+ontology:
+  spaces:
+    intellispaces.ixora.data:
+      sid: 179a1860-2cc4-4e09-b97f-b58906d5a7b6

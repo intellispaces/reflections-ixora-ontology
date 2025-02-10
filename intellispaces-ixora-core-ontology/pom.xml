@@ -24,7 +24,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <inputSpec>${project.basedir}/intellispaces-ixora-core.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/core.yaml</inputSpec>
                 </configuration>
             </plugin>
             <plugin>

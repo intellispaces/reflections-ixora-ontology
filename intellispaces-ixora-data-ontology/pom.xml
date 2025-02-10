@@ -24,9 +24,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <inputSpec>${project.basedir}/intellispaces-ixora-data.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/data.yaml</inputSpec>
                     <repositories>
-                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/intellispaces-ixora-core.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
