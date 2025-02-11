@@ -55,7 +55,7 @@ ontology:
         - readMultiple:
           cid: f7415895-f183-43e0-8fc6-c50fe08e3c98
           name: InputDataStreamReadMultipleChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target:
@@ -103,7 +103,7 @@ ontology:
         - write:
           cid: 84038791-42f2-48e1-8a39-500e06cc8f0b
           name: OutputDataStreamWriteElementChannel
-          projections:
+          qualifiers:
             - element:
               target.constraints:
                 - equivalence.paths:
@@ -147,7 +147,7 @@ ontology:
         - readMultiple:
           cid: 2c9b4074-f83b-4d4f-983d-3107e26dc8ee
           name: ByteInputStreamReadMultipleChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target:

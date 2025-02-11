@@ -7,6 +7,7 @@ imports:
   - "streams.yaml"
   - "association.yaml"
   - "dictionary.yaml"
+  - "yaml.yaml"
 ontology:
   spaces:
     intellispaces.ixora.data:
