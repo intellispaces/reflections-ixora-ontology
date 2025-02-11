@@ -48,7 +48,7 @@ ontology:
         - get:
           cid: a8b23e74-2f8a-41eb-9427-a50e8274dc09
           name: ListToElementChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target:
@@ -115,7 +115,7 @@ ontology:
         - get:
           cid: f5bf6431-109a-4906-a54d-d30755a623c9
           name: ByteListToElementChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer8
@@ -149,7 +149,7 @@ ontology:
         - get:
           cid: fa8d530a-7e9d-49e1-a7f3-0956d3460ac5
           name: Integer32ListToElementChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Integer32
@@ -183,7 +183,7 @@ ontology:
         - get:
           cid: 7f2c28d4-a738-432b-8afa-f47e7e00a933
           name: Float64ListToElementChannel
-          projections:
+          qualifiers:
             - index:
               target.domain: intellispaces.ixora.core.data.Integer32
           target.domain: intellispaces.ixora.core.data.Float64
