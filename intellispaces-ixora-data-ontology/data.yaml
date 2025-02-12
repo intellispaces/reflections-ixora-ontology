@@ -4,7 +4,7 @@ info:
 imports:
   - "collection.yaml"
   - "cursor.yaml"
-  - "streams.yaml"
+  - "stream.yaml"
   - "association.yaml"
   - "dictionary.yaml"
   - "yaml.yaml"

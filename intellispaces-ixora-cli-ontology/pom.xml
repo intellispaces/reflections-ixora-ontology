@@ -25,6 +25,9 @@
                 </executions>
                 <configuration>
                     <inputSpec>${project.basedir}/cli.yaml</inputSpec>
+                    <repositories>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
+                    </repositories>
                 </configuration>
             </plugin>
             <plugin>

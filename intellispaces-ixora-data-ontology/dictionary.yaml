@@ -115,7 +115,7 @@ ontology:
       cid: cafc0a2e-a1da-44e1-997f-2db62f7e385c
       source.domain: intellispaces.ixora.data.dictionary.Dictionary
       qualifiers:
-        - dataClass:
+        - dataType:
           target:
             domain: intellispaces.ixora.core.space.Domain
             alias: D
@@ -123,4 +123,4 @@ ontology:
         constraints:
           - equivalence.paths:
               - this to intellispaces.ixora.core.space.Domain
-              - base thru dataClass
+              - base thru dataType
