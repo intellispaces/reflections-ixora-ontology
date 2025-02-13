@@ -23,8 +23,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - hasNext:
           cid: 493c84b9-36cc-4312-b887-a37f8e21123e
           name: HasCursorNextElementChannel
@@ -36,8 +36,8 @@ ontology:
           target:
             constraints:
               - equivalence.paths:
-                  - this to intellispaces.ixora.core.space.Domain
-                  - base thru elementDomain
+                  - $this to intellispaces.ixora.core.space.Domain
+                  - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
 
     intellispaces.ixora.data.cursor.ByteCursor:
@@ -46,8 +46,8 @@ ontology:
         - intellispaces.ixora.data.cursor.Cursor:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4

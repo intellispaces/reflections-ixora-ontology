@@ -12,10 +12,11 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>intellispaces-ixora-core-ontology</module>
-        <module>intellispaces-ixora-system-ontology</module>
-        <module>intellispaces-ixora-cli-ontology</module>
-        <module>intellispaces-ixora-data-ontology</module>
+        <module>intellispaces-jaquarius-ixora-core-ontology</module>
+        <module>intellispaces-jaquarius-ixora-system-ontology</module>
+        <module>intellispaces-jaquarius-ixora-cli-ontology</module>
+        <module>intellispaces-jaquarius-ixora-data-ontology</module>
+        <module>intellispaces-jaquarius-ixora-rdb-ontology</module>
     </modules>
 
     <dependencies>
@@ -30,4 +31,19 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>tech.intellispaces.jaquarius</groupId>
+                <artifactId>intellispaces-jaquarius-ixora-core-ontology</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>tech.intellispaces.jaquarius</groupId>
+                <artifactId>intellispaces-jaquarius-ixora-data-ontology</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

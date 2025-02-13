@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispaces-jaquarius-ixora-data-ontology</artifactId>
+    <artifactId>intellispaces-jaquarius-ixora-cli-ontology</artifactId>
     <packaging>jar</packaging>
 	
     <build>
@@ -24,9 +24,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <inputSpec>${project.basedir}/data.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/cli.yaml</inputSpec>
                     <repositories>
-                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-jaquarius-ixora-core-ontology/core.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>

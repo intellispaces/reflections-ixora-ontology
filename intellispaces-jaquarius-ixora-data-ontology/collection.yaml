@@ -28,8 +28,8 @@ ontology:
         - intellispaces.ixora.data.collection.Collection:
           constraints:
             - equivalence.paths:
-              - this thru elementDomain
-              - base thru elementDomain
+              - $this thru elementDomain
+              - $base thru elementDomain
       channels:
         - elementDomain:
           cid: 93099ab8-37c6-4c53-8b4f-554924e46856
@@ -43,8 +43,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - get:
           cid: a8b23e74-2f8a-41eb-9427-a50e8274dc09
           name: ListToElementChannel
@@ -54,8 +54,8 @@ ontology:
           target:
             constraints:
               - equivalence.paths:
-                  - this to intellispaces.ixora.core.space.Domain
-                  - base thru elementDomain
+                  - $this to intellispaces.ixora.core.space.Domain
+                  - $base thru elementDomain
 
     intellispaces.ixora.data.collection.NumberList:
       did: 01908c74-4692-7fe2-8f51-375bda2efc40
@@ -66,8 +66,8 @@ ontology:
         - intellispaces.ixora.data.collection.List:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: 2c16d0ca-619d-4a17-a680-655bd98d78f1
@@ -83,8 +83,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
 
     intellispaces.ixora.data.collection.ByteList:
       did: 46127f8a-6396-4bb8-8af4-d85ebd37f143
@@ -94,8 +94,8 @@ ontology:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: e151b008-acd1-4dda-9ddb-e7c78b5e34ef
@@ -110,8 +110,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - get:
           cid: f5bf6431-109a-4906-a54d-d30755a623c9
           name: ByteListToElementChannel
@@ -128,8 +128,8 @@ ontology:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
           - equivalence.paths:
-              - this thru elementDomain
-              - base thru elementDomain
+              - $this thru elementDomain
+              - $base thru elementDomain
       channels:
         - elementDomain:
           cid: a3299ab9-f126-45ce-af23-e2d7be814bce
@@ -144,8 +144,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - get:
           cid: fa8d530a-7e9d-49e1-a7f3-0956d3460ac5
           name: Integer32ListToElementChannel
@@ -162,8 +162,8 @@ ontology:
         - intellispaces.ixora.data.collection.NumberList:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: 7e733832-f05f-46ce-abf3-b13ea4d53316
@@ -178,8 +178,8 @@ ontology:
             domain: intellispaces.ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - get:
           cid: 7f2c28d4-a738-432b-8afa-f47e7e00a933
           name: Float64ListToElementChannel

@@ -23,8 +23,8 @@ ontology:
         - intellispaces.ixora.data.stream.DataStream:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: 892ff5cb-e889-4ebb-b21c-5cd891802a7d
@@ -37,8 +37,8 @@ ontology:
             domain: intellispaces.ixora.data.stream.DataStream
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - isExhausted:
           cid: 2d698e68-bb86-4e5b-9888-203c530b7fd2
           name: InputDataStreamIsExhaustedChannel
@@ -49,8 +49,8 @@ ontology:
           target:
             constraints:
               - equivalence.paths:
-                  - this to intellispaces.ixora.core.space.Domain
-                  - base thru elementDomain
+                  - $this to intellispaces.ixora.core.space.Domain
+                  - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
         - readMultiple:
           cid: f7415895-f183-43e0-8fc6-c50fe08e3c98
@@ -63,8 +63,8 @@ ontology:
             immobilityType: Unmovable
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
         - readAll:
           cid: 56d9023d-2045-4b8b-96d7-f2beb64cb378
@@ -74,8 +74,8 @@ ontology:
             immobilityType: Unmovable
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
 
     intellispaces.ixora.data.stream.OutputDataStream:
@@ -84,8 +84,8 @@ ontology:
         - intellispaces.ixora.data.stream.DataStream:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: 9a42f7b7-cdb1-4ea9-9ebd-7ad9cdbc40c3
@@ -98,8 +98,8 @@ ontology:
             domain: intellispaces.ixora.data.stream.DataStream
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - write:
           cid: 84038791-42f2-48e1-8a39-500e06cc8f0b
           name: OutputDataStreamWriteElementChannel
@@ -107,14 +107,14 @@ ontology:
             - element:
               target.constraints:
                 - equivalence.paths:
-                    - this to intellispaces.ixora.core.space.Domain
-                    - base thru elementDomain
+                    - $this to intellispaces.ixora.core.space.Domain
+                    - $base thru elementDomain
           target:
             domain: intellispaces.ixora.data.stream.OutputDataStream
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
           allowedTraverses: [ Moving ]
 
     intellispaces.ixora.data.stream.ByteInputStream:
@@ -123,8 +123,8 @@ ontology:
         - intellispaces.ixora.data.stream.InputDataStream:
           constraints:
             - equivalence.paths:
-                - this thru elementDomain
-                - base thru elementDomain
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           cid: c01f543d-7738-4ee7-941a-c8fd05ec1b40
@@ -137,8 +137,8 @@ ontology:
             domain: intellispaces.ixora.data.stream.DataStream
             constraints:
               - equivalence.paths:
-                  - this thru elementDomain
-                  - base thru elementDomain
+                  - $this thru elementDomain
+                  - $base thru elementDomain
         - read:
           cid: 47a07883-5660-4e7e-81f1-24d48d215285
           name: ByteInputStreamReadChannel

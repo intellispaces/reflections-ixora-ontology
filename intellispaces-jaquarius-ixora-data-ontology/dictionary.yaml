@@ -57,7 +57,7 @@ ontology:
             constraints:
               - equivalence:
                 paths:
-                  - this thru elementDomain
+                  - $this thru elementDomain
                 instance:
                   domain: intellispaces.ixora.core.space.Domain
                   name: intellispaces.ixora.core.data.Integer32
@@ -72,7 +72,7 @@ ontology:
             constraints:
               - equivalence:
                 paths:
-                  - this thru elementDomain
+                  - $this thru elementDomain
                 instance:
                   domain: intellispaces.ixora.core.space.Domain
                   name: intellispaces.ixora.core.data.Float64
@@ -87,7 +87,7 @@ ontology:
             constraints:
               - equivalence:
                 paths:
-                  - this thru elementDomain
+                  - $this thru elementDomain
                 instance:
                   domain: intellispaces.ixora.core.space.Domain
                   name: intellispaces.ixora.core.data.String
@@ -102,7 +102,7 @@ ontology:
             constraints:
               - equivalence:
                 paths:
-                  - this thru elementDomain
+                  - $this thru elementDomain
                 instance:
                   domain: intellispaces.ixora.core.space.Domain
                   name: intellispaces.ixora.data.dictionary.Dictionary
@@ -122,5 +122,5 @@ ontology:
       target:
         constraints:
           - equivalence.paths:
-              - this to intellispaces.ixora.core.space.Domain
-              - base thru dataType
+              - $this to intellispaces.ixora.core.space.Domain
+              - $base thru dataType

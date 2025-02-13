@@ -42,14 +42,14 @@ ontology:
             constraints:
               - equivalence:
                 paths:
-                  - this thru elementDomain
+                  - $this thru elementDomain
                 instance:
                   domain: intellispaces.ixora.core.space.Domain
                   name: intellispaces.ixora.data.association.KeyValuePair
                   constraints:
                     - equivalence.paths:
-                        - this thru keyDomain
-                        - base thru keyDomain
+                        - $this thru keyDomain
+                        - $base thru keyDomain
                     - equivalence.paths:
-                        - this thru valueDomain
-                        - base thru valueDomain
+                        - $this thru valueDomain
+                        - $base thru valueDomain
