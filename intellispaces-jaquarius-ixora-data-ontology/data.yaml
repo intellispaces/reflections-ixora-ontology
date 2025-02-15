@@ -8,7 +8,12 @@ imports:
   - "association.yaml"
   - "dictionary.yaml"
   - "yaml.yaml"
+
 ontology:
   spaces:
     intellispaces.ixora.data:
       sid: 179a1860-2cc4-4e09-b97f-b58906d5a7b6
+
+  domains:
+    intellispaces.ixora.data.Dataset:
+      did: 8d32c26c-70b6-4698-9d2f-a3d698f1d069
