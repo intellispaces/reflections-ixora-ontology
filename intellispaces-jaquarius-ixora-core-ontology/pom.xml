@@ -25,6 +25,9 @@
                 </executions>
                 <configuration>
                     <inputSpec>${project.basedir}/core.yaml</inputSpec>
+                    <repositories>
+                        <repository>file:///${project.basedir}/../intellispaces-jaquarius-ixora-data-ontology/data.yaml</repository>
+                    </repositories>
                 </configuration>
             </plugin>
             <plugin>

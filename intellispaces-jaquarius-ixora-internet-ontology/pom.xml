@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispaces-jaquarius-ixora-cli-ontology</artifactId>
+    <artifactId>intellispaces-jaquarius-ixora-internet-ontology</artifactId>
     <packaging>jar</packaging>
 	
     <build>
@@ -24,7 +24,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <inputSpec>${project.basedir}/cli.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/internet.yaml</inputSpec>
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-jaquarius-ixora-core-ontology/core.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-jaquarius-ixora-data-ontology/data.yaml</repository>
@@ -50,7 +50,10 @@
         <dependency>
             <groupId>tech.intellispaces.jaquarius</groupId>
             <artifactId>intellispaces-jaquarius-ixora-core-ontology</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.intellispaces.jaquarius</groupId>
+            <artifactId>intellispaces-jaquarius-ixora-data-ontology</artifactId>
         </dependency>
     </dependencies>
 </project>
