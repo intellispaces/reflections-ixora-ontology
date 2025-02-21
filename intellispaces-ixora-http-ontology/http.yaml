@@ -1,0 +1,196 @@
+intellispaces: "0.1"
+info:
+  title: Ixora HTTP space ontology
+ontology:
+  spaces:
+    tech.intellispaces.ixora.http:
+      sid: b48d5558-a90a-4ec1-96b7-157e3bba8432
+
+  domains:
+    tech.intellispaces.ixora.http.HttpStatus:
+      did: 346dee4e-e618-4b0e-83d5-dd070f607e4e
+      description: The HTTP status
+      channels:
+        - code:
+          cid: 7f6f42ae-a190-467f-a08e-e19f07bb538b
+          target.domain: tech.intellispaces.ixora.data.Integer32
+        - isOkStatus:
+          cid: 7e0e1b72-d885-4a96-be59-05199b90009d
+          target.domain: tech.intellispaces.ixora.data.Boolean
+
+    tech.intellispaces.ixora.http.HttpMethod:
+      did: a9b7f614-28cb-414b-8fb6-eb54fce9eea6
+      description: The HTTP method
+      channels:
+        - name:
+          cid: 4335c27b-035e-41a8-abbc-535fb9b403a7
+          target.domain: tech.intellispaces.ixora.data.String
+        - isGetMethod:
+          cid: 1b73f498-f9e2-4fcf-93d6-b7d08e42dea1
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isHeadMethod:
+          cid: a824c452-21bc-4abe-a3df-9eba533e1074
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isPostMethod:
+          cid: 30be3265-926a-4f5f-94d0-7813f84f20c3
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isPutMethod:
+          cid: 57561089-d33d-41ea-b1a5-c7e79877c50f
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isPatchMethod:
+          cid: 94c17678-1550-4434-b980-0505d098f1ae
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isDeleteMethod:
+          cid: a068223e-11a5-403d-9bbe-5e065fea53ba
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isOptionsMethod:
+          cid: 94765e29-6256-45c3-80dd-90bb3de79f43
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - isTraceMethod:
+          cid: 71afbc7e-1a14-4fdf-a9c7-330ffc520094
+          target.domain: tech.intellispaces.ixora.data.Boolean
+
+    tech.intellispaces.ixora.http.HttpMessage:
+      did: 0c5ed260-ccf7-4b7a-970c-12a696a99dbc
+      description: The HTTP status
+      channels:
+        - bodyStream:
+          cid: 476d36df-38e9-4340-a870-fe2ee21b400
+          target:
+            domain: tech.intellispaces.ixora.data.stream.ByteInputStream
+            immobilityType: Movable
+          description: The byte stream associated with the HTTP message body. There is only one stream associated with the request.
+
+    tech.intellispaces.ixora.http.HttpHeaderList:
+      did: cacb1b31-cfe8-4070-be01-3be7c16f1170
+      description: The HTTP message headers
+
+    tech.intellispaces.ixora.http.HttpRequest:
+      did: 7424475c-e034-47f7-9627-5ca8845867c9
+      description: Abstract HTTP request.
+      superDomains:
+        - tech.intellispaces.ixora.http.HttpMessage
+      channels:
+        - asHttpMessage:
+          cid: 5d96b126-71a7-4583-ad75-9636b977fd15
+          target.domain: tech.intellispaces.ixora.http.HttpMessage
+        - requestURI:
+          cid: 35fd9d51-2aca-4ddd-aee3-559f513fa82c
+          target.domain: tech.intellispaces.ixora.internet.uri.Uri
+        - method:
+          cid: 76494aaf-99bd-42df-8bf5-3a1a28b137d7
+          target.domain: tech.intellispaces.ixora.http.HttpMethod
+
+    tech.intellispaces.ixora.http.HttpResponse:
+      did: 5f96c856-7ac3-407f-89fb-0137e5936fe8
+      description: Abstract HTTP response.
+      superDomains:
+        - tech.intellispaces.ixora.http.HttpMessage
+      channels:
+        - asHttpMessage:
+          cid: afe6e5c1-292a-4edf-b436-790df0e37160
+          target.domain: tech.intellispaces.ixora.http.HttpMessage
+        - status:
+          cid: 73bac052-7077-43a4-816a-dd929fdc6cd6
+          target.domain: tech.intellispaces.ixora.http.HttpStatus
+
+    tech.intellispaces.ixora.http.HttpPort:
+      did: 27d55c7d-a278-42d6-bda9-63db5114e1ed
+      description: HTTP module port.
+      superDomains:
+        - tech.intellispaces.ixora.system.ModulePort
+      channels:
+        - asModulePort:
+          cid: 489c861a-13d4-47c7-9a88-8d5f48e83aff
+          target.domain: tech.intellispaces.ixora.system.ModulePort
+        - exchange:
+          cid: 04eae999-4651-447f-82b9-9de3dcc27659
+          name: HttpPortExchangeChannel
+          target.domain: tech.intellispaces.ixora.http.HttpResponse
+          qualifiers:
+            - request:
+              target.domain: tech.intellispaces.ixora.http.HttpRequest
+          allowedTraverses: [ MappingOfMoving ]
+
+    tech.intellispaces.ixora.http.InboundHttpPort:
+      did: ce126067-c94b-4fff-b423-a24a3d2fd5c2
+      description: Inbound HTTP module port.
+      superDomains:
+        - tech.intellispaces.ixora.http.HttpPort
+        - tech.intellispaces.ixora.system.InboundModulePort
+      channels:
+        - asHttpPort:
+          cid: 21ffc30d-ae90-4dd6-90d9-821b2ee821ac
+          target.domain: tech.intellispaces.ixora.http.HttpPort
+        - asInboundModulePort:
+          cid: c6153f76-12ef-434e-baed-a5f7fdcb0ee2
+          target.domain: tech.intellispaces.ixora.system.InboundModulePort
+        - portNumber:
+          cid: 71693529-9c92-4a05-bab0-2d9a378ba9ab
+          target.domain: tech.intellispaces.ixora.data.Integer32
+        - open:
+          cid: c64f254e-75c1-42e7-929f-b1bf0c6314d1
+          target.domain: tech.intellispaces.ixora.http.InboundHttpPort
+          allowedTraverses: [ Moving ]
+        - close:
+          cid: 4accdb1d-7c42-441b-8b3b-fe2da28d8c96
+          target.domain: tech.intellispaces.ixora.http.InboundHttpPort
+          allowedTraverses: [ Moving ]
+
+    tech.intellispaces.ixora.http.OutboundHttpPort:
+      did: 20f03cb9-c0b5-4ae4-9736-0468cdddd12b
+      description: Outbound HTTP module port.
+      superDomains:
+        - tech.intellispaces.ixora.http.HttpPort
+        - tech.intellispaces.ixora.system.OutboundModulePort
+      channels:
+        - asHttpPort:
+          cid: ee91aeee-5401-438c-81b1-df3948624bf2
+          target.domain: tech.intellispaces.ixora.http.HttpPort
+        - asOutboundModulePort:
+          cid: b1865f7e-8249-4e81-81ef-95cab84afe81
+          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
+
+    tech.intellispaces.ixora.http.DedicatedHttpPort:
+      did: 20f03cb9-c0b5-4ae4-9736-0468cdddd12b
+      superDomains:
+        - tech.intellispaces.ixora.system.OutboundModulePort
+      channels:
+        - asOutboundModulePort:
+          cid: 57905f2f-acdb-42be-81a9-daf5d1a27104
+          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
+        - baseUrl:
+          cid: a300f5c5-a9c2-4d34-9d89-709f60b39c63
+          target.domain: tech.intellispaces.ixora.data.String
+        - exchange:
+          cid: f525865c-e71d-4150-91d2-6639548ae5aa
+          name: HttpClientExchangeSimpleChannel
+          qualifiers:
+            - endpoint:
+              target.domain: tech.intellispaces.ixora.data.String
+            - method:
+              target.domain: tech.intellispaces.ixora.http.HttpMethod
+          target.domain: tech.intellispaces.ixora.http.HttpResponse
+          allowedTraverses: [ MappingOfMoving ]
+        - exchange:
+          cid: 6d0d1b6b-e887-4a7e-993d-c278e9d94e5d
+          name: HttpClientExchangeChannel
+          qualifiers:
+            - endpoint:
+              target.domain: tech.intellispaces.ixora.data.String
+            - method:
+              target.domain: tech.intellispaces.ixora.http.HttpMethod
+            - headers:
+              target.domain: tech.intellispaces.ixora.http.HttpHeaderList
+            - body:
+              target:
+                domain: tech.intellispaces.ixora.data.stream.InputDataStream
+                constraints:
+                  - equivalence:
+                      paths:
+                        - $this thru elementDomain
+                      instance:
+                        domain: tech.intellispaces.ixora.core.Domain
+                        name: tech.intellispaces.ixora.data.Byte
+          target.domain: tech.intellispaces.ixora.http.HttpResponse
+          allowedTraverses: [ MappingOfMoving ]

@@ -1,12 +1,12 @@
 intellispaces: "0.1"
 ontology:
   spaces:
-    intellispaces.ixora.data.yaml:
+    tech.intellispaces.ixora.data.yaml:
       sid: 9942341e-db92-4388-85f4-7c70e5e52bb8
 
   channels:
-    intellispaces.ixora.data.yaml.StringToDictionary:
+    tech.intellispaces.ixora.data.yaml.StringToDictionary:
       cid: 1830e924-2c78-4f18-b9eb-39f002cbeea6
       source:
-        domain: intellispaces.ixora.core.data.String
-      target.domain: intellispaces.ixora.data.dictionary.Dictionary
+        domain: tech.intellispaces.ixora.data.String
+      target.domain: tech.intellispaces.ixora.data.dictionary.Dictionary
