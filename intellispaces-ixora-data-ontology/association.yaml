@@ -1,0 +1,55 @@
+intellispaces: "0.1"
+info:
+  title: Ixora data space ontology
+ontology:
+  spaces:
+    tech.intellispaces.ixora.data.association:
+      sid: e7becb3c-d818-4424-a2f2-e0905777db8a
+
+  domains:
+    tech.intellispaces.ixora.data.association.KeyValuePair:
+      did: 8f00a2aa-f70d-4064-b517-e7f15642c805
+      channels:
+        - keyDomain:
+          cid: ac7048b7-9967-4eba-877b-019d19e16d05
+          target:
+            domain: tech.intellispaces.ixora.core.Domain
+            alias: K
+        - valueDomain:
+          cid: 9e331b76-deae-4411-98ad-ca402a747a2e
+          target:
+            domain: tech.intellispaces.ixora.core.Domain
+            alias: V
+
+    tech.intellispaces.ixora.data.association.Map:
+      did: 7fe5d4bb-a298-45a2-acc8-75b6bb4cb2f0
+      channels:
+        - keyDomain:
+          cid: b5bbd1cb-e212-4f82-a801-3080738f5647
+          target:
+            domain: tech.intellispaces.ixora.core.Domain
+            alias: K
+        - valueDomain:
+          cid: da55447c-4158-4d56-bee1-ab019c7f9fdb
+          target:
+            domain: tech.intellispaces.ixora.core.Domain
+            alias: V
+        - keyValuePairs:
+          cid: b766a35c-b544-4b84-9b5e-51dc8386e3cd
+          target:
+            domain: tech.intellispaces.ixora.data.collection.Collection
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: tech.intellispaces.ixora.core.Domain
+                  name: tech.intellispaces.ixora.data.association.KeyValuePair
+                  constraints:
+                    - equivalence.paths:
+                        - $this thru keyDomain
+                        - $base thru keyDomain
+                    - equivalence.paths:
+                        - $this thru valueDomain
+                        - $base thru valueDomain

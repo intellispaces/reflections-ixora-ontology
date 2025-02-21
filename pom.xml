@@ -8,20 +8,20 @@
     </parent>
 
     <groupId>tech.intellispaces.jaquarius</groupId>
-    <artifactId>intellispaces-jaquarius-ixora-parent</artifactId>
+    <artifactId>intellispaces-ixora-ontology-parent</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>intellispaces-jaquarius-ixora-core-ontology</module>
-        <module>intellispaces-jaquarius-ixora-system-ontology</module>
-        <module>intellispaces-jaquarius-ixora-cli-ontology</module>
-        <module>intellispaces-jaquarius-ixora-data-ontology</module>
-        <module>intellispaces-jaquarius-ixora-rdb-ontology</module>
-        <module>intellispaces-jaquarius-ixora-hikaricp-ontology</module>
-        <module>intellispaces-jaquarius-ixora-internet-ontology</module>
-        <module>intellispaces-jaquarius-ixora-http-ontology</module>
-        <module>intellispaces-jaquarius-ixora-okhttp-ontology</module>
-        <module>intellispaces-jaquarius-ixora-jetty-ontology</module>
+        <module>intellispaces-ixora-core-ontology</module>
+        <module>intellispaces-ixora-system-ontology</module>
+        <module>intellispaces-ixora-cli-ontology</module>
+        <module>intellispaces-ixora-data-ontology</module>
+        <module>intellispaces-ixora-rdb-ontology</module>
+        <module>intellispaces-ixora-hikaricp-ontology</module>
+        <module>intellispaces-ixora-internet-ontology</module>
+        <module>intellispaces-ixora-http-ontology</module>
+        <module>intellispaces-ixora-okhttp-ontology</module>
+        <module>intellispaces-ixora-jetty-ontology</module>
     </modules>
 
     <dependencies>
@@ -41,32 +41,32 @@
         <dependencies>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-core-ontology</artifactId>
+                <artifactId>intellispaces-ixora-core-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-data-ontology</artifactId>
+                <artifactId>intellispaces-ixora-data-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-system-ontology</artifactId>
+                <artifactId>intellispaces-ixora-system-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-rdb-ontology</artifactId>
+                <artifactId>intellispaces-ixora-rdb-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-internet-ontology</artifactId>
+                <artifactId>intellispaces-ixora-internet-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.jaquarius</groupId>
-                <artifactId>intellispaces-jaquarius-ixora-http-ontology</artifactId>
+                <artifactId>intellispaces-ixora-http-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

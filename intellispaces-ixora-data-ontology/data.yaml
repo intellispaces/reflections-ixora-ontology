@@ -1,0 +1,73 @@
+intellispaces: "0.1"
+info:
+  title: Ixora data space ontology
+imports:
+  - "collection.yaml"
+  - "cursor.yaml"
+  - "stream.yaml"
+  - "association.yaml"
+  - "dictionary.yaml"
+  - "yaml.yaml"
+
+ontology:
+  spaces:
+    tech.intellispaces.ixora.data:
+      sid: 179a1860-2cc4-4e09-b97f-b58906d5a7b6
+
+  domains:
+    tech.intellispaces.ixora.data.Number:
+      did: b4fef548-b446-4cae-ae98-63883a6326b8
+      description: The domain of objects considered as numbers
+
+    tech.intellispaces.ixora.data.Integer8:
+      did: 97bc971e-1b2e-4e93-9042-bd19d8c98d9a
+      description: The domain of objects considered as integer numbers in the set from -128 to 127 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.data.Number
+      channels:
+        - asNumber:
+          cid: e6c59876-1b43-41cc-ba98-93922a80c775
+          target.domain: tech.intellispaces.ixora.data.Number
+
+    tech.intellispaces.ixora.data.Integer16:
+      did: d3c939ec-0fa7-4b48-8dc4-e93b31691b17
+      description: The domain of objects considered as integer numbers in the set from -32768 to 32767 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.data.Number
+      channels:
+        - asNumber:
+          cid: 5ff21160-e035-49d4-8113-c1bc1ea888d7
+          target.domain: tech.intellispaces.ixora.data.Number
+
+    tech.intellispaces.ixora.data.Integer32:
+      did: 9b83b952-370c-4bc5-beb6-c02af713ef31
+      description: The domain of objects considered as integer numbers in the set from -2147483648 to 2147483647 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.data.Number
+      channels:
+        - asNumber:
+          cid: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
+          target.domain: tech.intellispaces.ixora.data.Number
+
+    tech.intellispaces.ixora.data.Float64:
+      did: 66fad657-c4ab-48a9-9c1b-c1c9f8b4bffe
+      description: The domain of objects considered as float numbers in set of 64-bit IEEE 754 floating point numbers
+      superDomains:
+        - tech.intellispaces.ixora.data.Number
+      channels:
+        - asNumber:
+          cid: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
+          target.domain: tech.intellispaces.ixora.data.Number
+
+    tech.intellispaces.ixora.data.Byte:
+      did: e4a84070-ae6e-424e-90d3-0441c0e91a5b
+
+    tech.intellispaces.ixora.data.Boolean:
+      did: 64c08bfa-e4d3-411d-a465-0aec0ce3849e
+
+    tech.intellispaces.ixora.data.String:
+      did: f498a206-6b7f-4cad-81eb-e9859a56c8b1
+      description: The domain of strings
+
+    tech.intellispaces.ixora.data.Dataset:
+      did: 8d32c26c-70b6-4698-9d2f-a3d698f1d069
