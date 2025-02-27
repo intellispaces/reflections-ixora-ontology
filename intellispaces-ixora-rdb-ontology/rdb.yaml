@@ -309,6 +309,14 @@ ontology:
           target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
 
+    tech.intellispaces.ixora.rdb.transaction.TransactionalEntity:
+      did: 51133fde-65c6-4a0d-abed-770545dd47a9
+      description: The entity associated with a specific transaction
+      channels:
+        - transaction:
+          cid: 575e4c19-3b0b-4d89-b481-127ea2f861ac
+          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+
   channels:
     tech.intellispaces.ixora.rdb.query.CastStringToParameterizedNamedQuery:
       cid: d3673390-b743-434a-b7c9-f7dc64976387
