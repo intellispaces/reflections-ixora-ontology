@@ -283,18 +283,18 @@ ontology:
               target:
                 domain: tech.intellispaces.ixora.data.association.Map
                 constraints:
-                    - equivalence:
-                      paths:
-                        - $this thru keyDomain
-                      instance:
-                        domain: tech.intellispaces.ixora.core.Domain
-                        name: tech.intellispaces.ixora.data.String
-                    - equivalence:
-                      paths:
-                        - $this thru valueDomain
-                      instance:
-                        domain: tech.intellispaces.ixora.core.Domain
-                        name: tech.intellispaces.ixora.core.Point
+                  - equivalence:
+                    paths:
+                      - $this thru keyDomain
+                    instance:
+                      domain: tech.intellispaces.ixora.core.Domain
+                      name: tech.intellispaces.ixora.data.String
+                  - equivalence:
+                    paths:
+                      - $this thru valueDomain
+                    instance:
+                      domain: tech.intellispaces.ixora.core.Domain
+                      name: tech.intellispaces.ixora.core.Point
           target:
             constraints:
               - equivalence.paths:
@@ -308,6 +308,14 @@ ontology:
               target.domain: tech.intellispaces.ixora.data.String
           target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
+
+    tech.intellispaces.ixora.rdb.transaction.TransactionalEntity:
+      did: 51133fde-65c6-4a0d-abed-770545dd47a9
+      description: The entity associated with a specific transaction
+      channels:
+        - transaction:
+          cid: 575e4c19-3b0b-4d89-b481-127ea2f861ac
+          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
 
   channels:
     tech.intellispaces.ixora.rdb.query.CastStringToParameterizedNamedQuery:
