@@ -76,7 +76,12 @@ ontology:
     tech.intellispaces.ixora.rdb.datasource.Connection:
       did: f72b8a37-6f1e-4c98-93b5-9d5bb959cb80
       description: The database connection
+      superDomains:
+        - tech.intellispaces.ixora.system.OutboundModulePort
       channels:
+        - asOutboundModulePort:
+          cid: faaa63eb-2c50-442e-a6d3-e5aff1ff2716
+          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
         - createStatement:
           cid: b7c73781-0441-4ef7-b5b3-f122b5bccd29
           name: ConnectionToStatementChannel

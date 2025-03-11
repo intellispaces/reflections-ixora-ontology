@@ -28,6 +28,7 @@
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-system-ontology/system.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
@@ -54,6 +55,10 @@
         <dependency>
             <groupId>tech.intellispaces.ixora.jaquarius</groupId>
             <artifactId>intellispaces-ixora-data-ontology</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>tech.intellispaces.ixora.jaquarius</groupId>
+            <artifactId>intellispaces-ixora-system-ontology</artifactId>
         </dependency>
     </dependencies>
 </project>
