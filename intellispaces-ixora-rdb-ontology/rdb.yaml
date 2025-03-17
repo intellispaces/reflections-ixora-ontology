@@ -13,9 +13,11 @@ ontology:
     tech.intellispaces.ixora.rdb.connection:
       sid: e52a9c37-1fda-46f0-b2f7-221be4f98a56
     tech.intellispaces.ixora.rdb.statement:
-      sid: a86d625e-05d4-4d1b-a908-3110cfabe848
+      sid: 53008eae-1cf3-48e7-9da6-c17a3f69c7d2
     tech.intellispaces.ixora.rdb.transaction:
       sid: a86d625e-05d4-4d1b-a908-3110cfabe848
+    tech.intellispaces.ixora.rdb.entity:
+      sid: 340f999d-3794-4f0a-827a-b2da6e86f8c4
 
   domains:
     tech.intellispaces.ixora.rdb.query.ParameterizedNamedQuery:
@@ -314,13 +316,18 @@ ontology:
           target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
 
-    tech.intellispaces.ixora.rdb.transaction.TransactionalEntity:
+    tech.intellispaces.ixora.rdb.entity.TransactionalEntity:
       did: 51133fde-65c6-4a0d-abed-770545dd47a9
-      description: The entity associated with a specific transaction
+      description: The persisted entity associated with a specific transaction
       channels:
         - transaction:
           cid: 575e4c19-3b0b-4d89-b481-127ea2f861ac
           target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+        - detach:
+          cid: 61afe369-2e1c-42e2-a85e-0018e1b88df4
+          name: DetachEntityChannel
+          target.domain: tech.intellispaces.ixora.rdb.entity.TransactionalEntity
+          allowedTraverses: [ Moving ]
 
   channels:
     tech.intellispaces.ixora.rdb.query.CastStringToParameterizedNamedQuery:
