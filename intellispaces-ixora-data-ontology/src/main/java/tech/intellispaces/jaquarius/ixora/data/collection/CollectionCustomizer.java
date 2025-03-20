@@ -3,8 +3,11 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 import tech.intellispaces.ixora.data.collection.CollectionDomain;
 import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
 
-@ArtifactCustomizer(origin = CollectionDomain.class, target = "UndefinedObjectHandle")
-public interface CollectionCustomizer<E> {
+import java.util.Iterator;
 
-  java.util.Collection<E> nativeCollection();
+@ArtifactCustomizer(origin = CollectionDomain.class, target = "UndefinedPlainObject")
+public interface CollectionCustomizer<E> extends Iterable<E> {
+
+  @Override
+  Iterator<E> iterator();
 }
