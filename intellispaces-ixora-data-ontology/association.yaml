@@ -53,6 +53,30 @@ ontology:
                     - equivalence.paths:
                         - $this thru valueDomain
                         - $base thru valueDomain
+        - containsKey:
+          cid: ef114937-5184-4b09-91e8-b02a7c08edd9
+          qualifiers:
+            - key:
+              target:
+                constraints:
+                  - equivalence.paths:
+                      - $this to tech.intellispaces.ixora.core.Domain
+                      - $base thru keyDomain
+          target.domain: tech.intellispaces.ixora.data.Boolean
+        - value:
+          cid: 7b577c92-040c-4974-9ac9-8547d974dfdd
+          qualifiers:
+            - key:
+              target:
+                constraints:
+                  - equivalence.paths:
+                      - $this to tech.intellispaces.ixora.core.Domain
+                      - $base thru keyDomain
+          target:
+            constraints:
+              - equivalence.paths:
+                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $base thru valueDomain
 
     tech.intellispaces.ixora.data.association.Properties:
       did: eccd18a1-ec7a-4949-9acd-2b2fa9576da1
