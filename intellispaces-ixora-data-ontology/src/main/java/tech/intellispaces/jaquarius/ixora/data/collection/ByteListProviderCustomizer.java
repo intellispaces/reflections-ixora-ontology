@@ -5,7 +5,7 @@ import tech.intellispaces.ixora.data.collection.UnmovableByteListHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
 
 @ArtifactCustomizer(origin = ByteListDomain.class, target = "ObjectProvider")
-public interface ByteListsCustomizer {
+public interface ByteListProviderCustomizer {
 
   UnmovableByteListHandle create(byte value1, byte value2);
 

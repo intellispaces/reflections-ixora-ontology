@@ -9,7 +9,7 @@ import tech.intellispaces.ixora.data.collection.UnmovableListHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
 
 @ArtifactCustomizer(origin = ListDomain.class, target = "ObjectProvider")
-public interface ListsCustomizer {
+public interface ListProviderCustomizer {
 
   default UnmovableListHandle<Byte> create(byte value1, byte value2) {
     return ByteLists.create(value1, value2);
@@ -37,7 +37,7 @@ public interface ListsCustomizer {
   <E> UnmovableListHandle<E> empty(Class<E> elementClass);
 
   /**
-   * Returns unmovable handle to list.
+   * Returns unmovable handle to Java list.
    *
    * @param list the list.
    * @param elementClass the list element class.
@@ -47,7 +47,7 @@ public interface ListsCustomizer {
   <E> UnmovableListHandle<E> handleOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
-   * Returns unmovable handle to list.
+   * Returns unmovable handle to Java list.
    *
    * @param list the list.
    * @param elementType the elements type.

@@ -5,7 +5,7 @@ import tech.intellispaces.ixora.data.collection.UnmovableInteger32ListHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
 
 @ArtifactCustomizer(origin = Integer32ListDomain.class, target = "ObjectProvider")
-public interface Integer32ListsCustomizer {
+public interface IntegerListProviderCustomizer {
 
   UnmovableInteger32ListHandle create(int value1, int value2);
 
