@@ -2,9 +2,10 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 
 import tech.intellispaces.ixora.data.collection.Integer32ListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableInteger32ListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = Integer32ListDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = Integer32ListDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface IntegerListProviderCustomizer {
 
   UnmovableInteger32ListHandle create(int value1, int value2);

@@ -3,9 +3,10 @@ package tech.intellispaces.jaquarius.ixora.data.association;
 import tech.intellispaces.commons.type.Type;
 import tech.intellispaces.ixora.data.association.MapDomain;
 import tech.intellispaces.ixora.data.association.UnmovableMapHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = MapDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = MapDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface MapProviderCustomizer {
 
   <K, V> UnmovableMapHandle<K, V> create(

@@ -1,10 +1,11 @@
 package tech.intellispaces.ixora.http;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
 import java.io.InputStream;
 
-@ArtifactCustomizer(origin = HttpResponseDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = HttpResponseDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface HttpResponseProviderCustomizer {
 
   HttpResponseHandle create(HttpStatusHandle status);

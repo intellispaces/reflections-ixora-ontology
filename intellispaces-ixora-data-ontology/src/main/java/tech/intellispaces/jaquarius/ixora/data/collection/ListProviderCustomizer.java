@@ -6,9 +6,10 @@ import tech.intellispaces.ixora.data.collection.Float64Lists;
 import tech.intellispaces.ixora.data.collection.Integer32Lists;
 import tech.intellispaces.ixora.data.collection.ListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = ListDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = ListDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface ListProviderCustomizer {
 
   default UnmovableListHandle<Byte> create(byte value1, byte value2) {

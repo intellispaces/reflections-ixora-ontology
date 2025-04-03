@@ -3,9 +3,10 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 import tech.intellispaces.commons.type.Type;
 import tech.intellispaces.ixora.data.collection.CollectionDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableCollectionHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = CollectionDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = CollectionDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface CollectionProviderCustomizer {
 
   /**

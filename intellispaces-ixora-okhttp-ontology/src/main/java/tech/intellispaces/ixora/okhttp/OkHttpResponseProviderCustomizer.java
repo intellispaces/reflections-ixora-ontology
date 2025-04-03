@@ -1,9 +1,10 @@
 package tech.intellispaces.ixora.okhttp;
 
 import okhttp3.Response;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = OkHttpResponseDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = OkHttpResponseDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface OkHttpResponseProviderCustomizer {
 
   UnmovableOkHttpResponseHandle handleOf(Response response);

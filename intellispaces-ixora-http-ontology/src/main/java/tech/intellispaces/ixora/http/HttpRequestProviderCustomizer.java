@@ -2,9 +2,10 @@ package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.ixora.internet.uri.Uri;
 import tech.intellispaces.ixora.internet.uri.Uris;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = HttpRequestDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = HttpRequestDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface HttpRequestProviderCustomizer {
 
   UnmovableHttpRequestHandle create(HttpMethod method, Uri requestURI);

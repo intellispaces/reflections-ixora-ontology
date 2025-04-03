@@ -1,9 +1,10 @@
 package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.commons.exception.UnexpectedExceptions;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = HttpMethodDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = HttpMethodDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface HttpMethodProviderCustomizer {
 
   HttpMethodHandle get();

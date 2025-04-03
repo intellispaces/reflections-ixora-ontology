@@ -2,9 +2,10 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 
 import tech.intellispaces.ixora.data.collection.ByteListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableByteListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = ByteListDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = ByteListDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface ByteListProviderCustomizer {
 
   UnmovableByteListHandle create(byte value1, byte value2);

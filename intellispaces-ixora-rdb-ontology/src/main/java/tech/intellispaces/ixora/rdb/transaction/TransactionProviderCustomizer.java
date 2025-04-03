@@ -1,8 +1,9 @@
 package tech.intellispaces.ixora.rdb.transaction;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactCustomizer;
+import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
+import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactCustomizer(origin = TransactionDomain.class, target = "ObjectProvider")
+@ArtifactExtension(origin = TransactionDomain.class, target = ArtifactTypes.ObjectProvider)
 public interface TransactionProviderCustomizer {
 
   MovableTransactionHandle current();
