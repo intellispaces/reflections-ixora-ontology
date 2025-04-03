@@ -6,8 +6,8 @@ import tech.intellispaces.ixora.data.association.UnmovableMapHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = MapDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface MapProviderCustomizer {
+@ArtifactExtension(origin = MapDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface MapAssistantExtension {
 
   <K, V> UnmovableMapHandle<K, V> create(
       Class<K> keyClass, Class<V> valueClass,

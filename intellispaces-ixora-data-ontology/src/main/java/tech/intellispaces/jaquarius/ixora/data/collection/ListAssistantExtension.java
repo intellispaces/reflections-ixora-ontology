@@ -9,8 +9,8 @@ import tech.intellispaces.ixora.data.collection.UnmovableListHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = ListDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface ListProviderCustomizer {
+@ArtifactExtension(origin = ListDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface ListAssistantExtension {
 
   default UnmovableListHandle<Byte> create(byte value1, byte value2) {
     return ByteLists.create(value1, value2);

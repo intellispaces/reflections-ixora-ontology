@@ -5,8 +5,8 @@ import tech.intellispaces.ixora.internet.uri.Uris;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = HttpRequestDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface HttpRequestProviderCustomizer {
+@ArtifactExtension(origin = HttpRequestDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface HttpRequestAssistantExtension {
 
   UnmovableHttpRequestHandle create(HttpMethod method, Uri requestURI);
 

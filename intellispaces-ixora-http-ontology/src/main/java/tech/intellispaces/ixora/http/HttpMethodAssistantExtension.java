@@ -4,8 +4,8 @@ import tech.intellispaces.commons.exception.UnexpectedExceptions;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = HttpMethodDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface HttpMethodProviderCustomizer {
+@ArtifactExtension(origin = HttpMethodDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface HttpMethodAssistantExtension {
 
   HttpMethodHandle get();
 

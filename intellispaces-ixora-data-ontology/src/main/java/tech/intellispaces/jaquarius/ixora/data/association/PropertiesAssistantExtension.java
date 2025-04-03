@@ -5,8 +5,8 @@ import tech.intellispaces.ixora.data.association.UnmovablePropertiesHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = PropertiesDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface PropertiesProviderCustomizer {
+@ArtifactExtension(origin = PropertiesDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface PropertiesAssistantExtension {
 
   UnmovablePropertiesHandle handleOf(java.util.Map<String, Object> map);
 }

@@ -7,8 +7,8 @@ import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
 import java.io.PrintStream;
 
-@ArtifactExtension(origin = ConsoleDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface ConsoleProviderCustomizer {
+@ArtifactExtension(origin = ConsoleDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface ConsoleAssistantExtension {
 
   MovableConsoleHandle create(PrintStream ps);
 }

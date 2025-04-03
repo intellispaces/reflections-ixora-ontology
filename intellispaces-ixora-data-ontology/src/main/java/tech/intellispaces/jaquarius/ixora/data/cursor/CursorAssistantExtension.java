@@ -6,8 +6,8 @@ import tech.intellispaces.ixora.data.cursor.CursorHandle;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = CursorDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface CursorProviderCustomizer {
+@ArtifactExtension(origin = CursorDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface CursorAssistantExtension {
 
   <E> CursorHandle<E> create(CollectionDomain<E> collection);
 }

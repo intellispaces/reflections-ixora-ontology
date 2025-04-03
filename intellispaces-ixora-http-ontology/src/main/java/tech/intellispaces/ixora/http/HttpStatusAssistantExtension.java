@@ -4,8 +4,8 @@ import tech.intellispaces.commons.exception.UnexpectedExceptions;
 import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
 import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
-@ArtifactExtension(origin = HttpStatusDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface HttpStatusProviderCustomizer {
+@ArtifactExtension(origin = HttpStatusDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface HttpStatusAssistantExtension {
 
   HttpStatusHandle ok();
 

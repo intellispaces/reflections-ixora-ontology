@@ -7,8 +7,8 @@ import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
 import java.io.InputStream;
 
-@ArtifactExtension(origin = ByteInputStreamDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface ByteInputStreamProviderCustomizer {
+@ArtifactExtension(origin = ByteInputStreamDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface ByteInputStreamAssistantExtension {
 
   MovableByteInputStreamHandle empty();
 

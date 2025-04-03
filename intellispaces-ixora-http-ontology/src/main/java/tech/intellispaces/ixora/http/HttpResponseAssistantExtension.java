@@ -5,8 +5,8 @@ import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
 import java.io.InputStream;
 
-@ArtifactExtension(origin = HttpResponseDomain.class, target = ArtifactTypes.ObjectProvider)
-public interface HttpResponseProviderCustomizer {
+@ArtifactExtension(origin = HttpResponseDomain.class, target = ArtifactTypes.ObjectAssistant)
+public interface HttpResponseAssistantExtension {
 
   HttpResponseHandle create(HttpStatusHandle status);
 
