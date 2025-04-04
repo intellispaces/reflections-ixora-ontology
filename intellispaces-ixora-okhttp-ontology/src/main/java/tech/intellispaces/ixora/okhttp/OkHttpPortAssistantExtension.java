@@ -1,9 +1,8 @@
 package tech.intellispaces.ixora.okhttp;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = OkHttpPortDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(OkHttpPortDomain.class)
 public interface OkHttpPortAssistantExtension {
 
   MovableOkHttpPortHandle create();

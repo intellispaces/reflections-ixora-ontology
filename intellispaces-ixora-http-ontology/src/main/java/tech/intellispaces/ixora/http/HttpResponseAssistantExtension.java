@@ -1,11 +1,10 @@
 package tech.intellispaces.ixora.http;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
 import java.io.InputStream;
 
-@ArtifactExtension(origin = HttpResponseDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(HttpResponseDomain.class)
 public interface HttpResponseAssistantExtension {
 
   HttpResponseHandle create(HttpStatusHandle status);

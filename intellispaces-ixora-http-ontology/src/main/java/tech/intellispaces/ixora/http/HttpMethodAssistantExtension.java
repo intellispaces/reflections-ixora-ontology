@@ -1,10 +1,9 @@
 package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.commons.exception.UnexpectedExceptions;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = HttpMethodDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(HttpMethodDomain.class)
 public interface HttpMethodAssistantExtension {
 
   HttpMethodHandle get();

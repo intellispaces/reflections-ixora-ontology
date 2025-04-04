@@ -2,10 +2,9 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 
 import tech.intellispaces.ixora.data.collection.Integer32ListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableInteger32ListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = Integer32ListDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(Integer32ListDomain.class)
 public interface IntegerListAssistantExtension {
 
   UnmovableInteger32ListHandle create(int value1, int value2);

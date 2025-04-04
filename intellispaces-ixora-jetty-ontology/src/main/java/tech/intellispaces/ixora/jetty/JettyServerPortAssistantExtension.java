@@ -1,10 +1,9 @@
 package tech.intellispaces.ixora.jetty;
 
 import tech.intellispaces.ixora.http.HttpPortExchangeChannel;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = JettyServerPortDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(JettyServerPortDomain.class)
 public interface JettyServerPortAssistantExtension {
 
   MovableJettyServerPortHandle create(int portNumber, Class<? extends HttpPortExchangeChannel> exchangeChannel);

@@ -2,10 +2,9 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 
 import tech.intellispaces.ixora.data.collection.ByteListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableByteListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = ByteListDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(ByteListDomain.class)
 public interface ByteListAssistantExtension {
 
   UnmovableByteListHandle create(byte value1, byte value2);

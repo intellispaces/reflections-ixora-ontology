@@ -3,10 +3,9 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 import tech.intellispaces.commons.type.Type;
 import tech.intellispaces.ixora.data.collection.CollectionDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableCollectionHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = CollectionDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(CollectionDomain.class)
 public interface CollectionAssistantExtension {
 
   /**

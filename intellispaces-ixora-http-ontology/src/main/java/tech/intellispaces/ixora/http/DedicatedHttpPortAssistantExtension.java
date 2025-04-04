@@ -1,9 +1,8 @@
 package tech.intellispaces.ixora.http;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = DedicatedHttpPortDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(DedicatedHttpPortDomain.class)
 public interface DedicatedHttpPortAssistantExtension {
 
   MovableDedicatedHttpPortHandle create(String baseUrl, MovableHttpPort httpPort);

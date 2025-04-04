@@ -6,10 +6,9 @@ import tech.intellispaces.ixora.data.collection.Float64Lists;
 import tech.intellispaces.ixora.data.collection.Integer32Lists;
 import tech.intellispaces.ixora.data.collection.ListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = ListDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(ListDomain.class)
 public interface ListAssistantExtension {
 
   default UnmovableListHandle<Byte> create(byte value1, byte value2) {

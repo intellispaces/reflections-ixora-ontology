@@ -2,10 +2,9 @@ package tech.intellispaces.jaquarius.ixora.data.collection;
 
 import tech.intellispaces.ixora.data.collection.Float64ListDomain;
 import tech.intellispaces.ixora.data.collection.UnmovableFloat64ListHandle;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = Float64ListDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(Float64ListDomain.class)
 public interface DoubleListAssistantExtension {
 
   UnmovableFloat64ListHandle handleOf(double[] array);

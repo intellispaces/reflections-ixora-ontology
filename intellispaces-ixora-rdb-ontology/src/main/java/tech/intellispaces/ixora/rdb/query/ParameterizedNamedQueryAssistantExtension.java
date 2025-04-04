@@ -1,10 +1,9 @@
 package tech.intellispaces.ixora.rdb.query;
 
 import tech.intellispaces.ixora.data.collection.UnmovableList;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = ParameterizedNamedQueryDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(ParameterizedNamedQueryDomain.class)
 public interface ParameterizedNamedQueryAssistantExtension {
 
   UnmovableParameterizedNamedQueryHandle create(String query, UnmovableList<String> paramNames);

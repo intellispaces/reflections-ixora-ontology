@@ -1,10 +1,9 @@
 package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.commons.exception.UnexpectedExceptions;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = HttpStatusDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(HttpStatusDomain.class)
 public interface HttpStatusAssistantExtension {
 
   HttpStatusHandle ok();

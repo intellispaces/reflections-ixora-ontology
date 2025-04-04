@@ -1,9 +1,8 @@
 package tech.intellispaces.ixora.rdb.transaction;
 
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = TransactionDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(TransactionDomain.class)
 public interface TransactionAssistantExtension {
 
   MovableTransactionHandle current();

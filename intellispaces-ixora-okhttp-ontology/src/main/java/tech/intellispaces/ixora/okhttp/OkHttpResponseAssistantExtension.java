@@ -1,10 +1,9 @@
 package tech.intellispaces.ixora.okhttp;
 
 import okhttp3.Response;
-import tech.intellispaces.jaquarius.annotation.ArtifactExtension;
-import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
+import tech.intellispaces.jaquarius.annotation.AssistantExtension;
 
-@ArtifactExtension(origin = OkHttpResponseDomain.class, target = ArtifactTypes.ObjectAssistant)
+@AssistantExtension(OkHttpResponseDomain.class)
 public interface OkHttpResponseAssistantExtension {
 
   UnmovableOkHttpResponseHandle handleOf(Response response);
