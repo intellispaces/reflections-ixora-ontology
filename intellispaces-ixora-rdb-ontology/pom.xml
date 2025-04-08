@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>tech.intellispaces.ixora.jaquarius</groupId>
+        <groupId>tech.intellispaces</groupId>
         <artifactId>intellispaces-ixora-ontology-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -13,7 +13,7 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>tech.intellispaces.jaquarius</groupId>
+                <groupId>tech.intellispaces</groupId>
                 <artifactId>intellispaces-jaquarius-generator-maven-plugin</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
                 <executions>
@@ -49,15 +49,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.intellispaces.ixora.jaquarius</groupId>
+            <groupId>tech.intellispaces</groupId>
             <artifactId>intellispaces-ixora-core-ontology</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.intellispaces.ixora.jaquarius</groupId>
+            <groupId>tech.intellispaces</groupId>
             <artifactId>intellispaces-ixora-data-ontology</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.intellispaces.ixora.jaquarius</groupId>
+            <groupId>tech.intellispaces</groupId>
             <artifactId>intellispaces-ixora-system-ontology</artifactId>
         </dependency>
     </dependencies>
