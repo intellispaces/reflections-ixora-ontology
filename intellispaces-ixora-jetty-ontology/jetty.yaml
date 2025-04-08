@@ -2,14 +2,14 @@ intellispaces: "0.1"
 ontology:
   spaces:
     tech.intellispaces.ixora.jetty:
-      sid: 4c6bb73b-ce98-4bc9-9c23-dec59debe8d9
+      id: 4c6bb73b-ce98-4bc9-9c23-dec59debe8d9
 
   domains:
     tech.intellispaces.ixora.jetty.JettyServerPort:
-      did: 843b0222-dc2c-4a12-a75d-f98eef75bb1a
+      id: 843b0222-dc2c-4a12-a75d-f98eef75bb1a
       superDomains:
         - tech.intellispaces.ixora.http.InboundHttpPort
       channels:
         - asInboundHttpPort:
-          cid: 3e687bb4-d4b2-4af8-91ac-0f7bb32ebb36
+          id: 3e687bb4-d4b2-4af8-91ac-0f7bb32ebb36
           target.domain: tech.intellispaces.ixora.http.InboundHttpPort

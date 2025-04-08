@@ -2,11 +2,11 @@ intellispaces: "0.1"
 ontology:
   spaces:
     tech.intellispaces.ixora.data.yaml:
-      sid: 9942341e-db92-4388-85f4-7c70e5e52bb8
+      id: 9942341e-db92-4388-85f4-7c70e5e52bb8
 
   channels:
     tech.intellispaces.ixora.data.yaml.YamlStringToProperties:
-      cid: 1830e924-2c78-4f18-b9eb-39f002cbeea6
+      id: 1830e924-2c78-4f18-b9eb-39f002cbeea6
       description: YAML string to properties channel
       source:
         domain: tech.intellispaces.ixora.data.String
