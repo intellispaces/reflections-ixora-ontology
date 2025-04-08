@@ -4,15 +4,15 @@ info:
 ontology:
   spaces:
     tech.intellispaces.ixora.cli:
-      sid: b933ae7a-42ad-4f14-9854-b6abbe0435b3
+      id: b933ae7a-42ad-4f14-9854-b6abbe0435b3
 
   domains:
     tech.intellispaces.ixora.cli.Console:
-      did: ac5ad94b-0d0b-4bc1-b0af-a32c65a28793
+      id: ac5ad94b-0d0b-4bc1-b0af-a32c65a28793
       description: The console is a simple text in/out system port
       channels:
         - print:
-          cid: e09d266d-9568-44fd-8ed2-cf27da326a37
+          id: e09d266d-9568-44fd-8ed2-cf27da326a37
           name: ConsolePrintStringChannel
           target.domain: tech.intellispaces.ixora.cli.Console
           qualifiers:
@@ -20,7 +20,7 @@ ontology:
               target.domain: tech.intellispaces.ixora.data.String
           allowedTraverses: [ Moving ]
         - print:
-          cid: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
+          id: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
           name: ConsolePrintIntegerChannel
           target.domain: tech.intellispaces.ixora.cli.Console
           qualifiers:
@@ -28,7 +28,7 @@ ontology:
               target.domain: tech.intellispaces.ixora.data.Integer32
           allowedTraverses: [ Moving ]
         - println:
-          cid: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
+          id: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
           name: ConsolePrintlnStringChannel
           target.domain: tech.intellispaces.ixora.cli.Console
           qualifiers:
@@ -36,7 +36,7 @@ ontology:
               target.domain: tech.intellispaces.ixora.data.String
           allowedTraverses: [ Moving ]
         - println:
-          cid: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
+          id: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
           name: ConsolePrintlnIntegerChannel
           target.domain: tech.intellispaces.ixora.cli.Console
           qualifiers:
