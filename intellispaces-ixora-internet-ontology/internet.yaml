@@ -10,7 +10,7 @@ ontology:
 
   domains:
     tech.intellispaces.ixora.internet.uri.Uri:
-      id: a6b707b6-21e8-4fee-9d0d-ac09469a854
+      id: a6b707b6-21e8-4fee-9d0d-ac09469a8542
       description: The URI
       channels:
         - path:

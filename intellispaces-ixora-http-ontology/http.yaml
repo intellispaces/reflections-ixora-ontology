@@ -55,7 +55,7 @@ ontology:
       description: The HTTP status
       channels:
         - bodyStream:
-          id: 476d36df-38e9-4340-a870-fe2ee21b400
+          id: 476d36df-38e9-4340-a870-fe2ee21b4008
           target:
             domain: tech.intellispaces.ixora.data.stream.ByteInputStream
             immobilityType: Movable
