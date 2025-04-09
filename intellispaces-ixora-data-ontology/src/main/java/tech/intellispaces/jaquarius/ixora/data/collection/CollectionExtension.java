@@ -6,7 +6,7 @@ import tech.intellispaces.jaquarius.artifact.ArtifactTypes;
 
 import java.util.Iterator;
 
-@Extension(origin = CollectionDomain.class, target = ArtifactTypes.UndefinedPlainObject)
+@Extension(origin = CollectionDomain.class, target = ArtifactTypes.PlainObject)
 public interface CollectionExtension<E> extends Iterable<E> {
 
   @Override
