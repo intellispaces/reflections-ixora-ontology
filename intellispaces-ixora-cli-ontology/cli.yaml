@@ -7,14 +7,24 @@ ontology:
       id: b933ae7a-42ad-4f14-9854-b6abbe0435b3
 
   domains:
-    tech.intellispaces.ixora.cli.Console:
-      id: ac5ad94b-0d0b-4bc1-b0af-a32c65a28793
-      description: The console is a simple text in/out system port
+    tech.intellispaces.ixora.cli.InboundConsole:
+      id: dd50f287-101f-4ed1-9745-2b591746a67e
+      superDomains:
+        - tech.intellispaces.ixora.system.InboundModulePort:
+      channels:
+        - asInboundModulePort:
+          id: 11ed21bc-39fd-481c-9edb-35207e734e20
+          target.domain: tech.intellispaces.ixora.system.InboundModulePort
+
+    tech.intellispaces.ixora.cli.OutboundConsole:
+      id: e52eb6cf-bfd9-4503-a15f-19b640023bd4
+      superDomains:
+        - tech.intellispaces.ixora.system.OutboundModulePort:
       channels:
         - print:
           id: e09d266d-9568-44fd-8ed2-cf27da326a37
           name: ConsolePrintStringChannel
-          target.domain: tech.intellispaces.ixora.cli.Console
+          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
               target.domain: tech.intellispaces.ixora.data.String
@@ -22,7 +32,7 @@ ontology:
         - print:
           id: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
           name: ConsolePrintIntegerChannel
-          target.domain: tech.intellispaces.ixora.cli.Console
+          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
               target.domain: tech.intellispaces.ixora.data.Integer32
@@ -30,7 +40,7 @@ ontology:
         - println:
           id: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
           name: ConsolePrintlnStringChannel
-          target.domain: tech.intellispaces.ixora.cli.Console
+          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
               target.domain: tech.intellispaces.ixora.data.String
@@ -38,8 +48,33 @@ ontology:
         - println:
           id: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
           name: ConsolePrintlnIntegerChannel
-          target.domain: tech.intellispaces.ixora.cli.Console
+          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
               target.domain: tech.intellispaces.ixora.data.Integer32
           allowedTraverses: [ Moving ]
+        - asOutboundModulePort:
+          id: 8c8780e7-fe51-4345-ab94-25c93860de34
+          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
+
+    tech.intellispaces.ixora.cli.Console:
+      id: ac5ad94b-0d0b-4bc1-b0af-a32c65a28793
+      superDomains:
+        - tech.intellispaces.ixora.cli.InboundConsole
+        - tech.intellispaces.ixora.cli.OutboundConsole
+      channels:
+        - asInboundConsole:
+          id: 8b8fef3d-ec2b-457b-a3bb-83a5784b2f9b
+          target.domain: tech.intellispaces.ixora.cli.InboundConsole
+        - asOutboundConsole:
+          id: 869df49a-9ff7-4ab2-9398-2609150cf304
+          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+
+    tech.intellispaces.ixora.cli.DummyConsole:
+      id: ff413efb-bbd9-454e-8441-3460026b46ed
+      superDomains:
+        - tech.intellispaces.ixora.cli.Console
+      channels:
+        - asdConsole:
+          id: 78ea7429-7ec6-48fc-a213-16210fd0c3db
+          target.domain: tech.intellispaces.ixora.cli.Console
