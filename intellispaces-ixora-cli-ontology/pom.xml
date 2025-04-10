@@ -28,6 +28,7 @@
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-system-ontology/system.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
@@ -51,6 +52,10 @@
             <groupId>tech.intellispaces</groupId>
             <artifactId>intellispaces-ixora-core-ontology</artifactId>
             <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.intellispaces</groupId>
+            <artifactId>intellispaces-ixora-system-ontology</artifactId>
         </dependency>
     </dependencies>
 </project>

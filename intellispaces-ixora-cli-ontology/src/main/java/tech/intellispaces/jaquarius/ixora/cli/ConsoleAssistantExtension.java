@@ -9,5 +9,5 @@ import java.io.PrintStream;
 @AssistantExtension(ConsoleDomain.class)
 public interface ConsoleAssistantExtension {
 
-  MovableConsoleHandle create(PrintStream ps);
+  MovableConsoleHandle dummy(PrintStream ps);
 }

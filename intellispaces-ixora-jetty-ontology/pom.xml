@@ -28,6 +28,7 @@
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-http-ontology/http.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-system-ontology/system.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
