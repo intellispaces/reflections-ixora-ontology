@@ -71,6 +71,6 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.cli.Console
       channels:
-        - asdConsole:
+        - asConsole:
           id: 78ea7429-7ec6-48fc-a213-16210fd0c3db
           target.domain: tech.intellispaces.ixora.cli.Console
