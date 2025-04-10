@@ -77,7 +77,7 @@ ontology:
 
     tech.intellispaces.ixora.rdb.datasource.Connection:
       id: f72b8a37-6f1e-4c98-93b5-9d5bb959cb80
-      description: The database connection
+      description: The database connection. The connection is also an outbound module port.
       superDomains:
         - tech.intellispaces.ixora.system.OutboundModulePort
       channels:
