@@ -132,7 +132,7 @@ ontology:
           id: c64f254e-75c1-42e7-929f-b1bf0c6314d1
           target.domain: tech.intellispaces.ixora.http.InboundHttpPort
           allowedTraverses: [ Moving ]
-        - close:
+        - shut:
           id: 4accdb1d-7c42-441b-8b3b-fe2da28d8c96
           target.domain: tech.intellispaces.ixora.http.InboundHttpPort
           allowedTraverses: [ Moving ]
