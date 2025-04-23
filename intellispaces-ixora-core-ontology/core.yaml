@@ -15,8 +15,7 @@ ontology:
       id: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       description: The domain of objects representing semantic space domains
       channels:
-        - name:
-          id: 8776e3d7-2327-4936-b4be-4a916b44cb16
+        - id: 8776e3d7-2327-4936-b4be-4a916b44cb16
           target.domain: tech.intellispaces.ixora.data.String
 
     tech.intellispaces.ixora.core.Channel:

@@ -127,9 +127,9 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.data.collection.NumberList:
           constraints:
-          - equivalence.paths:
-              - $this thru elementDomain
-              - $base thru elementDomain
+            - equivalence.paths:
+                - $this thru elementDomain
+                - $base thru elementDomain
       channels:
         - elementDomain:
           id: a3299ab9-f126-45ce-af23-e2d7be814bce
