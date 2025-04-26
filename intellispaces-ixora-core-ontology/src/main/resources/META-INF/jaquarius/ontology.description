@@ -1,5 +1,8 @@
 point.domain.name = tech.intellispaces.ixora.core.Point
 domain.domain.name = tech.intellispaces.ixora.core.Domain
+
+boolean.domain.name = tech.intellispaces.ixora.data.Boolean
+string.domain.name = tech.intellispaces.ixora.data.String
 number.domain.name = tech.intellispaces.ixora.data.Number
 short.domain.name = tech.intellispaces.ixora.data.Integer16
 integer.domain.name = tech.intellispaces.ixora.data.Integer32
@@ -7,8 +10,6 @@ long.domain.name = tech.intellispaces.ixora.data.Integer64
 float.domain.name = tech.intellispaces.ixora.data.Float32
 double.domain.name = tech.intellispaces.ixora.data.Float64
 byte.domain.name = tech.intellispaces.ixora.data.Byte
-boolean.domain.name = tech.intellispaces.ixora.data.Boolean
-string.domain.name = tech.intellispaces.ixora.data.String
 properties.domain.name = tech.intellispaces.ixora.data.association.Properties
 dataset.domain.name = tech.intellispaces.ixora.data.Dataset
 

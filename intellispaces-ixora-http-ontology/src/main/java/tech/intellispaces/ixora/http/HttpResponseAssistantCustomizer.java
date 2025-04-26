@@ -1,8 +1,8 @@
 package tech.intellispaces.ixora.http;
 
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
-
 import java.io.InputStream;
+
+import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(HttpResponseDomain.class)
 public interface HttpResponseAssistantCustomizer {
