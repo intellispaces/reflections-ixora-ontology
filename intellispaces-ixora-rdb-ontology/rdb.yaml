@@ -132,7 +132,7 @@ ontology:
           qualifiers:
             - name:
               target.domain: tech.intellispaces.ixora.core.String
-          target.domain: tech.intellispaces.ixora.core.Integer32
+          target.domain: tech.intellispaces.ixora.data.Integer32
         - stringValue:
           name: ResultSetToStringValueByNameChannel
           id: 0fb39956-45e1-4b78-afdf-aa0b4922ed86
@@ -198,9 +198,9 @@ ontology:
           id: 6edca404-da35-4b0f-b249-08964c685e81
           qualifiers:
             - parameterIndex:
-              target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
             - value:
-              target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
           target.domain: tech.intellispaces.ixora.rdb.statement.PreparedStatement
           allowedTraverses: [ Moving ]
 

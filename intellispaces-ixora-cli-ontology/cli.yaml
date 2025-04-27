@@ -33,7 +33,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
           allowedTraverses: [ Moving ]
         - println:
           id: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
@@ -47,7 +47,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
           allowedTraverses: [ Moving ]
         - asOutboundModulePort:
           id: 8c8780e7-fe51-4345-ab94-25c93860de34

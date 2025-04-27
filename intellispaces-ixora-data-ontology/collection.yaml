@@ -19,7 +19,7 @@ ontology:
             alias: E
         - size:
           id: ac251f1d-ecd8-45a0-bd05-972c71ed26aa
-          target.domain: tech.intellispaces.ixora.core.Integer32
+          target.domain: tech.intellispaces.ixora.data.Integer32
 
     tech.intellispaces.ixora.data.collection.List:
       id: f260fb9d-fd6f-4421-a609-71c672c8fffc
@@ -50,7 +50,7 @@ ontology:
           name: ListToElementChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
           target:
             constraints:
               - equivalence.paths:
@@ -102,7 +102,7 @@ ontology:
           description: The list element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.core.Byte
+            instance: tech.intellispaces.ixora.data.Byte
         - asCollection:
           id: 306a5434-65fc-4c81-8ec5-2804ffff99b6
           description: Downgrade mapping
@@ -117,8 +117,8 @@ ontology:
           name: ByteListToElementChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.core.Integer32
-          target.domain: tech.intellispaces.ixora.core.Byte
+              target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.data.Byte
 
     tech.intellispaces.ixora.data.collection.Integer32List:
       id: 019081b8-bfb3-7089-9d6c-6537ab3fca07
@@ -136,7 +136,7 @@ ontology:
           description: The list element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.core.Integer32
+            instance: tech.intellispaces.ixora.data.Integer32
         - asCollection:
           id: 01909080-8b2e-798a-8467-150465a39848
           description: Downgrade mapping
@@ -151,8 +151,8 @@ ontology:
           name: Integer32ListToElementChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.core.Integer32
-          target.domain: tech.intellispaces.ixora.core.Integer32
+              target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.data.Integer32
 
     tech.intellispaces.ixora.data.collection.Float64List:
       id: 019081ff-e48c-773d-b6af-f6f3ec15ced9
@@ -170,7 +170,7 @@ ontology:
           description: The list element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.core.Float64
+            instance: tech.intellispaces.ixora.data.Float64
         - asCollection:
           id: 01909080-c97f-77f1-9a5a-f20dba6ed8a6
           description: Downgrade mapping
@@ -185,5 +185,5 @@ ontology:
           name: Float64ListToElementChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.core.Integer32
-          target.domain: tech.intellispaces.ixora.core.Float64
+              target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.data.Float64
