@@ -54,7 +54,7 @@ ontology:
           description: The cursor element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.core.Byte
+            instance: tech.intellispaces.ixora.data.Byte
         - next:
           id: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
-          target.domain: tech.intellispaces.ixora.core.Byte
+          target.domain: tech.intellispaces.ixora.data.Byte

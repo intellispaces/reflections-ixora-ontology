@@ -13,7 +13,7 @@ ontology:
       channels:
         - code:
           id: 7f6f42ae-a190-467f-a08e-e19f07bb538b
-          target.domain: tech.intellispaces.ixora.core.Integer32
+          target.domain: tech.intellispaces.ixora.data.Integer32
         - isOkStatus:
           id: 7e0e1b72-d885-4a96-be59-05199b90009d
           target.domain: tech.intellispaces.ixora.core.Boolean
@@ -127,7 +127,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.system.InboundModulePort
         - portNumber:
           id: 71693529-9c92-4a05-bab0-2d9a378ba9ab
-          target.domain: tech.intellispaces.ixora.core.Integer32
+          target.domain: tech.intellispaces.ixora.data.Integer32
         - open:
           id: c64f254e-75c1-42e7-929f-b1bf0c6314d1
           target.domain: tech.intellispaces.ixora.http.InboundHttpPort
@@ -191,6 +191,6 @@ ontology:
                         - $this thru elementDomain
                       instance:
                         domain: tech.intellispaces.ixora.core.Domain
-                        name: tech.intellispaces.ixora.core.Byte
+                        name: tech.intellispaces.ixora.data.Byte
           target.domain: tech.intellispaces.ixora.http.HttpResponse
           allowedTraverses: [ MappingOfMoving ]
