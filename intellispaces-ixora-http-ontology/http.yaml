@@ -13,10 +13,10 @@ ontology:
       channels:
         - code:
           id: 7f6f42ae-a190-467f-a08e-e19f07bb538b
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
         - isOkStatus:
           id: 7e0e1b72-d885-4a96-be59-05199b90009d
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
 
     tech.intellispaces.ixora.http.HttpMethod:
       id: a9b7f614-28cb-414b-8fb6-eb54fce9eea6
@@ -24,31 +24,31 @@ ontology:
       channels:
         - name:
           id: 4335c27b-035e-41a8-abbc-535fb9b403a7
-          target.domain: tech.intellispaces.ixora.data.String
+          target.domain: tech.intellispaces.ixora.core.String
         - isGetMethod:
           id: 1b73f498-f9e2-4fcf-93d6-b7d08e42dea1
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isHeadMethod:
           id: a824c452-21bc-4abe-a3df-9eba533e1074
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isPostMethod:
           id: 30be3265-926a-4f5f-94d0-7813f84f20c3
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isPutMethod:
           id: 57561089-d33d-41ea-b1a5-c7e79877c50f
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isPatchMethod:
           id: 94c17678-1550-4434-b980-0505d098f1ae
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isDeleteMethod:
           id: a068223e-11a5-403d-9bbe-5e065fea53ba
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isOptionsMethod:
           id: 94765e29-6256-45c3-80dd-90bb3de79f43
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - isTraceMethod:
           id: 71afbc7e-1a14-4fdf-a9c7-330ffc520094
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
 
     tech.intellispaces.ixora.http.HttpMessage:
       id: 0c5ed260-ccf7-4b7a-970c-12a696a99dbc
@@ -127,7 +127,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.system.InboundModulePort
         - portNumber:
           id: 71693529-9c92-4a05-bab0-2d9a378ba9ab
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
         - open:
           id: c64f254e-75c1-42e7-929f-b1bf0c6314d1
           target.domain: tech.intellispaces.ixora.http.InboundHttpPort
@@ -161,13 +161,13 @@ ontology:
           target.domain: tech.intellispaces.ixora.system.OutboundModulePort
         - baseUrl:
           id: a300f5c5-a9c2-4d34-9d89-709f60b39c63
-          target.domain: tech.intellispaces.ixora.data.String
+          target.domain: tech.intellispaces.ixora.core.String
         - exchange:
           id: f525865c-e71d-4150-91d2-6639548ae5aa
           name: HttpClientExchangeSimpleChannel
           qualifiers:
             - endpoint:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
             - method:
               target.domain: tech.intellispaces.ixora.http.HttpMethod
           target.domain: tech.intellispaces.ixora.http.HttpResponse
@@ -177,7 +177,7 @@ ontology:
           name: HttpClientExchangeChannel
           qualifiers:
             - endpoint:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
             - method:
               target.domain: tech.intellispaces.ixora.http.HttpMethod
             - headers:
@@ -191,6 +191,6 @@ ontology:
                         - $this thru elementDomain
                       instance:
                         domain: tech.intellispaces.ixora.core.Domain
-                        name: tech.intellispaces.ixora.data.Byte
+                        name: tech.intellispaces.ixora.core.Byte
           target.domain: tech.intellispaces.ixora.http.HttpResponse
           allowedTraverses: [ MappingOfMoving ]
