@@ -26,28 +26,28 @@ ontology:
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           allowedTraverses: [ Moving ]
         - print:
           id: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: tech.intellispaces.ixora.core.Integer32
           allowedTraverses: [ Moving ]
         - println:
           id: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           allowedTraverses: [ Moving ]
         - println:
           id: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: tech.intellispaces.ixora.core.Integer32
           allowedTraverses: [ Moving ]
         - asOutboundModulePort:
           id: 8c8780e7-fe51-4345-ab94-25c93860de34

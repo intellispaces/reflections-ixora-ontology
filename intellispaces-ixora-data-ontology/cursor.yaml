@@ -28,7 +28,7 @@ ontology:
         - hasNext:
           id: 493c84b9-36cc-4312-b887-a37f8e21123e
           name: HasCursorNextElementChannel
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - next:
           id: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
           name: CursorNextElementChannel
@@ -54,7 +54,7 @@ ontology:
           description: The cursor element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.data.Byte
+            instance: tech.intellispaces.ixora.core.Byte
         - next:
           id: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
-          target.domain: tech.intellispaces.ixora.data.Byte
+          target.domain: tech.intellispaces.ixora.core.Byte

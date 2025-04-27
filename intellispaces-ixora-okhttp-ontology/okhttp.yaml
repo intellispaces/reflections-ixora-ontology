@@ -15,13 +15,13 @@ ontology:
           target.domain: tech.intellispaces.ixora.data.Dataset
         - connectTimeoutMs:
           id: aba3acfc-960f-4e7a-bc5e-f5e5cef88e14
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
         - readTimeoutMs:
           id: adc31a43-a5ac-4e34-8938-fb262ea141f0
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
         - writeTimeoutMs:
           id: 8e075899-efe5-4eca-98d7-0879ad729291
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
 
     tech.intellispaces.ixora.okhttp.OkHttpPort:
       id: 6ac6a0f8-9909-46f4-aeb2-4ef8e1c46c62

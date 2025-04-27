@@ -42,7 +42,7 @@ ontology:
         - isExhausted:
           id: 2d698e68-bb86-4e5b-9888-203c530b7fd2
           name: InputDataStreamIsExhaustedChannel
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - read:
           id: e9dc6abd-5f7c-42f8-8e4b-d0ceb90adf06
           name: InputDataStreamReadChannel
@@ -57,7 +57,7 @@ ontology:
           name: InputDataStreamReadMultipleChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: tech.intellispaces.ixora.core.Integer32
           target:
             domain: tech.intellispaces.ixora.data.collection.List
             immobilityType: Unmovable
@@ -130,7 +130,7 @@ ontology:
           id: c01f543d-7738-4ee7-941a-c8fd05ec1b40
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.data.Byte
+            instance: tech.intellispaces.ixora.core.Byte
         - asDataStream:
           id: 57f385f2-4abf-4e2c-908b-6413bc6e72b8
           target:
@@ -142,14 +142,14 @@ ontology:
         - read:
           id: 47a07883-5660-4e7e-81f1-24d48d215285
           name: ByteInputStreamReadChannel
-          target.domain: tech.intellispaces.ixora.data.Byte
+          target.domain: tech.intellispaces.ixora.core.Byte
           allowedTraverses: [ MappingOfMoving ]
         - readMultiple:
           id: 2c9b4074-f83b-4d4f-983d-3107e26dc8ee
           name: ByteInputStreamReadMultipleChannel
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: tech.intellispaces.ixora.core.Integer32
           target:
             domain: tech.intellispaces.ixora.data.collection.ByteList
             immobilityType: Unmovable

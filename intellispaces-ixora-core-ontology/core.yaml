@@ -17,7 +17,7 @@ ontology:
       channels:
         - name:
           id: 8776e3d7-2327-4936-b4be-4a916b44cb16
-          target.domain: tech.intellispaces.ixora.data.String
+          target.domain: tech.intellispaces.ixora.core.String
 
     tech.intellispaces.ixora.core.Channel:
       id: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
@@ -37,4 +37,58 @@ ontology:
             alias: T
         - alias: id
           id: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
-          target.domain: tech.intellispaces.ixora.data.String
+          target.domain: tech.intellispaces.ixora.core.String
+
+    tech.intellispaces.ixora.core.Number:
+      id: b4fef548-b446-4cae-ae98-63883a6326b8
+      description: The domain of objects considered as numbers
+
+    tech.intellispaces.ixora.core.Integer8:
+      id: 97bc971e-1b2e-4e93-9042-bd19d8c98d9a
+      description: The domain of objects considered as integer numbers in the set from -128 to 127 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.core.Number
+      channels:
+        - asNumber:
+          id: e6c59876-1b43-41cc-ba98-93922a80c775
+          target.domain: tech.intellispaces.ixora.core.Number
+
+    tech.intellispaces.ixora.core.Integer16:
+      id: d3c939ec-0fa7-4b48-8dc4-e93b31691b17
+      description: The domain of objects considered as integer numbers in the set from -32768 to 32767 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.core.Number
+      channels:
+        - asNumber:
+          id: 5ff21160-e035-49d4-8113-c1bc1ea888d7
+          target.domain: tech.intellispaces.ixora.core.Number
+
+    tech.intellispaces.ixora.core.Integer32:
+      id: 9b83b952-370c-4bc5-beb6-c02af713ef31
+      description: The domain of objects considered as integer numbers in the set from -2147483648 to 2147483647 (inclusive)
+      superDomains:
+        - tech.intellispaces.ixora.core.Number
+      channels:
+        - asNumber:
+          id: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
+          target.domain: tech.intellispaces.ixora.core.Number
+
+    tech.intellispaces.ixora.core.Float64:
+      id: 66fad657-c4ab-48a9-9c1b-c1c9f8b4bffe
+      description: The domain of objects considered as float numbers in set of 64-bit IEEE 754 floating point numbers
+      superDomains:
+        - tech.intellispaces.ixora.core.Number
+      channels:
+        - asNumber:
+          id: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
+          target.domain: tech.intellispaces.ixora.core.Number
+
+    tech.intellispaces.ixora.core.Byte:
+      id: e4a84070-ae6e-424e-90d3-0441c0e91a5b
+
+    tech.intellispaces.ixora.core.Boolean:
+      id: 64c08bfa-e4d3-411d-a465-0aec0ce3849e
+
+    tech.intellispaces.ixora.core.String:
+      id: f498a206-6b7f-4cad-81eb-e9859a56c8b1
+      description: The domain of strings

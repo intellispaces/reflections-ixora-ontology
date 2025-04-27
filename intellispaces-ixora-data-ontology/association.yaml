@@ -62,7 +62,7 @@ ontology:
                   - equivalence.paths:
                       - $this to tech.intellispaces.ixora.core.Domain
                       - $base thru keyDomain
-          target.domain: tech.intellispaces.ixora.data.Boolean
+          target.domain: tech.intellispaces.ixora.core.Boolean
         - value:
           id: 7b577c92-040c-4974-9ac9-8547d974dfdd
           qualifiers:
@@ -87,7 +87,7 @@ ontology:
           description: The channel to an unqualified value. In fact, the value can be an 32-bit integer value, a 64-bit float value, a list, etc.
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.core.Point
         - integer32Value:
@@ -95,37 +95,37 @@ ontology:
           description: The channel to a 32-bit integer value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
-            domain: tech.intellispaces.ixora.data.Integer32
+            domain: tech.intellispaces.ixora.core.Integer32
         - float64Value:
           id: ffcd77b5-032f-49db-8dfd-c792a19d1005
           description: The channel to a 64-bit float value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
-            domain: tech.intellispaces.ixora.data.Float64
+            domain: tech.intellispaces.ixora.core.Float64
         - stringValue:
           id: 4cc73514-1a59-4560-ba50-7045360b853c
           description: The channel to a string value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
-            domain: tech.intellispaces.ixora.data.String
+            domain: tech.intellispaces.ixora.core.String
         - propertiesValue:
           id: e033ddc5-7f4d-4bbd-8958-8b9c34fdfc95
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.association.Properties
         - integer32List:
           id: e8e1fb09-b22e-4e66-bee5-34db85e4ada3
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.collection.List
             immobilityType: Unmovable
@@ -135,12 +135,12 @@ ontology:
                   - $this thru elementDomain
                 instance:
                   domain: tech.intellispaces.ixora.core.Domain
-                  name: tech.intellispaces.ixora.data.Integer32
+                  name: tech.intellispaces.ixora.core.Integer32
         - float64List:
           id: 101bf792-aa89-4114-ba58-26d78487a4a5
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.collection.List
             immobilityType: Unmovable
@@ -150,12 +150,12 @@ ontology:
                   - $this thru elementDomain
                 instance:
                   domain: tech.intellispaces.ixora.core.Domain
-                  name: tech.intellispaces.ixora.data.Float64
+                  name: tech.intellispaces.ixora.core.Float64
         - stringList:
           id: f6d6c228-cfe0-4bcd-80b8-b0bd23e606c7
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.collection.List
             immobilityType: Unmovable
@@ -165,12 +165,12 @@ ontology:
                   - $this thru elementDomain
                 instance:
                   domain: tech.intellispaces.ixora.core.Domain
-                  name: tech.intellispaces.ixora.data.String
+                  name: tech.intellispaces.ixora.core.String
         - propertiesList:
           id: b48ef2de-6bbc-4c9c-a0b1-e3f1c6ca33d1
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.data.String
+              target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.collection.List
             immobilityType: Unmovable
@@ -183,7 +183,7 @@ ontology:
                   name: tech.intellispaces.ixora.data.association.Properties
         - size:
           id: d1b7dcf8-b8d5-41d0-8d19-6faee74a852c
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: tech.intellispaces.ixora.core.Integer32
 
   channels:
     tech.intellispaces.ixora.data.association.PropertiesToData:

@@ -9,5 +9,5 @@ ontology:
       id: 1830e924-2c78-4f18-b9eb-39f002cbeea6
       description: YAML string to properties channel
       source:
-        domain: tech.intellispaces.ixora.data.String
+        domain: tech.intellispaces.ixora.core.String
       target.domain: tech.intellispaces.ixora.data.association.Properties
