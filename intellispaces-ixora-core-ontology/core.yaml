@@ -46,7 +46,7 @@ ontology:
     tech.intellispaces.ixora.core.IntegerNumber:
       id: 4299693b-abf1-4785-9377-bfcbd596dbc3
 
-    tech.intellispaces.ixora.core.FloatNumber:
+    tech.intellispaces.ixora.core.RealNumber:
       id: 1a8c3c8d-e87b-4e0d-b564-28f46a27e131
 
     tech.intellispaces.ixora.core.String:

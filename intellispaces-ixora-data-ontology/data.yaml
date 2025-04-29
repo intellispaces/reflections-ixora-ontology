@@ -44,15 +44,15 @@ ontology:
           id: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
           target.domain: tech.intellispaces.ixora.core.IntegerNumber
 
-    tech.intellispaces.ixora.data.Float64:
+    tech.intellispaces.ixora.data.Real64:
       id: 66fad657-c4ab-48a9-9c1b-c1c9f8b4bffe
       description: The domain of objects considered as float numbers in set of 64-bit IEEE 754 floating point numbers
       superDomains:
-        - tech.intellispaces.ixora.core.FloatNumber
+        - tech.intellispaces.ixora.core.RealNumber
       channels:
         - asNumber:
           id: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
-          target.domain: tech.intellispaces.ixora.core.FloatNumber
+          target.domain: tech.intellispaces.ixora.core.RealNumber
 
     tech.intellispaces.ixora.data.Byte:
       id: e4a84070-ae6e-424e-90d3-0441c0e91a5b

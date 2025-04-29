@@ -105,7 +105,7 @@ ontology:
             - path:
               target.domain: tech.intellispaces.ixora.core.String
           target:
-            domain: tech.intellispaces.ixora.data.Float64
+            domain: tech.intellispaces.ixora.data.Real64
         - stringValue:
           id: 4cc73514-1a59-4560-ba50-7045360b853c
           description: The channel to a string value
@@ -150,7 +150,7 @@ ontology:
                   - $this thru elementDomain
                 instance:
                   domain: tech.intellispaces.ixora.core.Domain
-                  name: tech.intellispaces.ixora.data.Float64
+                  name: tech.intellispaces.ixora.data.Real64
         - stringList:
           id: f6d6c228-cfe0-4bcd-80b8-b0bd23e606c7
           qualifiers:

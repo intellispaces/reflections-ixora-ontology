@@ -173,7 +173,7 @@ ontology:
           description: The list element domain
           target:
             domain: tech.intellispaces.ixora.core.Domain
-            instance: tech.intellispaces.ixora.data.Float64
+            instance: tech.intellispaces.ixora.data.Real64
         - asCollection:
           id: 01909080-c97f-77f1-9a5a-f20dba6ed8a6
           description: Downgrade mapping
@@ -190,4 +190,4 @@ ontology:
           qualifiers:
             - index:
               target.domain: tech.intellispaces.ixora.data.Integer32
-          target.domain: tech.intellispaces.ixora.data.Float64
+          target.domain: tech.intellispaces.ixora.data.Real64
