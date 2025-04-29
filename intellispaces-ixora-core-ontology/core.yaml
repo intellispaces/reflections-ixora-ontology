@@ -43,9 +43,15 @@ ontology:
       id: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of objects considered as numbers
 
-    tech.intellispaces.ixora.core.Boolean:
-      id: 64c08bfa-e4d3-411d-a465-0aec0ce3849e
+    tech.intellispaces.ixora.core.IntegerNumber:
+      id: 4299693b-abf1-4785-9377-bfcbd596dbc3
+
+    tech.intellispaces.ixora.core.FloatNumber:
+      id: 1a8c3c8d-e87b-4e0d-b564-28f46a27e131
 
     tech.intellispaces.ixora.core.String:
       id: f498a206-6b7f-4cad-81eb-e9859a56c8b1
       description: The domain of strings
+
+    tech.intellispaces.ixora.core.Boolean:
+      id: 64c08bfa-e4d3-411d-a465-0aec0ce3849e

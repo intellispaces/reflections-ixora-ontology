@@ -48,6 +48,7 @@ ontology:
         - get:
           id: a8b23e74-2f8a-41eb-9427-a50e8274dc09
           name: ListToElementChannel
+          description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
               target.domain: tech.intellispaces.ixora.data.Integer32
@@ -91,7 +92,7 @@ ontology:
       description: |
         The list of any objects considered as bytes. This is the alias for the domain NumberListDomain&lt;Byte&gt;
       superDomains:
-        - tech.intellispaces.ixora.data.collection.NumberList:
+        - tech.intellispaces.ixora.data.collection.List:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -115,6 +116,7 @@ ontology:
         - get:
           id: f5bf6431-109a-4906-a54d-d30755a623c9
           name: ByteListToElementChannel
+          description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
               target.domain: tech.intellispaces.ixora.data.Integer32
@@ -149,6 +151,7 @@ ontology:
         - get:
           id: fa8d530a-7e9d-49e1-a7f3-0956d3460ac5
           name: Integer32ListToElementChannel
+          description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
               target.domain: tech.intellispaces.ixora.data.Integer32
@@ -183,6 +186,7 @@ ontology:
         - get:
           id: 7f2c28d4-a738-432b-8afa-f47e7e00a933
           name: Float64ListToElementChannel
+          description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
               target.domain: tech.intellispaces.ixora.data.Integer32
