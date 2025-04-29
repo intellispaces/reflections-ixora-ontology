@@ -98,7 +98,7 @@ ontology:
               target.domain: tech.intellispaces.ixora.core.String
           target:
             domain: tech.intellispaces.ixora.data.Integer32
-        - float64Value:
+        - real64Value:
           id: ffcd77b5-032f-49db-8dfd-c792a19d1005
           description: The channel to a 64-bit float value
           qualifiers:
@@ -136,7 +136,7 @@ ontology:
                 instance:
                   domain: tech.intellispaces.ixora.core.Domain
                   name: tech.intellispaces.ixora.data.Integer32
-        - float64List:
+        - real64List:
           id: 101bf792-aa89-4114-ba58-26d78487a4a5
           qualifiers:
             - path:

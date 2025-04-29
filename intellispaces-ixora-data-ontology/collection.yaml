@@ -157,7 +157,7 @@ ontology:
               target.domain: tech.intellispaces.ixora.data.Integer32
           target.domain: tech.intellispaces.ixora.data.Integer32
 
-    tech.intellispaces.ixora.data.collection.Float64List:
+    tech.intellispaces.ixora.data.collection.Real64List:
       id: 019081ff-e48c-773d-b6af-f6f3ec15ced9
       description: |
         The list of any objects considered as 64-bits float numbers. This is the alias for the domain ListDomain&lt;Double&gt;
@@ -185,7 +185,7 @@ ontology:
                   - $base thru elementDomain
         - get:
           id: 7f2c28d4-a738-432b-8afa-f47e7e00a933
-          name: Float64ListToElementChannel
+          name: Real64ListToElementChannel
           description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
