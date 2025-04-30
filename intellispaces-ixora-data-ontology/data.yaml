@@ -20,7 +20,7 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.core.IntegerNumber
       channels:
-        - asNumber:
+        - asIntegerNumber:
           id: e6c59876-1b43-41cc-ba98-93922a80c775
           target.domain: tech.intellispaces.ixora.core.IntegerNumber
 
@@ -30,7 +30,7 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.core.IntegerNumber
       channels:
-        - asNumber:
+        - asIntegerNumber:
           id: 5ff21160-e035-49d4-8113-c1bc1ea888d7
           target.domain: tech.intellispaces.ixora.core.IntegerNumber
 
@@ -40,7 +40,7 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.core.IntegerNumber
       channels:
-        - asNumber:
+        - asIntegerNumber:
           id: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
           target.domain: tech.intellispaces.ixora.core.IntegerNumber
 
@@ -50,7 +50,7 @@ ontology:
       superDomains:
         - tech.intellispaces.ixora.core.RealNumber
       channels:
-        - asNumber:
+        - asRealNumber:
           id: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
           target.domain: tech.intellispaces.ixora.core.RealNumber
 
