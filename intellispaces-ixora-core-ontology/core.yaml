@@ -45,9 +45,17 @@ ontology:
 
     tech.intellispaces.ixora.core.IntegerNumber:
       id: 4299693b-abf1-4785-9377-bfcbd596dbc3
+      channels:
+        - asNumber:
+          id: 475c30d5-ee9a-4f28-8df1-a4c23a89893d
+          target.domain: tech.intellispaces.ixora.core.Number
 
     tech.intellispaces.ixora.core.RealNumber:
       id: 1a8c3c8d-e87b-4e0d-b564-28f46a27e131
+      channels:
+        - asNumber:
+          id: 3570e67a-2d42-4ca5-8f00-5ee4d619c2ac
+          target.domain: tech.intellispaces.ixora.core.Number
 
     tech.intellispaces.ixora.core.String:
       id: f498a206-6b7f-4cad-81eb-e9859a56c8b1
