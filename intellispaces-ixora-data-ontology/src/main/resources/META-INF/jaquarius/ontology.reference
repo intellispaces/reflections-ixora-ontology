@@ -1,8 +1,8 @@
 short.domainName = tech.intellispaces.ixora.data.Integer16
 integer.domainName = tech.intellispaces.ixora.data.Integer32
 long.domainName = tech.intellispaces.ixora.data.Integer64
-float.domainName = tech.intellispaces.ixora.data.Float32
-double.domainName = tech.intellispaces.ixora.data.Float64
+float.domainName = tech.intellispaces.ixora.data.Real32
+double.domainName = tech.intellispaces.ixora.data.Real64
 byte.domainName = tech.intellispaces.ixora.data.Byte
 propertiesSet.domainName = tech.intellispaces.ixora.data.association.Properties
 dataset.domainName = tech.intellispaces.ixora.data.Dataset

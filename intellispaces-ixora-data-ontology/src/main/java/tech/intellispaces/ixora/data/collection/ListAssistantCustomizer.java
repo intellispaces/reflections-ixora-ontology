@@ -1,9 +1,6 @@
 package tech.intellispaces.ixora.data.collection;
 
 import tech.intellispaces.commons.type.Type;
-import tech.intellispaces.ixora.data.collection.ByteLists;
-import tech.intellispaces.ixora.data.collection.Float64Lists;
-import tech.intellispaces.ixora.data.collection.Integer32Lists;
 import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(ListDomain.class)
@@ -63,7 +60,7 @@ public interface ListAssistantCustomizer {
   }
 
   default UnmovableListHandle<Double> handleOf(double[] array) {
-    return Float64Lists.handleOf(array);
+    return Real64Lists.handleOf(array);
   }
 
   default UnmovableListHandle<Byte> handleOfByteList(java.util.List<Byte> list) {
@@ -75,7 +72,7 @@ public interface ListAssistantCustomizer {
   }
 
   default UnmovableListHandle<Double> handleOfDoubleList(java.util.List<Double> list) {
-    return Float64Lists.handleOf(list);
+    return Real64Lists.handleOf(list);
   }
 
   default UnmovableListHandle<String> handleOfStringList(java.util.List<String> list) {
