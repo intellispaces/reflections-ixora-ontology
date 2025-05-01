@@ -5,9 +5,9 @@ ontology:
       id: 9942341e-db92-4388-85f4-7c70e5e52bb8
 
   channels:
-    tech.intellispaces.ixora.data.yaml.YamlStringToProperties:
+    tech.intellispaces.ixora.data.yaml.YamlStringToPropertiesSet:
       id: 1830e924-2c78-4f18-b9eb-39f002cbeea6
-      description: YAML string to properties channel
+      description: YAML string to properties set channel
       source:
         domain: tech.intellispaces.ixora.core.String
-      target.domain: tech.intellispaces.ixora.data.association.Properties
+      target.domain: tech.intellispaces.ixora.data.association.PropertiesSet
