@@ -7,5 +7,5 @@ public interface OkHttpPortAssistantCustomizer {
 
   MovableOkHttpPortHandle create();
 
-  MovableOkHttpPortHandle create(OkHttpPortSettings properties);
+  MovableOkHttpPortHandle create(OkHttpPortSettings settings);
 }
