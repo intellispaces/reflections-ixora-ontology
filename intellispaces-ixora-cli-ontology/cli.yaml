@@ -26,7 +26,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           allowedTraverses: [ Moving ]
         - print:
           id: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
@@ -40,7 +40,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           allowedTraverses: [ Moving ]
         - println:
           id: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9

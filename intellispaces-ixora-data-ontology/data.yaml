@@ -18,41 +18,41 @@ ontology:
       id: 97bc971e-1b2e-4e93-9042-bd19d8c98d9a
       description: The domain of objects considered as integer numbers in the set from -128 to 127 (inclusive)
       superDomains:
-        - tech.intellispaces.ixora.core.IntegerNumber
+        - tech.intellispaces.ixora.basic.IntegerNumber
       channels:
         - asIntegerNumber:
           id: e6c59876-1b43-41cc-ba98-93922a80c775
-          target.domain: tech.intellispaces.ixora.core.IntegerNumber
+          target.domain: tech.intellispaces.ixora.basic.IntegerNumber
 
     tech.intellispaces.ixora.data.Integer16:
       id: d3c939ec-0fa7-4b48-8dc4-e93b31691b17
       description: The domain of objects considered as integer numbers in the set from -32768 to 32767 (inclusive)
       superDomains:
-        - tech.intellispaces.ixora.core.IntegerNumber
+        - tech.intellispaces.ixora.basic.IntegerNumber
       channels:
         - asIntegerNumber:
           id: 5ff21160-e035-49d4-8113-c1bc1ea888d7
-          target.domain: tech.intellispaces.ixora.core.IntegerNumber
+          target.domain: tech.intellispaces.ixora.basic.IntegerNumber
 
     tech.intellispaces.ixora.data.Integer32:
       id: 9b83b952-370c-4bc5-beb6-c02af713ef31
       description: The domain of objects considered as integer numbers in the set from -2147483648 to 2147483647 (inclusive)
       superDomains:
-        - tech.intellispaces.ixora.core.IntegerNumber
+        - tech.intellispaces.ixora.basic.IntegerNumber
       channels:
         - asIntegerNumber:
           id: 83dd3db7-0b06-4cd9-a69e-313229d72fc4
-          target.domain: tech.intellispaces.ixora.core.IntegerNumber
+          target.domain: tech.intellispaces.ixora.basic.IntegerNumber
 
     tech.intellispaces.ixora.data.Real64:
       id: 66fad657-c4ab-48a9-9c1b-c1c9f8b4bffe
       description: The domain of objects considered as float numbers in set of 64-bit IEEE 754 floating point numbers
       superDomains:
-        - tech.intellispaces.ixora.core.RealNumber
+        - tech.intellispaces.ixora.basic.RealNumber
       channels:
         - asRealNumber:
           id: a6d1dc5e-ef38-4ee1-849b-6731f615a8b6
-          target.domain: tech.intellispaces.ixora.core.RealNumber
+          target.domain: tech.intellispaces.ixora.basic.RealNumber
 
     tech.intellispaces.ixora.data.Byte:
       id: e4a84070-ae6e-424e-90d3-0441c0e91a5b

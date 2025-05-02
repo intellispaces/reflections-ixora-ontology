@@ -14,7 +14,7 @@ ontology:
           id: fc977e28-105b-4169-a445-e81b3f89b6fc
           description: The stream element domain
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: E
 
     tech.intellispaces.ixora.data.stream.InputDataStream:
@@ -29,7 +29,7 @@ ontology:
         - elementDomain:
           id: 892ff5cb-e889-4ebb-b21c-5cd891802a7d
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: E
         - asDataStream:
           id: 565006d2-6171-446b-b85b-f5e17198ee80
@@ -42,14 +42,14 @@ ontology:
         - isExhausted:
           id: 2d698e68-bb86-4e5b-9888-203c530b7fd2
           name: InputDataStreamIsExhaustedChannel
-          target.domain: tech.intellispaces.ixora.core.Boolean
+          target.domain: tech.intellispaces.ixora.basic.Boolean
         - read:
           id: e9dc6abd-5f7c-42f8-8e4b-d0ceb90adf06
           name: InputDataStreamReadChannel
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $this to tech.intellispaces.ixora.basic.Domain
                   - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
         - readMultiple:
@@ -90,7 +90,7 @@ ontology:
         - elementDomain:
           id: 9a42f7b7-cdb1-4ea9-9ebd-7ad9cdbc40c3
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: E
         - asDataStream:
           id: 03cb13da-399e-4367-8538-99bd28899cb3
@@ -107,7 +107,7 @@ ontology:
             - element:
               target.constraints:
                 - equivalence.paths:
-                    - $this to tech.intellispaces.ixora.core.Domain
+                    - $this to tech.intellispaces.ixora.basic.Domain
                     - $base thru elementDomain
           target:
             domain: tech.intellispaces.ixora.data.stream.OutputDataStream
@@ -129,7 +129,7 @@ ontology:
         - elementDomain:
           id: c01f543d-7738-4ee7-941a-c8fd05ec1b40
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             instance: tech.intellispaces.ixora.data.Byte
         - asDataStream:
           id: 57f385f2-4abf-4e2c-908b-6413bc6e72b8
