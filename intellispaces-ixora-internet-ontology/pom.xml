@@ -26,7 +26,7 @@
                 <configuration>
                     <inputSpec>${project.basedir}/internet.yaml</inputSpec>
                     <repositories>
-                        <repository>file:///${project.basedir}/../intellispaces-ixora-core-ontology/core.yaml</repository>
+                        <repository>file:///${project.basedir}/../intellispaces-ixora-basic-ontology/basic.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
                     </repositories>
                 </configuration>
@@ -49,7 +49,7 @@
     <dependencies>
         <dependency>
             <groupId>tech.intellispaces</groupId>
-            <artifactId>intellispaces-ixora-core-ontology</artifactId>
+            <artifactId>intellispaces-ixora-basic-ontology</artifactId>
         </dependency>
         <dependency>
             <groupId>tech.intellispaces</groupId>

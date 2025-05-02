@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispaces-ixora-core-ontology</artifactId>
+    <artifactId>intellispaces-ixora-basic-ontology</artifactId>
     <packaging>jar</packaging>
 	
     <build>
@@ -24,7 +24,7 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <inputSpec>${project.basedir}/core.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/basic.yaml</inputSpec>
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
                     </repositories>

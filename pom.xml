@@ -11,7 +11,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>intellispaces-ixora-core-ontology</module>
+        <module>intellispaces-ixora-basic-ontology</module>
         <module>intellispaces-ixora-system-ontology</module>
         <module>intellispaces-ixora-cli-ontology</module>
         <module>intellispaces-ixora-data-ontology</module>
@@ -45,7 +45,7 @@
         <dependencies>
             <dependency>
                 <groupId>tech.intellispaces</groupId>
-                <artifactId>intellispaces-ixora-core-ontology</artifactId>
+                <artifactId>intellispaces-ixora-basic-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>

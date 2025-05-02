@@ -1,7 +1,7 @@
-notion.domainName = tech.intellispaces.ixora.core.Point
-domain.domainName = tech.intellispaces.ixora.core.Domain
-number.domainName = tech.intellispaces.ixora.core.Number
-string.domainName = tech.intellispaces.ixora.core.String
-boolean.domainName = tech.intellispaces.ixora.core.Boolean
+notion.domainName = tech.intellispaces.ixora.basic.Point
+domain.domainName = tech.intellispaces.ixora.basic.Domain
+number.domainName = tech.intellispaces.ixora.basic.Number
+string.domainName = tech.intellispaces.ixora.basic.String
+boolean.domainName = tech.intellispaces.ixora.basic.Boolean
 
 notionToDomain.channelAlias = domain

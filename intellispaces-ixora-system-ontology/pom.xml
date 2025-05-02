@@ -48,7 +48,7 @@
     <dependencies>
         <dependency>
             <groupId>tech.intellispaces</groupId>
-            <artifactId>intellispaces-ixora-core-ontology</artifactId>
+            <artifactId>intellispaces-ixora-basic-ontology</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
