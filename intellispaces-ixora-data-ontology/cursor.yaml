@@ -15,7 +15,7 @@ ontology:
           id: 8816842b-3aa7-4421-b2c5-3ac5b3da9b24
           description: The cursor element domain
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: E
         - collection:
           id: 4d445fd4-4088-49a5-b0ba-fffd8c443b13
@@ -28,7 +28,7 @@ ontology:
         - hasNext:
           id: 493c84b9-36cc-4312-b887-a37f8e21123e
           name: HasCursorNextElementChannel
-          target.domain: tech.intellispaces.ixora.core.Boolean
+          target.domain: tech.intellispaces.ixora.basic.Boolean
         - next:
           id: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
           name: CursorNextElementChannel
@@ -36,7 +36,7 @@ ontology:
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $this to tech.intellispaces.ixora.basic.Domain
                   - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
 
@@ -53,7 +53,7 @@ ontology:
           id: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4
           description: The cursor element domain
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             instance: tech.intellispaces.ixora.data.Byte
         - next:
           id: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc

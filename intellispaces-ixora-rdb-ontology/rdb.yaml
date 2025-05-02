@@ -31,7 +31,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.data.Dataset
         - query:
           id: 6cd3d0ac-72d5-4f5a-bb15-e7d8eb4eeefe
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - paramNames:
           id: 643c6816-45d7-4d9a-b09a-3f6fcb32195c
           target:
@@ -42,24 +42,24 @@ ontology:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.core.Domain
-                  name: tech.intellispaces.ixora.core.String
+                  domain: tech.intellispaces.ixora.basic.Domain
+                  name: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.rdb.datasource.DataSourceSettings:
       id: a0d2d709-9af1-4bcc-8a90-c3c828585198
       channels:
         - driverClassName:
           id: 04006c73-1ca9-46f3-9a5a-f8e5e1ab59e7
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - url:
           id: c35bb6bf-8e65-49df-86aa-4c07faee4d6a
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - username:
           id: eac366a8-f629-4589-a9a4-a30ee3abec8d
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - password:
           id: b254be32-7b81-4092-b821-4803c3af770d
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.rdb.datasource.DataSource:
       id: 8a1c0f79-78f2-4757-8f30-8a0fdeea4b93
@@ -96,7 +96,7 @@ ontology:
           name: ConnectionToPreparedStatementChannel
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target:
             domain: tech.intellispaces.ixora.rdb.statement.PreparedStatement
             immobilityType: Movable
@@ -124,34 +124,34 @@ ontology:
       channels:
         - next:
           id: a0b049ef-9ff2-4611-95b4-b500673afa55
-          target.domain: tech.intellispaces.ixora.core.Boolean
+          target.domain: tech.intellispaces.ixora.basic.Boolean
           allowedTraverses: [ MappingOfMoving ]
         - integer32Value:
           name: ResultSetToInteger32ValueByNameChannel
           id: 77aeebe4-6c9f-4067-a1be-fe7633558a13
           qualifiers:
             - name:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target.domain: tech.intellispaces.ixora.data.Integer32
         - stringValue:
           name: ResultSetToStringValueByNameChannel
           id: 0fb39956-45e1-4b78-afdf-aa0b4922ed86
           qualifiers:
             - name:
-              target.domain: tech.intellispaces.ixora.core.String
-          target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - dataValue:
           name: ResultSetToDataChannel
           id: d280d0b1-16d9-4d3a-a172-a0ad39c63de7
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.core.Domain
+                domain: tech.intellispaces.ixora.basic.Domain
                 alias: D
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $this to tech.intellispaces.ixora.basic.Domain
                   - $dataValue thru dataType
         - dataList:
           name: ResultSetToDataListChannel
@@ -159,7 +159,7 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.core.Domain
+                domain: tech.intellispaces.ixora.basic.Domain
                 alias: D
           target:
             domain: tech.intellispaces.ixora.data.collection.List
@@ -178,7 +178,7 @@ ontology:
           id: b1d7a815-567d-4b0d-a252-1a769212fb5b
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target:
             domain: tech.intellispaces.ixora.rdb.statement.ResultSet
             immobilityType: Movable
@@ -239,7 +239,7 @@ ontology:
           name: TransactionQueryChannel
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target:
             domain: tech.intellispaces.ixora.rdb.statement.ResultSet
             immobilityType: Movable
@@ -249,10 +249,10 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.core.Domain
+                domain: tech.intellispaces.ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target:
             domain: tech.intellispaces.ixora.data.cursor.Cursor
             immobilityType: Movable
@@ -266,14 +266,14 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.core.Domain
+                domain: tech.intellispaces.ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $this to tech.intellispaces.ixora.basic.Domain
                   - $fetchData thru dataType
             immobilityType: Unmovable
         - fetchData:
@@ -282,10 +282,10 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.core.Domain
+                domain: tech.intellispaces.ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
             - params:
               target:
                 domain: tech.intellispaces.ixora.data.association.Map
@@ -294,25 +294,25 @@ ontology:
                     paths:
                       - $this thru keyDomain
                     instance:
-                      domain: tech.intellispaces.ixora.core.Domain
-                      name: tech.intellispaces.ixora.core.String
+                      domain: tech.intellispaces.ixora.basic.Domain
+                      name: tech.intellispaces.ixora.basic.String
                   - equivalence:
                     paths:
                       - $this thru valueDomain
                     instance:
-                      domain: tech.intellispaces.ixora.core.Domain
-                      name: tech.intellispaces.ixora.core.Point
+                      domain: tech.intellispaces.ixora.basic.Domain
+                      name: tech.intellispaces.ixora.basic.Point
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.core.Domain
+                  - $this to tech.intellispaces.ixora.basic.Domain
                   - $fetchData thru dataType
             immobilityType: Unmovable
         - modify:
           id: 5dce771b-2908-444b-ba15-6c0b2167fe33
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.core.String
+              target.domain: tech.intellispaces.ixora.basic.String
           target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
 
@@ -333,5 +333,5 @@ ontology:
     tech.intellispaces.ixora.rdb.query.CastStringToParameterizedNamedQuery:
       id: d3673390-b743-434a-b7c9-f7dc64976387
       source:
-        domain: tech.intellispaces.ixora.core.String
+        domain: tech.intellispaces.ixora.basic.String
       target.domain: tech.intellispaces.ixora.rdb.query.ParameterizedNamedQuery

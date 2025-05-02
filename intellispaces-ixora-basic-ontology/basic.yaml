@@ -1,25 +1,25 @@
 intellispaces: "0.1"
 info:
-  title: Ixora core space ontology
+  title: Ixora basic ontology
 ontology:
   spaces:
-    tech.intellispaces.ixora.core:
+    tech.intellispaces.ixora.basic:
       id: 00135a20-5574-4c20-aff7-fe21a0dd81cd
 
   domains:
-    tech.intellispaces.ixora.core.Point:
+    tech.intellispaces.ixora.basic.Point:
       id: c83ce3d6-19cf-4e40-99c9-53596acfe1c4
       description: The domain of any objects
 
-    tech.intellispaces.ixora.core.Domain:
+    tech.intellispaces.ixora.basic.Domain:
       id: 1a243181-9d2b-48d2-bbcf-cd1f18311011
       description: The domain of objects representing semantic space domains
       channels:
         - name:
           id: 8776e3d7-2327-4936-b4be-4a916b44cb16
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
 
-    tech.intellispaces.ixora.core.Channel:
+    tech.intellispaces.ixora.basic.Channel:
       id: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
       description: The domain of objects representing semantic space channel
       channels:
@@ -27,39 +27,39 @@ ontology:
           id: e38873a2-2e49-46bc-849d-b56f76bdb9d5
           description: The channel source domain
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: S
         - targetDomain:
           id: bcacb1d5-0981-4646-8534-c769bd4c9ddc
           description: The channel target domain
           target:
-            domain: tech.intellispaces.ixora.core.Domain
+            domain: tech.intellispaces.ixora.basic.Domain
             alias: T
         - alias: id
           id: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
 
-    tech.intellispaces.ixora.core.Number:
+    tech.intellispaces.ixora.basic.Number:
       id: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of objects considered as numbers
 
-    tech.intellispaces.ixora.core.IntegerNumber:
+    tech.intellispaces.ixora.basic.IntegerNumber:
       id: 4299693b-abf1-4785-9377-bfcbd596dbc3
       channels:
         - asNumber:
           id: 475c30d5-ee9a-4f28-8df1-a4c23a89893d
-          target.domain: tech.intellispaces.ixora.core.Number
+          target.domain: tech.intellispaces.ixora.basic.Number
 
-    tech.intellispaces.ixora.core.RealNumber:
+    tech.intellispaces.ixora.basic.RealNumber:
       id: 1a8c3c8d-e87b-4e0d-b564-28f46a27e131
       channels:
         - asNumber:
           id: 3570e67a-2d42-4ca5-8f00-5ee4d619c2ac
-          target.domain: tech.intellispaces.ixora.core.Number
+          target.domain: tech.intellispaces.ixora.basic.Number
 
-    tech.intellispaces.ixora.core.String:
+    tech.intellispaces.ixora.basic.String:
       id: f498a206-6b7f-4cad-81eb-e9859a56c8b1
       description: The domain of strings
 
-    tech.intellispaces.ixora.core.Boolean:
+    tech.intellispaces.ixora.basic.Boolean:
       id: 64c08bfa-e4d3-411d-a465-0aec0ce3849e

@@ -15,24 +15,24 @@ ontology:
       channels:
         - path:
           id: 47ba7add-d4d0-4091-9fcb-04d9858129a5
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - query:
           id: bb1f65a5-03dd-4b0b-9b0a-31e38ed83e67
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
         - toString:
           id: 5dc5206c-4fa5-44b6-871e-23ce3efab4cf
           name: UriToStringChannel
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
 
   channels:
     tech.intellispaces.ixora.internet.uri.JoinBasePathStringWithEndpointString:
       id: 3fe84a44-7f40-4df9-95d1-f1d857c1a5b8
       source:
-        domain: tech.intellispaces.ixora.core.String
+        domain: tech.intellispaces.ixora.basic.String
       qualifiers:
           - endpoint:
-            target.domain: tech.intellispaces.ixora.core.String
-      target.domain: tech.intellispaces.ixora.core.String
+            target.domain: tech.intellispaces.ixora.basic.String
+      target.domain: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.internet.uri.GetUriQueryParam:
       id: f613bc2a-3a2a-4a8a-b184-80480aa819d5
@@ -40,7 +40,7 @@ ontology:
         domain: tech.intellispaces.ixora.internet.uri.Uri
       qualifiers:
         - paramName:
-          target.domain: tech.intellispaces.ixora.core.String
+          target.domain: tech.intellispaces.ixora.basic.String
       target:
         domain: tech.intellispaces.ixora.data.collection.List
         immobilityType: Unmovable
@@ -49,13 +49,13 @@ ontology:
             paths:
               - $this thru elementDomain
             instance:
-              domain: tech.intellispaces.ixora.core.Domain
-              name: tech.intellispaces.ixora.core.String
+              domain: tech.intellispaces.ixora.basic.Domain
+              name: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.internet.uri.SplitUriPathStringToParts:
       id: 9bf5861b-1af9-4f83-a39f-5c44d9e451d0
       source:
-        domain: tech.intellispaces.ixora.core.String
+        domain: tech.intellispaces.ixora.basic.String
       target:
         domain: tech.intellispaces.ixora.data.collection.List
         immobilityType: Unmovable
@@ -64,5 +64,5 @@ ontology:
             paths:
               - $this thru elementDomain
             instance:
-              domain: tech.intellispaces.ixora.core.Domain
-              name: tech.intellispaces.ixora.core.String
+              domain: tech.intellispaces.ixora.basic.Domain
+              name: tech.intellispaces.ixora.basic.String
