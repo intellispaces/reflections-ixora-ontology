@@ -2,7 +2,7 @@ package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.ixora.internet.uri.Uri;
 import tech.intellispaces.ixora.internet.uri.Uris;
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(HttpRequestDomain.class)
 public interface HttpRequestAssistantCustomizer {

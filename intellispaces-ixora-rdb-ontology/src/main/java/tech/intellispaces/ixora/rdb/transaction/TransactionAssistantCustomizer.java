@@ -1,6 +1,6 @@
 package tech.intellispaces.ixora.rdb.transaction;
 
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(TransactionDomain.class)
 public interface TransactionAssistantCustomizer {

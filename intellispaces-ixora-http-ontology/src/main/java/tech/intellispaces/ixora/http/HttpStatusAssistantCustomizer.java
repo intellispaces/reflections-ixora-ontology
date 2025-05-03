@@ -1,7 +1,7 @@
 package tech.intellispaces.ixora.http;
 
 import tech.intellispaces.commons.exception.UnexpectedExceptions;
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(HttpStatusDomain.class)
 public interface HttpStatusAssistantCustomizer {

@@ -1,8 +1,8 @@
 package tech.intellispaces.ixora.jetty;
 
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
-import tech.intellispaces.jaquarius.object.reference.DownwardObjectFactory;
-import tech.intellispaces.jaquarius.object.reference.MovableObjectHandle;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.object.reference.DownwardObjectFactory;
+import tech.intellispaces.reflections.object.reference.MovableObjectHandle;
 
 @AssistantCustomizer(JettyServerPortDomain.class)
 public interface JettyServerPortAssistantCustomizer {

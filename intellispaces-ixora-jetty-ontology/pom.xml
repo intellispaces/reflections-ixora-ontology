@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>tech.intellispaces</groupId>
+        <groupId>tech.intellispaces.reflections.ixora</groupId>
         <artifactId>intellispaces-ixora-ontology-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
@@ -13,13 +13,13 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>tech.intellispaces</groupId>
-                <artifactId>intellispaces-jaquarius-generator-maven-plugin</artifactId>
+                <groupId>tech.intellispaces.reflections</groupId>
+                <artifactId>intellispaces-reflections-generator-maven-plugin</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>jaquarius-generator</goal>
+                            <goal>intellispaces-reflections-generator</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -49,11 +49,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.intellispaces</groupId>
+            <groupId>tech.intellispaces.reflections.ixora</groupId>
             <artifactId>intellispaces-ixora-basic-ontology</artifactId>
         </dependency>
         <dependency>
-            <groupId>tech.intellispaces</groupId>
+            <groupId>tech.intellispaces.reflections.ixora</groupId>
             <artifactId>intellispaces-ixora-http-ontology</artifactId>
         </dependency>
     </dependencies>

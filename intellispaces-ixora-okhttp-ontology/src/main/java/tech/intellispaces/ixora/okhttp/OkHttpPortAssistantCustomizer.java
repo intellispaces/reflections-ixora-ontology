@@ -1,6 +1,6 @@
 package tech.intellispaces.ixora.okhttp;
 
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(OkHttpPortDomain.class)
 public interface OkHttpPortAssistantCustomizer {

@@ -2,11 +2,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>tech.intellispaces</groupId>
+        <groupId>tech.intellispaces.commons</groupId>
         <artifactId>intellispaces-parent-pom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>tech.intellispaces.reflections.ixora</groupId>
     <artifactId>intellispaces-ixora-ontology-parent</artifactId>
     <packaging>pom</packaging>
 
@@ -25,18 +26,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>tech.intellispaces</groupId>
-            <artifactId>intellispaces-jaquarius-annotationprocessor</artifactId>
+            <groupId>tech.intellispaces.reflections</groupId>
+            <artifactId>intellispaces-reflections-annotationprocessor</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>tech.intellispaces</groupId>
-            <artifactId>intellispaces-jaquarius-model</artifactId>
+            <groupId>tech.intellispaces.reflections</groupId>
+            <artifactId>intellispaces-reflections-model</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>tech.intellispaces</groupId>
-            <artifactId>intellispaces-jaquarius-core</artifactId>
+            <groupId>tech.intellispaces.reflections</groupId>
+            <artifactId>intellispaces-reflections-core</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
@@ -44,32 +45,32 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-basic-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-data-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-system-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-rdb-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-internet-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
-                <groupId>tech.intellispaces</groupId>
+                <groupId>tech.intellispaces.reflections.ixora</groupId>
                 <artifactId>intellispaces-ixora-http-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>

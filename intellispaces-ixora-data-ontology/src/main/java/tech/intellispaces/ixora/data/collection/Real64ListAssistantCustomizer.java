@@ -1,6 +1,6 @@
 package tech.intellispaces.ixora.data.collection;
 
-import tech.intellispaces.jaquarius.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(Real64ListDomain.class)
 public interface Real64ListAssistantCustomizer {
