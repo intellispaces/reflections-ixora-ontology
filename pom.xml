@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>tech.intellispaces.reflections.ixora</groupId>
-    <artifactId>intellispaces-ixora-ontology-parent</artifactId>
+    <artifactId>reflections-ixora-ontology-parent</artifactId>
     <packaging>pom</packaging>
 
     <modules>
@@ -46,32 +46,32 @@
         <dependencies>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-basic-ontology</artifactId>
+                <artifactId>reflections-ixora-basic-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-data-ontology</artifactId>
+                <artifactId>reflections-ixora-data-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-system-ontology</artifactId>
+                <artifactId>reflections-ixora-system-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-rdb-ontology</artifactId>
+                <artifactId>reflections-ixora-rdb-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-internet-ontology</artifactId>
+                <artifactId>reflections-ixora-internet-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>tech.intellispaces.reflections.ixora</groupId>
-                <artifactId>intellispaces-ixora-http-ontology</artifactId>
+                <artifactId>reflections-ixora-http-ontology</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>

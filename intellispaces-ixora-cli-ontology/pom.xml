@@ -3,11 +3,11 @@
 
     <parent>
         <groupId>tech.intellispaces.reflections.ixora</groupId>
-        <artifactId>intellispaces-ixora-ontology-parent</artifactId>
+        <artifactId>reflections-ixora-ontology-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>intellispaces-ixora-cli-ontology</artifactId>
+    <artifactId>reflections-ixora-cli-ontology</artifactId>
     <packaging>jar</packaging>
 	
     <build>
@@ -50,15 +50,15 @@
     <dependencies>
         <dependency>
             <groupId>tech.intellispaces.reflections.ixora</groupId>
-            <artifactId>intellispaces-ixora-basic-ontology</artifactId>
+            <artifactId>reflections-ixora-basic-ontology</artifactId>
         </dependency>
         <dependency>
             <groupId>tech.intellispaces.reflections.ixora</groupId>
-            <artifactId>intellispaces-ixora-data-ontology</artifactId>
+            <artifactId>reflections-ixora-data-ontology</artifactId>
         </dependency>
         <dependency>
             <groupId>tech.intellispaces.reflections.ixora</groupId>
-            <artifactId>intellispaces-ixora-system-ontology</artifactId>
+            <artifactId>reflections-ixora-system-ontology</artifactId>
         </dependency>
     </dependencies>
 </project>
