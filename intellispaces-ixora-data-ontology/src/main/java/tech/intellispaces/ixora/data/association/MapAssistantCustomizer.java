@@ -1,7 +1,7 @@
 package tech.intellispaces.ixora.data.association;
 
 import tech.intellispaces.commons.type.Type;
-import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(MapDomain.class)
 public interface MapAssistantCustomizer {

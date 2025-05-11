@@ -1,7 +1,7 @@
 package tech.intellispaces.ixora.data.collection;
 
 import tech.intellispaces.commons.type.Type;
-import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(CollectionDomain.class)
 public interface CollectionAssistantCustomizer {

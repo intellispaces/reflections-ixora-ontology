@@ -1,6 +1,6 @@
 package tech.intellispaces.ixora.internet.uri;
 
-import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(UriDomain.class)
 public interface UriAssistantCustomizer {

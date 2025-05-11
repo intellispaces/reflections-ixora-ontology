@@ -1,6 +1,6 @@
 package tech.intellispaces.ixora.data.association;
 
-import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(PropertiesSetDomain.class)
 public interface PropertiesSetAssistantCustomizer {

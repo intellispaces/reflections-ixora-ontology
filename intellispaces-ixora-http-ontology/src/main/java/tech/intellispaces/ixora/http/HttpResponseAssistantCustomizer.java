@@ -2,7 +2,7 @@ package tech.intellispaces.ixora.http;
 
 import java.io.InputStream;
 
-import tech.intellispaces.reflections.annotation.AssistantCustomizer;
+import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(HttpResponseDomain.class)
 public interface HttpResponseAssistantCustomizer {
