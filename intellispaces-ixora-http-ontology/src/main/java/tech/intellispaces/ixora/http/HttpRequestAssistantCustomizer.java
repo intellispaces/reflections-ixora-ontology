@@ -7,9 +7,9 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(HttpRequestDomain.class)
 public interface HttpRequestAssistantCustomizer {
 
-  UnmovableHttpRequestHandle create(HttpMethod method, Uri requestURI);
+  UnmovableHttpRequestReflection create(HttpMethod method, Uri requestURI);
 
-  default UnmovableHttpRequestHandle create(HttpMethod method, String requestURI){
+  default UnmovableHttpRequestReflection create(HttpMethod method, String requestURI){
     return HttpRequests.create(method, Uris.create(requestURI));
   }
 }

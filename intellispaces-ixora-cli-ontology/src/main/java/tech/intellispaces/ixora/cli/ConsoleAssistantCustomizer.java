@@ -7,5 +7,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(ConsoleDomain.class)
 public interface ConsoleAssistantCustomizer {
 
-  MovableConsoleHandle dummy(PrintStream ps);
+  MovableConsoleReflection dummy(PrintStream ps);
 }

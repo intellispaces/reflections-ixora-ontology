@@ -5,7 +5,7 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(Real64ListDomain.class)
 public interface Real64ListAssistantCustomizer {
 
-  UnmovableReal64ListHandle handleOf(double[] array);
+  UnmovableReal64ListReflection handleOf(double[] array);
 
-  UnmovableReal64ListHandle handleOf(java.util.List<Double> list);
+  UnmovableReal64ListReflection handleOf(java.util.List<Double> list);
 }

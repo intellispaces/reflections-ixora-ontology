@@ -7,23 +7,23 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(HttpResponseDomain.class)
 public interface HttpResponseAssistantCustomizer {
 
-  HttpResponseHandle create(HttpStatusHandle status);
+  HttpResponseReflection create(HttpStatusReflection status);
 
-  HttpResponseHandle create(HttpStatusHandle status, InputStream body);
+  HttpResponseReflection create(HttpStatusReflection status, InputStream body);
 
-  HttpResponseHandle create(HttpStatusHandle status, String body);
+  HttpResponseReflection create(HttpStatusReflection status, String body);
 
-  HttpResponseHandle create(HttpStatusHandle status, byte[] body);
+  HttpResponseReflection create(HttpStatusReflection status, byte[] body);
 
-  default HttpResponseHandle ok(String body) {
+  default HttpResponseReflection ok(String body) {
     return create(HttpStatuses.ok(), body);
   }
 
-  default HttpResponseHandle notFound() {
+  default HttpResponseReflection notFound() {
     return create(HttpStatuses.notFound());
   }
 
-  default HttpResponseHandle notFound(String body) {
+  default HttpResponseReflection notFound(String body) {
     return create(HttpStatuses.notFound(), body);
   }
 }

@@ -6,23 +6,23 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(HttpMethodDomain.class)
 public interface HttpMethodAssistantCustomizer {
 
-  HttpMethodHandle get();
+  HttpMethodReflection get();
 
-  HttpMethodHandle head();
+  HttpMethodReflection head();
 
-  HttpMethodHandle post();
+  HttpMethodReflection post();
 
-  HttpMethodHandle put();
+  HttpMethodReflection put();
 
-  HttpMethodHandle patch();
+  HttpMethodReflection patch();
 
-  HttpMethodHandle delete();
+  HttpMethodReflection delete();
 
-  HttpMethodHandle options();
+  HttpMethodReflection options();
 
-  HttpMethodHandle trace();
+  HttpMethodReflection trace();
 
-  default HttpMethodHandle get(String name) {
+  default HttpMethodReflection get(String name) {
     if (HttpMethodNames.GET.equals(name)) {
       return get();
     } else if (HttpMethodNames.HEAD.equals(name)) {

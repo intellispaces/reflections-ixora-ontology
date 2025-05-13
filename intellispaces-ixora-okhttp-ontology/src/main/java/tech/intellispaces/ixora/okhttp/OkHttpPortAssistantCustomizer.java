@@ -5,7 +5,7 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(OkHttpPortDomain.class)
 public interface OkHttpPortAssistantCustomizer {
 
-  MovableOkHttpPortHandle create();
+  MovableOkHttpPortReflection create();
 
-  MovableOkHttpPortHandle create(OkHttpPortSettings settings);
+  MovableOkHttpPortReflection create(OkHttpPortSettings settings);
 }

@@ -7,7 +7,7 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(ByteInputStreamDomain.class)
 public interface ByteInputStreamAssistantCustomizer {
 
-  MovableByteInputStreamHandle empty();
+  MovableByteInputStreamReflection empty();
 
-  MovableByteInputStreamHandle handleOf(InputStream is);
+  MovableByteInputStreamReflection handleOf(InputStream is);
 }

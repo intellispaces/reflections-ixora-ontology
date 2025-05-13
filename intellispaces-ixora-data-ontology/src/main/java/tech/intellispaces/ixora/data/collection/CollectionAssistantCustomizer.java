@@ -7,22 +7,22 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 public interface CollectionAssistantCustomizer {
 
   /**
-   * Returns unmovable handle to Java list.
+   * Returns unmovable reflection of the Java list.
    *
    * @param list the origin collection.
    * @param elementClass the collection elements class.
-   * @return the handle to collection.
+   * @return the reflection.
    * @param <E> the element type.
    */
-  <E> UnmovableCollectionHandle<E> handleOf(java.util.List<E> list, Class<E> elementClass);
+  <E> UnmovableCollectionReflection<E> handleOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
-   * Returns unmovable handle to Java list.
+   * Returns unmovable reflection of the Java list.
    *
    * @param list the origin collection.
    * @param elementType the collection elements type.
-   * @return the handle to collection.
+   * @return the reflection.
    * @param <E> the element type.
    */
-  <E> UnmovableCollectionHandle<E> handleOf(java.util.List<E> list, Type<E> elementType);
+  <E> UnmovableCollectionReflection<E> handleOf(java.util.List<E> list, Type<E> elementType);
 }

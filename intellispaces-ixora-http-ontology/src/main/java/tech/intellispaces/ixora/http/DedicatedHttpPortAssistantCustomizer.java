@@ -5,5 +5,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(DedicatedHttpPortDomain.class)
 public interface DedicatedHttpPortAssistantCustomizer {
 
-  MovableDedicatedHttpPortHandle create(String baseUrl, MovableHttpPort httpPort);
+  MovableDedicatedHttpPortReflection create(String baseUrl, MovableHttpPort httpPort);
 }

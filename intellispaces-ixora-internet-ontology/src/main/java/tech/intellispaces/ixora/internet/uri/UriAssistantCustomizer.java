@@ -5,5 +5,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(UriDomain.class)
 public interface UriAssistantCustomizer {
 
-  UriHandle create(String string);
+  UriReflection create(String string);
 }

@@ -6,31 +6,31 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(HttpStatusDomain.class)
 public interface HttpStatusAssistantCustomizer {
 
-  HttpStatusHandle ok();
+  HttpStatusReflection ok();
 
-  HttpStatusHandle created();
+  HttpStatusReflection created();
 
-  HttpStatusHandle accepted();
+  HttpStatusReflection accepted();
 
-  HttpStatusHandle noContent();
+  HttpStatusReflection noContent();
 
-  HttpStatusHandle movedPermanently();
+  HttpStatusReflection movedPermanently();
 
-  HttpStatusHandle notModified();
+  HttpStatusReflection notModified();
 
-  HttpStatusHandle badRequest();
+  HttpStatusReflection badRequest();
 
-  HttpStatusHandle unauthorized();
+  HttpStatusReflection unauthorized();
 
-  HttpStatusHandle forbidden();
+  HttpStatusReflection forbidden();
 
-  HttpStatusHandle notFound();
+  HttpStatusReflection notFound();
 
-  HttpStatusHandle notAcceptable();
+  HttpStatusReflection notAcceptable();
 
-  HttpStatusHandle internalServerError();
+  HttpStatusReflection internalServerError();
 
-  default HttpStatusHandle get(int code) {
+  default HttpStatusReflection get(int code) {
     return switch (code) {
       case HttpStatusCodes.OK -> ok();
       case HttpStatusCodes.CREATED -> created();

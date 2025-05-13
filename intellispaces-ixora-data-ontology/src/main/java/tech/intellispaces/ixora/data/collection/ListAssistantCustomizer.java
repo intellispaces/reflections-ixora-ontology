@@ -6,19 +6,19 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(ListDomain.class)
 public interface ListAssistantCustomizer {
 
-  default UnmovableListHandle<Byte> create(byte value1, byte value2) {
+  default UnmovableListReflection<Byte> create(byte value1, byte value2) {
     return ByteLists.create(value1, value2);
   }
 
-  default UnmovableListHandle<Byte> create(byte value1, byte value2, byte value3) {
+  default UnmovableListReflection<Byte> create(byte value1, byte value2, byte value3) {
     return ByteLists.create(value1, value2, value3);
   }
 
-  default UnmovableListHandle<Integer> create(int value1, int value2) {
+  default UnmovableListReflection<Integer> create(int value1, int value2) {
     return Integer32Lists.create(value1, value2);
   }
 
-  default UnmovableListHandle<Integer> create(int value1, int value2, int value3) {
+  default UnmovableListReflection<Integer> create(int value1, int value2, int value3) {
     return Integer32Lists.create(value1, value2, value3);
   }
 
@@ -29,7 +29,7 @@ public interface ListAssistantCustomizer {
    * @return the handle to list.
    * @param <E> the list element type.
    */
-  <E> UnmovableListHandle<E> empty(Class<E> elementClass);
+  <E> UnmovableListReflection<E> empty(Class<E> elementClass);
 
   /**
    * Returns unmovable handle to Java list.
@@ -39,7 +39,7 @@ public interface ListAssistantCustomizer {
    * @return the handle to list.
    * @param <E> the list element type.
    */
-  <E> UnmovableListHandle<E> handleOf(java.util.List<E> list, Class<E> elementClass);
+  <E> UnmovableListReflection<E> handleOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
    * Returns unmovable handle to Java list.
@@ -49,33 +49,33 @@ public interface ListAssistantCustomizer {
    * @return the handle to list.
    * @param <E> the list element type.
    */
-  <E> UnmovableListHandle<E> handleOf(java.util.List<E> list, Type<E> elementType);
+  <E> UnmovableListReflection<E> handleOf(java.util.List<E> list, Type<E> elementType);
 
-  default UnmovableListHandle<Byte> handleOf(byte[] array) {
+  default UnmovableListReflection<Byte> handleOf(byte[] array) {
     return ByteLists.handleOf(array);
   }
 
-  default UnmovableListHandle<Integer> handleOf(int[] array) {
+  default UnmovableListReflection<Integer> handleOf(int[] array) {
     return Integer32Lists.handleOf(array);
   }
 
-  default UnmovableListHandle<Double> handleOf(double[] array) {
+  default UnmovableListReflection<Double> handleOf(double[] array) {
     return Real64Lists.handleOf(array);
   }
 
-  default UnmovableListHandle<Byte> handleOfByteList(java.util.List<Byte> list) {
+  default UnmovableListReflection<Byte> handleOfByteList(java.util.List<Byte> list) {
     return ByteLists.handleOf(list);
   }
 
-  default UnmovableListHandle<Integer> handleOfIntegerList(java.util.List<Integer> list) {
+  default UnmovableListReflection<Integer> handleOfIntegerList(java.util.List<Integer> list) {
     return Integer32Lists.handleOf(list);
   }
 
-  default UnmovableListHandle<Double> handleOfDoubleList(java.util.List<Double> list) {
+  default UnmovableListReflection<Double> handleOfDoubleList(java.util.List<Double> list) {
     return Real64Lists.handleOf(list);
   }
 
-  default UnmovableListHandle<String> handleOfStringList(java.util.List<String> list) {
+  default UnmovableListReflection<String> handleOfStringList(java.util.List<String> list) {
     return handleOf(list, String.class);
   }
 }

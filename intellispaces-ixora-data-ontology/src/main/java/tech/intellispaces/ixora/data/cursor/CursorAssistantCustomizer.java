@@ -6,5 +6,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(CursorDomain.class)
 public interface CursorAssistantCustomizer {
 
-  <E> CursorHandle<E> create(CollectionDomain<E> collection);
+  <E> CursorReflection<E> create(CollectionDomain<E> collection);
 }
