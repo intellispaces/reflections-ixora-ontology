@@ -9,5 +9,5 @@ public interface ByteInputStreamAssistantCustomizer {
 
   MovableByteInputStreamReflection empty();
 
-  MovableByteInputStreamReflection handleOf(InputStream is);
+  MovableByteInputStreamReflection reflectionOf(InputStream is);
 }

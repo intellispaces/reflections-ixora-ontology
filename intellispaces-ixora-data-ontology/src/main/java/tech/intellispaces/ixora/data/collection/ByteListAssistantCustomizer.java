@@ -9,8 +9,8 @@ public interface ByteListAssistantCustomizer {
 
   UnmovableByteListReflection create(byte value1, byte value2, byte value3);
 
-  UnmovableByteListReflection handleOf(byte[] array);
+  UnmovableByteListReflection reflectionOf(byte[] array);
 
-  UnmovableByteListReflection handleOf(java.util.List<Byte> list);
+  UnmovableByteListReflection reflectionOf(java.util.List<Byte> list);
 }
 

@@ -42,7 +42,7 @@ public interface MapAssistantCustomizer {
       K key3, V value3
   );
 
-  <K, V> UnmovableMapReflection<K, V> handleOf(java.util.Map<K, V> map, Class<K> keyClass, Class<V> valueClass);
+  <K, V> UnmovableMapReflection<K, V> reflectionOf(java.util.Map<K, V> map, Class<K> keyClass, Class<V> valueClass);
 
-  <K, V> UnmovableMapReflection<K, V> handleOf(java.util.Map<K, V> map, Type<K> keyType, Type<V> valueType);
+  <K, V> UnmovableMapReflection<K, V> reflectionOf(java.util.Map<K, V> map, Type<K> keyType, Type<V> valueType);
 }

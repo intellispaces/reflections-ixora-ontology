@@ -39,7 +39,7 @@ public interface ListAssistantCustomizer {
    * @return the handle to list.
    * @param <E> the list element type.
    */
-  <E> UnmovableListReflection<E> handleOf(java.util.List<E> list, Class<E> elementClass);
+  <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
    * Returns unmovable handle to Java list.
@@ -49,33 +49,33 @@ public interface ListAssistantCustomizer {
    * @return the handle to list.
    * @param <E> the list element type.
    */
-  <E> UnmovableListReflection<E> handleOf(java.util.List<E> list, Type<E> elementType);
+  <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
 
-  default UnmovableListReflection<Byte> handleOf(byte[] array) {
-    return ByteLists.handleOf(array);
+  default UnmovableListReflection<Byte> reflectionOf(byte[] array) {
+    return ByteLists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Integer> handleOf(int[] array) {
-    return Integer32Lists.handleOf(array);
+  default UnmovableListReflection<Integer> reflectionOf(int[] array) {
+    return Integer32Lists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Double> handleOf(double[] array) {
-    return Real64Lists.handleOf(array);
+  default UnmovableListReflection<Double> reflectionOf(double[] array) {
+    return Real64Lists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Byte> handleOfByteList(java.util.List<Byte> list) {
-    return ByteLists.handleOf(list);
+  default UnmovableListReflection<Byte> reflectionOfByteList(java.util.List<Byte> list) {
+    return ByteLists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<Integer> handleOfIntegerList(java.util.List<Integer> list) {
-    return Integer32Lists.handleOf(list);
+  default UnmovableListReflection<Integer> reflectionOfIntegerList(java.util.List<Integer> list) {
+    return Integer32Lists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<Double> handleOfDoubleList(java.util.List<Double> list) {
-    return Real64Lists.handleOf(list);
+  default UnmovableListReflection<Double> reflectionOfDoubleList(java.util.List<Double> list) {
+    return Real64Lists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<String> handleOfStringList(java.util.List<String> list) {
-    return handleOf(list, String.class);
+  default UnmovableListReflection<String> reflectionOfStringList(java.util.List<String> list) {
+    return reflectionOf(list, String.class);
   }
 }

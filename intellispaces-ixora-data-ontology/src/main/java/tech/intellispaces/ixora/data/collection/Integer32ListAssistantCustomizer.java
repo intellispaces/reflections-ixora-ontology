@@ -9,7 +9,7 @@ public interface Integer32ListAssistantCustomizer {
 
   UnmovableInteger32ListReflection create(int value1, int value2, int value3);
 
-  UnmovableInteger32ListReflection handleOf(int[] array);
+  UnmovableInteger32ListReflection reflectionOf(int[] array);
 
-  UnmovableInteger32ListReflection handleOf(java.util.List<Integer> list);
+  UnmovableInteger32ListReflection reflectionOf(java.util.List<Integer> list);
 }
