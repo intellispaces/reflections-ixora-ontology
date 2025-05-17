@@ -23,30 +23,30 @@ public interface ListAssistantCustomizer {
   }
 
   /**
-   * Creates empty list and returns unmovable handle to it.
+   * Creates empty list and returns unmovable reflection.
    *
    * @param elementClass the list element class.
-   * @return the handle to list.
+   * @return the list reflection.
    * @param <E> the list element type.
    */
   <E> UnmovableListReflection<E> empty(Class<E> elementClass);
 
   /**
-   * Returns unmovable handle to Java list.
+   * Returns unmovable reflection of the Java list.
    *
    * @param list the list.
    * @param elementClass the list element class.
-   * @return the handle to list.
+   * @return the list reflection.
    * @param <E> the list element type.
    */
   <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
-   * Returns unmovable handle to Java list.
+   * Returns unmovable reflection of the Java list.
    *
    * @param list the list.
    * @param elementType the elements type.
-   * @return the handle to list.
+   * @return the list reflection.
    * @param <E> the list element type.
    */
   <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
