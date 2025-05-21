@@ -14,12 +14,12 @@
         <plugins>
             <plugin>
                 <groupId>tech.intellispaces.reflections</groupId>
-                <artifactId>reflections-generator-maven-plugin</artifactId>
+                <artifactId>reflections-codegenerator-maven-plugin</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <goals>
-                            <goal>reflections-generator</goal>
+                            <goal>reflections-codegenerator</goal>
                         </goals>
                     </execution>
                 </executions>
