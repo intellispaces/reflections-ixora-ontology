@@ -1,7 +1,7 @@
 intellispaces: "0.1"
 ontology:
   domains:
-    tech.intellispaces.ixora.computerlanguage.java.collection:
+    tech.intellispaces.ixora.computerlanguage.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
 
     tech.intellispaces.ixora.computerlanguage.java.r21.java.util.ArrayList:
