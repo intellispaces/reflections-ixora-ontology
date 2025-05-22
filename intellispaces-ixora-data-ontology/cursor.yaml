@@ -2,23 +2,19 @@ intellispaces: "0.1"
 info:
   title: Ixora data space ontology
 ontology:
-  spaces:
-    tech.intellispaces.ixora.data.cursor:
-      id: 9690394e-b754-443b-b9f9-fd5ee6de9b9e
-
   domains:
     tech.intellispaces.ixora.data.cursor.Cursor:
-      id: 3826cfd5-1b2a-4441-86b7-6ff0a9b2a7cd
+      rid: 3826cfd5-1b2a-4441-86b7-6ff0a9b2a7cd
       description: The one-sided cursor
       channels:
         - elementDomain:
-          id: 8816842b-3aa7-4421-b2c5-3ac5b3da9b24
+          rid: 8816842b-3aa7-4421-b2c5-3ac5b3da9b24
           description: The cursor element domain
           target:
             domain: tech.intellispaces.ixora.basic.Domain
             alias: E
         - collection:
-          id: 4d445fd4-4088-49a5-b0ba-fffd8c443b13
+          rid: 4d445fd4-4088-49a5-b0ba-fffd8c443b13
           target:
             domain: tech.intellispaces.ixora.data.collection.Collection
             constraints:
@@ -26,11 +22,11 @@ ontology:
                   - $this thru elementDomain
                   - $base thru elementDomain
         - hasNext:
-          id: 493c84b9-36cc-4312-b887-a37f8e21123e
+          rid: 493c84b9-36cc-4312-b887-a37f8e21123e
           name: HasCursorNextElementChannel
           target.domain: tech.intellispaces.ixora.basic.Boolean
         - next:
-          id: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
+          rid: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
           name: CursorNextElementChannel
           description: Moves cursor to the next item in the collection and return next item
           target:
@@ -41,7 +37,7 @@ ontology:
           allowedTraverses: [ MappingOfMoving ]
 
     tech.intellispaces.ixora.data.cursor.ByteCursor:
-      id: d280760e-013f-4dbb-a817-8b784561d058
+      rid: d280760e-013f-4dbb-a817-8b784561d058
       superDomains:
         - tech.intellispaces.ixora.data.cursor.Cursor:
           constraints:
@@ -50,11 +46,11 @@ ontology:
                 - $base thru elementDomain
       channels:
         - elementDomain:
-          id: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4
+          rid: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4
           description: The cursor element domain
           target:
             domain: tech.intellispaces.ixora.basic.Domain
             instance: tech.intellispaces.ixora.data.Byte
         - next:
-          id: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
+          rid: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
           target.domain: tech.intellispaces.ixora.data.Byte
