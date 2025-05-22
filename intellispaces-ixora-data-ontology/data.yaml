@@ -6,6 +6,7 @@ imports:
   - "cursor.yaml"
   - "stream.yaml"
   - "association.yaml"
+  - "json.yaml"
   - "yaml.yaml"
 
 ontology:
