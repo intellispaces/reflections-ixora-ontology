@@ -31,9 +31,6 @@ ontology:
           target:
             domain: tech.intellispaces.ixora.basic.Domain
             alias: T
-        - alias: rid
-          rid: 5d1bf548-23cf-4e4b-8e55-cd9979f73635
-          target.domain: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.basic.Number:
       rid: b4fef548-b446-4cae-ae98-63883a6326b8
