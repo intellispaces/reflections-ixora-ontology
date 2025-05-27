@@ -1,11 +1,11 @@
 intellispaces: "0.1"
 ontology:
   domains:
+    tech.intellispaces.ixora.java.ObjectContractBySupplierSourceCode:
+      rid: f0125837-f702-440f-97a5-7a8f6b27c936
+
     tech.intellispaces.ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
-
-    tech.intellispaces.ixora.java.collection.ArrayListContractBySourceCode:
-      rid: f0125837-f702-440f-97a5-7a8f6b27c936
 
     tech.intellispaces.ixora.java.r21.java.util.ArrayList:
       rid: 0314e65f-7077-462f-ad77-dc8eda2f1043
