@@ -4,6 +4,20 @@ ontology:
     tech.intellispaces.ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
 
+    tech.intellispaces.ixora.java.ObjectGraph:
+      description: The internal graph of the Java object
+      rid: 4b60546b-85f7-4790-ac8f-de777026c590
+
+    tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView:
+      description: The simple graph-shaped Java object reflection view
+      rid: 3e045a8b-1bfa-434d-bad3-87f3eeabf82f
+      superDomains:
+        - tech.intellispaces.ixora.internet.WebReflectionView
+      channels:
+        - asWebReflectionView:
+          rid: aebb9456-2cda-462e-a787-ca5810310811
+          target.domain: tech.intellispaces.ixora.internet.WebReflectionView
+
     tech.intellispaces.ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
 
