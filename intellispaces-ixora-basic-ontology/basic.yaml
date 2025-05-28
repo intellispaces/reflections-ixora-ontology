@@ -56,3 +56,6 @@ ontology:
 
     tech.intellispaces.ixora.basic.Boolean:
       rid: 64c08bfa-e4d3-411d-a465-0aec0ce3849e
+
+    tech.intellispaces.ixora.basic.ReflectionView:
+      rid: da56844f-46ec-4eb6-9df2-3e028188f4c3
