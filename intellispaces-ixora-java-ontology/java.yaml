@@ -7,6 +7,9 @@ ontology:
         - simpleGraphShapedJavaObjectWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
           target.domain: tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView
+        - objectGraph:
+          rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
+          target.domain: tech.intellispaces.ixora.java.ObjectGraph
 
     tech.intellispaces.ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
@@ -14,6 +17,26 @@ ontology:
     tech.intellispaces.ixora.java.ObjectGraph:
       description: The internal graph of the Java object
       rid: 4b60546b-85f7-4790-ac8f-de777026c590
+      channels:
+        - nodes:
+          rid: 90c4184a-1158-463e-b5f2-be70a3102859
+          target:
+            domain: tech.intellispaces.ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: tech.intellispaces.ixora.basic.Domain
+                  name: tech.intellispaces.ixora.java.ObjectGraphNode
+
+    tech.intellispaces.ixora.java.ObjectGraphNode:
+      rid: 662e6c5e-033f-4b8f-8d32-1ed0f614b965
+      channels:
+        - label:
+          rid: 9430f6f1-8ec3-4417-a212-559a282c4405
+          target.domain: tech.intellispaces.ixora.basic.String
 
     tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView:
       description: The simple graph-shaped Java object reflection view
