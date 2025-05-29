@@ -3,6 +3,10 @@ ontology:
   domains:
     tech.intellispaces.ixora.java.JavaObject:
       rid: f20a7a3c-0e85-48d2-a6bb-a7b92e99690d
+      channels:
+        - simpleGraphShapedJavaObjectWebView:
+          rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
+          target.domain: tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView
 
     tech.intellispaces.ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
@@ -32,9 +36,3 @@ ontology:
         - asJavaObject:
           rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
           target.domain: tech.intellispaces.ixora.java.JavaObject
-
-  channels:
-    tech.intellispaces.ixora.java.JavaObjectToSimpleGraphShapedJavaObjectWebView:
-      rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
-      source.domain: tech.intellispaces.ixora.java.JavaObject
-      target.domain: tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView
