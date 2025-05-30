@@ -17,7 +17,12 @@ ontology:
     tech.intellispaces.ixora.java.ObjectGraph:
       description: The internal graph of the Java object
       rid: 4b60546b-85f7-4790-ac8f-de777026c590
+      superDomains:
+        - tech.intellispaces.ixora.data.Dataset
       channels:
+        - asDataset:
+          rid: dee22b90-067f-462b-8a02-42d8d7a828d1
+          target.domain: tech.intellispaces.ixora.data.Dataset
         - nodes:
           rid: 90c4184a-1158-463e-b5f2-be70a3102859
           target:
@@ -33,10 +38,30 @@ ontology:
 
     tech.intellispaces.ixora.java.ObjectGraphNode:
       rid: 662e6c5e-033f-4b8f-8d32-1ed0f614b965
+      superDomains:
+        - tech.intellispaces.ixora.data.Dataset
       channels:
+        - asDataset:
+          rid: bb7849e3-b1ae-459a-b0d3-cea62039d37c
+          target.domain: tech.intellispaces.ixora.data.Dataset
         - label:
           rid: 9430f6f1-8ec3-4417-a212-559a282c4405
           target.domain: tech.intellispaces.ixora.basic.String
+        - typename:
+          rid: 0e0a993d-37bb-4cc1-9336-f6ad7fc01bfc
+          target.domain: tech.intellispaces.ixora.basic.String
+
+    tech.intellispaces.ixora.java.ObjectGraphIntegerNode:
+      rid: 6a89765b-e455-424b-a535-f33fbf670a5b
+      superDomains:
+        - tech.intellispaces.ixora.java.ObjectGraphNode
+      channels:
+        - asObjectGraphNode:
+          rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
+          target.domain: tech.intellispaces.ixora.java.ObjectGraphNode
+        - value:
+          rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
+          target.domain: tech.intellispaces.ixora.basic.IntegerNumber
 
     tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView:
       description: The simple graph-shaped Java object reflection view

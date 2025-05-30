@@ -22,10 +22,14 @@ ontology:
       rid: 411ebc42-cdb1-425f-b07e-9e619bdbc666
       superDomains:
         - tech.intellispaces.ixora.basic.ReflectionView
+        - tech.intellispaces.ixora.data.Dataset
       channels:
         - asReflectionView:
           rid: 521d909a-2396-4f80-9965-83facbbdc835
           target.domain: tech.intellispaces.ixora.basic.ReflectionView
+        - asDataset:
+          rid: f9ca7127-a5d4-4c4f-9cf8-1ff421cd0f69
+          target.domain: tech.intellispaces.ixora.data.Dataset
         - htmlString:
           rid: b5718f85-66f9-4328-aca5-9f14fc4e0d69
           name: WebReflectionViewToHtmlStringChannel
