@@ -61,7 +61,7 @@ ontology:
           target.domain: tech.intellispaces.ixora.java.ObjectGraphNode
         - value:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
-          target.domain: tech.intellispaces.ixora.basic.IntegerNumber
+          target.domain: tech.intellispaces.ixora.data.Integer32
 
     tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView:
       description: The simple graph-shaped Java object reflection view
