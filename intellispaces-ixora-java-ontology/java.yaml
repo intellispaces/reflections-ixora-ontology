@@ -63,8 +63,8 @@ ontology:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
           target.domain: tech.intellispaces.ixora.data.Integer32
 
-    tech.intellispaces.ixora.java.SimpleGraphShapedJavaObjectWebView:
-      description: The simple graph-shaped Java object reflection view
+    tech.intellispaces.ixora.java.ErLikeJavaObjectGraphWebView:
+      description: The simple ER-like graph web view of Java object
       rid: 3e045a8b-1bfa-434d-bad3-87f3eeabf82f
       superDomains:
         - tech.intellispaces.ixora.internet.WebReflectionView
