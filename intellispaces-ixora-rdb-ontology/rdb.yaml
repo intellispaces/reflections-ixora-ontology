@@ -4,75 +4,75 @@ info:
 
 ontology:
   domains:
-    tech.intellispaces.ixora.rdb.query.ParameterizedNamedQuery:
+    ixora.rdb.query.ParameterizedNamedQuery:
       rid: db6fbe62-df10-41d8-8192-f3324af11ef4
       description: The parameterized SQL query with named variables
       superDomains:
-        - tech.intellispaces.ixora.data.Dataset
+        - ixora.data.Dataset
       channels:
         - asDataset:
           rid: 777d26e9-6001-46f5-95ea-c3efa6b1ba97
-          target.domain: tech.intellispaces.ixora.data.Dataset
+          target.domain: ixora.data.Dataset
         - query:
           rid: 6cd3d0ac-72d5-4f5a-bb15-e7d8eb4eeefe
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - paramNames:
           rid: 643c6816-45d7-4d9a-b09a-3f6fcb32195c
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.basic.String
+                  domain: ixora.basic.Domain
+                  name: ixora.basic.String
 
-    tech.intellispaces.ixora.rdb.datasource.DataSourceSettings:
+    ixora.rdb.datasource.DataSourceSettings:
       rid: a0d2d709-9af1-4bcc-8a90-c3c828585198
       channels:
         - driverClassName:
           rid: 04006c73-1ca9-46f3-9a5a-f8e5e1ab59e7
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - url:
           rid: c35bb6bf-8e65-49df-86aa-4c07faee4d6a
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - username:
           rid: eac366a8-f629-4589-a9a4-a30ee3abec8d
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - password:
           rid: b254be32-7b81-4092-b821-4803c3af770d
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
 
-    tech.intellispaces.ixora.rdb.datasource.DataSource:
+    ixora.rdb.datasource.DataSource:
       rid: 8a1c0f79-78f2-4757-8f30-8a0fdeea4b93
       channels:
         - settings:
           rid: ea808587-a507-40e1-9091-0c623dcb6d74
-          target.domain: tech.intellispaces.ixora.rdb.datasource.DataSourceSettings
+          target.domain: ixora.rdb.datasource.DataSourceSettings
         - getConnection:
           rid: 7465cd7c-94bd-4aac-b220-1520907c4e9b
           name: DataSourceToConnectionChannel
           target:
-            domain: tech.intellispaces.ixora.rdb.datasource.Connection
+            domain: ixora.rdb.datasource.Connection
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.rdb.datasource.Connection:
+    ixora.rdb.datasource.Connection:
       rid: f72b8a37-6f1e-4c98-93b5-9d5bb959cb80
       description: The database connection. The connection is also an outbound module port.
       superDomains:
-        - tech.intellispaces.ixora.system.OutboundModulePort
+        - ixora.system.OutboundModulePort
       channels:
         - asOutboundModulePort:
           rid: faaa63eb-2c50-442e-a6d3-e5aff1ff2716
-          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
+          target.domain: ixora.system.OutboundModulePort
         - createStatement:
           rid: b7c73781-0441-4ef7-b5b3-f122b5bccd29
           name: ConnectionToStatementChannel
           target:
-            domain: tech.intellispaces.ixora.rdb.statement.Statement
+            domain: ixora.rdb.statement.Statement
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
         - createPreparedStatement:
@@ -80,62 +80,62 @@ ontology:
           name: ConnectionToPreparedStatementChannel
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.rdb.statement.PreparedStatement
+            domain: ixora.rdb.statement.PreparedStatement
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
         - disableAutoCommit:
           rid: 0f840bdd-29eb-4847-9209-199f13de78a8
-          target.domain: tech.intellispaces.ixora.rdb.datasource.Connection
+          target.domain: ixora.rdb.datasource.Connection
           allowedTraverses: [ Moving ]
         - commit:
           rid: 7e5ce719-8cb6-452f-a1e2-a0f08fc786a3
-          target.domain: tech.intellispaces.ixora.rdb.datasource.Connection
+          target.domain: ixora.rdb.datasource.Connection
           allowedTraverses: [ Moving ]
         - rollback:
           rid: f2b08c59-c52e-4915-9d14-ac6352e2fe23
-          target.domain: tech.intellispaces.ixora.rdb.datasource.Connection
+          target.domain: ixora.rdb.datasource.Connection
           allowedTraverses: [ Moving ]
         - close:
           rid: 33512973-f011-4ab8-81b9-0cdf4ba7b082
-          target.domain: tech.intellispaces.ixora.rdb.datasource.Connection
+          target.domain: ixora.rdb.datasource.Connection
           allowedTraverses: [ Moving ]
 
-    tech.intellispaces.ixora.rdb.statement.ResultSet:
+    ixora.rdb.statement.ResultSet:
       rid: 80898b0a-6a68-4693-bc86-17d7c5bb6a64
       description: The result set
       channels:
         - next:
           rid: a0b049ef-9ff2-4611-95b4-b500673afa55
-          target.domain: tech.intellispaces.ixora.basic.Boolean
+          target.domain: ixora.basic.Boolean
           allowedTraverses: [ MappingOfMoving ]
         - integer32Value:
           name: ResultSetToInteger32ValueByNameChannel
           rid: 77aeebe4-6c9f-4067-a1be-fe7633558a13
           qualifiers:
             - name:
-              target.domain: tech.intellispaces.ixora.basic.String
-          target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.basic.String
+          target.domain: ixora.data.Integer32
         - stringValue:
           name: ResultSetToStringValueByNameChannel
           rid: 0fb39956-45e1-4b78-afdf-aa0b4922ed86
           qualifiers:
             - name:
-              target.domain: tech.intellispaces.ixora.basic.String
-          target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
+          target.domain: ixora.basic.String
         - dataValue:
           name: ResultSetToDataChannel
           rid: d280d0b1-16d9-4d3a-a172-a0ad39c63de7
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.basic.Domain
+                domain: ixora.basic.Domain
                 alias: D
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $dataValue thru dataType
         - dataList:
           name: ResultSetToDataListChannel
@@ -143,10 +143,10 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.basic.Domain
+                domain: ixora.basic.Domain
                 alias: D
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence.paths:
@@ -154,7 +154,7 @@ ontology:
                   - $dataList thru dataType
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.rdb.statement.Statement:
+    ixora.rdb.statement.Statement:
       rid: 24c32319-367b-4d90-8ff0-307532d7ac0d
       description: The statement
       channels:
@@ -162,70 +162,70 @@ ontology:
           rid: b1d7a815-567d-4b0d-a252-1a769212fb5b
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.rdb.statement.ResultSet
+            domain: ixora.rdb.statement.ResultSet
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.rdb.statement.PreparedStatement:
+    ixora.rdb.statement.PreparedStatement:
       rid: d3660036-a556-4ae1-a322-4a60d4c3b2e2
       description: The prepared statement
       channels:
         - executeQuery:
           rid: b1d7a815-567d-4b0d-a252-1a769212fb5b
           target:
-            domain: tech.intellispaces.ixora.rdb.statement.ResultSet
+            domain: ixora.rdb.statement.ResultSet
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
         - setInt:
           rid: 6edca404-da35-4b0f-b249-08964c685e81
           qualifiers:
             - parameterIndex:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.data.Integer32
             - value:
-              target.domain: tech.intellispaces.ixora.data.Integer32
-          target.domain: tech.intellispaces.ixora.rdb.statement.PreparedStatement
+              target.domain: ixora.data.Integer32
+          target.domain: ixora.rdb.statement.PreparedStatement
           allowedTraverses: [ Moving ]
 
-    tech.intellispaces.ixora.rdb.transaction.TransactionFactory:
+    ixora.rdb.transaction.TransactionFactory:
       rid: 1931adca-ed62-4b0f-af4f-6d7dee9b7822
       description: The transaction factory
       channels:
         - dataSource:
           rid: 42c35449-eb32-4683-ba40-9ded4a1d38f4
-          target.domain: tech.intellispaces.ixora.rdb.datasource.DataSource
+          target.domain: ixora.rdb.datasource.DataSource
         - getTransaction:
           rid: 03e420fb-2cf3-49ea-a1f3-8adff39e738b
           name: TransactionFactoryToTransactionChannel
           target:
-            domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+            domain: ixora.rdb.transaction.Transaction
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.rdb.transaction.Transaction:
+    ixora.rdb.transaction.Transaction:
       rid: 8f174862-2fab-48cb-af12-b8e264f19257
       description: The database transaction
       channels:
         - connection:
           rid: 038c69e9-7231-49e1-9a71-156018ea026b
-          target.domain: tech.intellispaces.ixora.rdb.datasource.Connection
+          target.domain: ixora.rdb.datasource.Connection
         - commit:
           rid: 8f3720d1-f451-41c0-bac6-d9d1c4c11448
-          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+          target.domain: ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
         - rollback:
           rid: 68ea2724-07be-463f-8f61-b9102a91efea
-          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+          target.domain: ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
         - query:
           rid: 580e6c95-881e-47f3-a43e-bce3dd2c628d
           name: TransactionQueryChannel
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.rdb.statement.ResultSet
+            domain: ixora.rdb.statement.ResultSet
             immobilityType: Movable
         - queryData:
           rid: 562a0437-6e55-492b-ac35-70ca1ddf57f0
@@ -233,12 +233,12 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.basic.Domain
+                domain: ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.cursor.Cursor
+            domain: ixora.data.cursor.Cursor
             immobilityType: Movable
             constraints:
               - equivalence.paths:
@@ -250,14 +250,14 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.basic.Domain
+                domain: ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $fetchData thru dataType
             immobilityType: Unmovable
         - fetchData:
@@ -266,56 +266,56 @@ ontology:
           qualifiers:
             - dataType:
               target:
-                domain: tech.intellispaces.ixora.basic.Domain
+                domain: ixora.basic.Domain
                 alias: D
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
             - params:
               target:
-                domain: tech.intellispaces.ixora.data.association.Map
+                domain: ixora.data.association.Map
                 constraints:
                   - equivalence:
                     paths:
                       - $this thru keyDomain
                     instance:
-                      domain: tech.intellispaces.ixora.basic.Domain
-                      name: tech.intellispaces.ixora.basic.String
+                      domain: ixora.basic.Domain
+                      name: ixora.basic.String
                   - equivalence:
                     paths:
                       - $this thru valueDomain
                     instance:
-                      domain: tech.intellispaces.ixora.basic.Domain
-                      name: tech.intellispaces.ixora.basic.Point
+                      domain: ixora.basic.Domain
+                      name: ixora.basic.Point
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $fetchData thru dataType
             immobilityType: Unmovable
         - modify:
           rid: 5dce771b-2908-444b-ba15-6c0b2167fe33
           qualifiers:
             - query:
-              target.domain: tech.intellispaces.ixora.basic.String
-          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+              target.domain: ixora.basic.String
+          target.domain: ixora.rdb.transaction.Transaction
           allowedTraverses: [ Moving ]
 
-    tech.intellispaces.ixora.rdb.entity.TransactionalEntity:
+    ixora.rdb.entity.TransactionalEntity:
       rid: 51133fde-65c6-4a0d-abed-770545dd47a9
       description: The persisted entity associated with a specific transaction
       channels:
         - transaction:
           rid: 575e4c19-3b0b-4d89-b481-127ea2f861ac
-          target.domain: tech.intellispaces.ixora.rdb.transaction.Transaction
+          target.domain: ixora.rdb.transaction.Transaction
         - detach:
           rid: 61afe369-2e1c-42e2-a85e-0018e1b88df4
           name: DetachEntityChannel
-          target.domain: tech.intellispaces.ixora.rdb.entity.TransactionalEntity
+          target.domain: ixora.rdb.entity.TransactionalEntity
           allowedTraverses: [ Moving ]
 
   channels:
-    tech.intellispaces.ixora.rdb.query.CastStringToParameterizedNamedQuery:
+    ixora.rdb.query.CastStringToParameterizedNamedQuery:
       rid: d3673390-b743-434a-b7c9-f7dc64976387
       source:
-        domain: tech.intellispaces.ixora.basic.String
-      target.domain: tech.intellispaces.ixora.rdb.query.ParameterizedNamedQuery
+        domain: ixora.basic.String
+      target.domain: ixora.rdb.query.ParameterizedNamedQuery

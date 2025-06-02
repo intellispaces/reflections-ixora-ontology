@@ -1,11 +1,11 @@
 intellispaces: "0.1"
 ontology:
   domains:
-    tech.intellispaces.ixora.jetty.JettyServerPort:
+    ixora.jetty.JettyServerPort:
       rid: 843b0222-dc2c-4a12-a75d-f98eef75bb1a
       superDomains:
-        - tech.intellispaces.ixora.http.InboundHttpPort
+        - ixora.http.InboundHttpPort
       channels:
         - asInboundHttpPort:
           rid: 3e687bb4-d4b2-4af8-91ac-0f7bb32ebb36
-          target.domain: tech.intellispaces.ixora.http.InboundHttpPort
+          target.domain: ixora.http.InboundHttpPort

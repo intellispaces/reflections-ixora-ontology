@@ -3,70 +3,70 @@ info:
   title: Ixora CLI space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.cli.InboundConsole:
+    ixora.cli.InboundConsole:
       rid: dd50f287-101f-4ed1-9745-2b591746a67e
       superDomains:
-        - tech.intellispaces.ixora.system.InboundModulePort:
+        - ixora.system.InboundModulePort:
       channels:
         - asInboundModulePort:
           rid: 11ed21bc-39fd-481c-9edb-35207e734e20
-          target.domain: tech.intellispaces.ixora.system.InboundModulePort
+          target.domain: ixora.system.InboundModulePort
 
-    tech.intellispaces.ixora.cli.OutboundConsole:
+    ixora.cli.OutboundConsole:
       rid: e52eb6cf-bfd9-4503-a15f-19b640023bd4
       superDomains:
-        - tech.intellispaces.ixora.system.OutboundModulePort:
+        - ixora.system.OutboundModulePort:
       channels:
         - print:
           rid: e09d266d-9568-44fd-8ed2-cf27da326a37
-          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+          target.domain: ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           allowedTraverses: [ Moving ]
         - print:
           rid: 5c0ac95a-a8f9-4a77-a6f7-7897659e80b1
-          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+          target.domain: ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.data.Integer32
           allowedTraverses: [ Moving ]
         - println:
           rid: 0df1747b-b0dc-4a34-9584-54d06af4ffe2
-          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+          target.domain: ixora.cli.OutboundConsole
           qualifiers:
             - string:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           allowedTraverses: [ Moving ]
         - println:
           rid: 1e2ffbd9-dd81-4fa5-8658-93052623c1b9
-          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+          target.domain: ixora.cli.OutboundConsole
           qualifiers:
             - number:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.data.Integer32
           allowedTraverses: [ Moving ]
         - asOutboundModulePort:
           rid: 8c8780e7-fe51-4345-ab94-25c93860de34
-          target.domain: tech.intellispaces.ixora.system.OutboundModulePort
+          target.domain: ixora.system.OutboundModulePort
 
-    tech.intellispaces.ixora.cli.Console:
+    ixora.cli.Console:
       rid: ac5ad94b-0d0b-4bc1-b0af-a32c65a28793
       superDomains:
-        - tech.intellispaces.ixora.cli.InboundConsole
-        - tech.intellispaces.ixora.cli.OutboundConsole
+        - ixora.cli.InboundConsole
+        - ixora.cli.OutboundConsole
       channels:
         - asInboundConsole:
           rid: 8b8fef3d-ec2b-457b-a3bb-83a5784b2f9b
-          target.domain: tech.intellispaces.ixora.cli.InboundConsole
+          target.domain: ixora.cli.InboundConsole
         - asOutboundConsole:
           rid: 869df49a-9ff7-4ab2-9398-2609150cf304
-          target.domain: tech.intellispaces.ixora.cli.OutboundConsole
+          target.domain: ixora.cli.OutboundConsole
 
-    tech.intellispaces.ixora.cli.DummyConsole:
+    ixora.cli.DummyConsole:
       rid: ff413efb-bbd9-454e-8441-3460026b46ed
       superDomains:
-        - tech.intellispaces.ixora.cli.Console
+        - ixora.cli.Console
       channels:
         - asConsole:
           rid: 78ea7429-7ec6-48fc-a213-16210fd0c3db
-          target.domain: tech.intellispaces.ixora.cli.Console
+          target.domain: ixora.cli.Console

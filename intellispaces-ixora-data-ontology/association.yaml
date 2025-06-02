@@ -3,45 +3,45 @@ info:
   title: Ixora data space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.data.association.KeyValuePair:
+    ixora.data.association.KeyValuePair:
       rid: 8f00a2aa-f70d-4064-b517-e7f15642c805
       channels:
         - keyDomain:
           rid: ac7048b7-9967-4eba-877b-019d19e16d05
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: K
         - valueDomain:
           rid: 9e331b76-deae-4411-98ad-ca402a747a2e
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: V
 
-    tech.intellispaces.ixora.data.association.Map:
+    ixora.data.association.Map:
       rid: 7fe5d4bb-a298-45a2-acc8-75b6bb4cb2f0
       channels:
         - keyDomain:
           rid: b5bbd1cb-e212-4f82-a801-3080738f5647
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: K
         - valueDomain:
           rid: da55447c-4158-4d56-bee1-ab019c7f9fdb
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: V
         - keyValuePairs:
           rid: b766a35c-b544-4b84-9b5e-51dc8386e3cd
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.data.association.KeyValuePair
+                  domain: ixora.basic.Domain
+                  name: ixora.data.association.KeyValuePair
                   constraints:
                     - equivalence.paths:
                         - $this thru keyDomain
@@ -56,9 +56,9 @@ ontology:
               target:
                 constraints:
                   - equivalence.paths:
-                      - $this to tech.intellispaces.ixora.basic.Domain
+                      - $this to ixora.basic.Domain
                       - $base thru keyDomain
-          target.domain: tech.intellispaces.ixora.basic.Boolean
+          target.domain: ixora.basic.Boolean
         - value:
           rid: 7b577c92-040c-4974-9ac9-8547d974dfdd
           qualifiers:
@@ -66,15 +66,15 @@ ontology:
               target:
                 constraints:
                   - equivalence.paths:
-                      - $this to tech.intellispaces.ixora.basic.Domain
+                      - $this to ixora.basic.Domain
                       - $base thru keyDomain
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $base thru valueDomain
 
-    tech.intellispaces.ixora.data.association.PropertiesSet:
+    ixora.data.association.PropertiesSet:
       rid: eccd18a1-ec7a-4949-9acd-2b2fa9576da1
       description: The properties set is a hierarchical set of named properties.
       channels:
@@ -83,115 +83,115 @@ ontology:
           description: The channel to an unqualified value. In fact, the value can be an 32-bit integer value, a 64-bit float value, a list, etc.
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.basic.Point
+            domain: ixora.basic.Point
         - integer32Value:
           rid: 4e01aa7a-3fd4-4509-9387-921c30ecf5f9
           description: The channel to a 32-bit integer value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.Integer32
+            domain: ixora.data.Integer32
         - real64Value:
           rid: ffcd77b5-032f-49db-8dfd-c792a19d1005
           description: The channel to a 64-bit float value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.Real64
+            domain: ixora.data.Real64
         - stringValue:
           rid: 4cc73514-1a59-4560-ba50-7045360b853c
           description: The channel to a string value
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.basic.String
+            domain: ixora.basic.String
         - propertiesSetValue:
           rid: e033ddc5-7f4d-4bbd-8958-8b9c34fdfc95
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.association.PropertiesSet
+            domain: ixora.data.association.PropertiesSet
         - integer32List:
           rid: e8e1fb09-b22e-4e66-bee5-34db85e4ada3
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.data.Integer32
+                  domain: ixora.basic.Domain
+                  name: ixora.data.Integer32
         - real64List:
           rid: 101bf792-aa89-4114-ba58-26d78487a4a5
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.data.Real64
+                  domain: ixora.basic.Domain
+                  name: ixora.data.Real64
         - stringList:
           rid: f6d6c228-cfe0-4bcd-80b8-b0bd23e606c7
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.basic.String
+                  domain: ixora.basic.Domain
+                  name: ixora.basic.String
         - propertiesSetList:
           rid: b48ef2de-6bbc-4c9c-a0b1-e3f1c6ca33d1
           qualifiers:
             - path:
-              target.domain: tech.intellispaces.ixora.basic.String
+              target.domain: ixora.basic.String
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.data.association.PropertiesSet
+                  domain: ixora.basic.Domain
+                  name: ixora.data.association.PropertiesSet
         - size:
           rid: d1b7dcf8-b8d5-41d0-8d19-6faee74a852c
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: ixora.data.Integer32
 
   channels:
-    tech.intellispaces.ixora.data.association.PropertiesSetToData:
+    ixora.data.association.PropertiesSetToData:
       rid: cafc0a2e-a1da-44e1-997f-2db62f7e385c
-      source.domain: tech.intellispaces.ixora.data.association.PropertiesSet
+      source.domain: ixora.data.association.PropertiesSet
       qualifiers:
         - dataType:
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: D
       target:
         constraints:
           - equivalence.paths:
-              - $this to tech.intellispaces.ixora.basic.Domain
+              - $this to ixora.basic.Domain
               - $base thru dataType
