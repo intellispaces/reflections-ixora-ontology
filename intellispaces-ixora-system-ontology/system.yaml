@@ -3,38 +3,38 @@ info:
   title: Ixora system space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.system.Unit:
+    ixora.system.Unit:
       rid: bf47fd9e-90d6-4f0f-8aad-0a1d22fbdd00
       description: The system unit
 
-    tech.intellispaces.ixora.system.Module:
+    ixora.system.Module:
       rid: ee505167-e6b9-44e1-901a-9a47244a7368
       description: The system module
 
-    tech.intellispaces.ixora.system.ModulePort:
+    ixora.system.ModulePort:
       rid: 9c48d431-b4fb-4613-92ad-84478331a57f
       description: The system module port
       channels:
         - module:
           rid: ead777d3-38b0-46c3-9da1-a9ea3cb3b9f7
-          target.domain: tech.intellispaces.ixora.system.Module
+          target.domain: ixora.system.Module
 
-    tech.intellispaces.ixora.system.InboundModulePort:
+    ixora.system.InboundModulePort:
       rid: b923e0b3-58fc-4bff-be34-8555049604dd
       description: The system module inbound port
       superDomains:
-        - tech.intellispaces.ixora.system.ModulePort:
+        - ixora.system.ModulePort:
       channels:
         - asModulePort:
           rid: e7d5352b-cc31-47b8-ad05-7c472ea0d9dd
-          target.domain: tech.intellispaces.ixora.system.ModulePort
+          target.domain: ixora.system.ModulePort
 
-    tech.intellispaces.ixora.system.OutboundModulePort:
+    ixora.system.OutboundModulePort:
       rid: 002efd3a-d5ec-4fd0-954a-07cd93e45786
       description: The system module outbound port
       superDomains:
-        - tech.intellispaces.ixora.system.ModulePort:
+        - ixora.system.ModulePort:
       channels:
         - asModulePort:
           rid: b044f77f-5a71-4c03-a316-b6928e35fa0d
-          target.domain: tech.intellispaces.ixora.system.ModulePort
+          target.domain: ixora.system.ModulePort

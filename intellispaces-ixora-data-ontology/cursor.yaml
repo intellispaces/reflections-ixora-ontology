@@ -3,7 +3,7 @@ info:
   title: Ixora data space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.data.cursor.Cursor:
+    ixora.data.cursor.Cursor:
       rid: 3826cfd5-1b2a-4441-86b7-6ff0a9b2a7cd
       description: The one-sided cursor
       channels:
@@ -11,12 +11,12 @@ ontology:
           rid: 8816842b-3aa7-4421-b2c5-3ac5b3da9b24
           description: The cursor element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: E
         - collection:
           rid: 4d445fd4-4088-49a5-b0ba-fffd8c443b13
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
@@ -24,7 +24,7 @@ ontology:
         - hasNext:
           rid: 493c84b9-36cc-4312-b887-a37f8e21123e
           name: HasCursorNextElementChannel
-          target.domain: tech.intellispaces.ixora.basic.Boolean
+          target.domain: ixora.basic.Boolean
         - next:
           rid: 2bb07e04-f49d-4a13-85c3-f86f9a00f60c
           name: CursorNextElementChannel
@@ -32,14 +32,14 @@ ontology:
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $base thru elementDomain
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.data.cursor.ByteCursor:
+    ixora.data.cursor.ByteCursor:
       rid: d280760e-013f-4dbb-a817-8b784561d058
       superDomains:
-        - tech.intellispaces.ixora.data.cursor.Cursor:
+        - ixora.data.cursor.Cursor:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -49,8 +49,8 @@ ontology:
           rid: ac2501cc-c586-4782-81b9-5ea5e6cb3ba4
           description: The cursor element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
-            instance: tech.intellispaces.ixora.data.Byte
+            domain: ixora.basic.Domain
+            instance: ixora.data.Byte
         - next:
           rid: 29d7623b-4a5b-4a6b-97e9-e877ec2cb4cc
-          target.domain: tech.intellispaces.ixora.data.Byte
+          target.domain: ixora.data.Byte

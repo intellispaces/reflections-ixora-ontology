@@ -1,9 +1,9 @@
 intellispaces: "0.1"
 ontology:
   channels:
-    tech.intellispaces.ixora.data.json.JsonStringToPropertiesSet:
+    ixora.data.json.JsonStringToPropertiesSet:
       rid: 0af9a00c-4f4c-408c-8ff1-bad4c0a1ae12
       description: The channel from JSON string to properties set
       source:
-        domain: tech.intellispaces.ixora.basic.String
-      target.domain: tech.intellispaces.ixora.data.association.PropertiesSet
+        domain: ixora.basic.String
+      target.domain: ixora.data.association.PropertiesSet

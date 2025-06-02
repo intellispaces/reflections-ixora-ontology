@@ -3,7 +3,7 @@ info:
   title: Ixora collection space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.data.collection.Collection:
+    ixora.data.collection.Collection:
       rid: 715d235a-b6ee-4a0a-8166-dd908d6bf026
       description: The homogeneous collection of elements
       channels:
@@ -11,17 +11,17 @@ ontology:
           rid: 855a617e-1281-4f23-ac3b-be45e045b337
           description: The collection element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: E
         - size:
           rid: ac251f1d-ecd8-45a0-bd05-972c71ed26aa
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: ixora.data.Integer32
 
-    tech.intellispaces.ixora.data.collection.List:
+    ixora.data.collection.List:
       rid: f260fb9d-fd6f-4421-a609-71c672c8fffc
       description: The homogeneous ordered list of elements
       superDomains:
-        - tech.intellispaces.ixora.data.collection.Collection:
+        - ixora.data.collection.Collection:
           constraints:
             - equivalence.paths:
               - $this thru elementDomain
@@ -31,12 +31,12 @@ ontology:
           rid: 93099ab8-37c6-4c53-8b4f-554924e46856
           description: The list element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
+            domain: ixora.basic.Domain
             alias: E
         - asCollection:
           rid: 01909079-ab91-75ba-8fd0-4a2cb5391791
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
@@ -47,20 +47,20 @@ ontology:
           description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.data.Integer32
           target:
             constraints:
               - equivalence.paths:
-                  - $this to tech.intellispaces.ixora.basic.Domain
+                  - $this to ixora.basic.Domain
                   - $base thru elementDomain
 
-    tech.intellispaces.ixora.data.collection.NumberList:
+    ixora.data.collection.NumberList:
       rid: 01908c74-4692-7fe2-8f51-375bda2efc40
       description: |
         The list of any objects considered as numbers. For example, a list of integer or float number objects.</p>
         This is the alias for the domain ListDomain&lt;Number&gt;
       superDomains:
-        - tech.intellispaces.ixora.data.collection.List:
+        - ixora.data.collection.List:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -71,24 +71,24 @@ ontology:
           description: The list element domain
           target:
             domain.bounds.super:
-              - tech.intellispaces.ixora.basic.Number
+              - ixora.basic.Number
             alias: N
         - asCollection:
           rid: 390f8f03-3622-4bbf-8df4-11e48c897d94
           description: Downgrade mapping
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
                   - $base thru elementDomain
 
-    tech.intellispaces.ixora.data.collection.ByteList:
+    ixora.data.collection.ByteList:
       rid: 46127f8a-6396-4bb8-8af4-d85ebd37f143
       description: |
         The list of any objects considered as bytes. This is the alias for the domain NumberListDomain&lt;Byte&gt;
       superDomains:
-        - tech.intellispaces.ixora.data.collection.List:
+        - ixora.data.collection.List:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -98,13 +98,13 @@ ontology:
           rid: e151b008-acd1-4dda-9ddb-e7c78b5e34ef
           description: The list element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
-            instance: tech.intellispaces.ixora.data.Byte
+            domain: ixora.basic.Domain
+            instance: ixora.data.Byte
         - asCollection:
           rid: 306a5434-65fc-4c81-8ec5-2804ffff99b6
           description: Downgrade mapping
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
@@ -115,15 +115,15 @@ ontology:
           description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
-          target.domain: tech.intellispaces.ixora.data.Byte
+              target.domain: ixora.data.Integer32
+          target.domain: ixora.data.Byte
 
-    tech.intellispaces.ixora.data.collection.Integer32List:
+    ixora.data.collection.Integer32List:
       rid: 019081b8-bfb3-7089-9d6c-6537ab3fca07
       description: |
         The list of any objects considered as 32-bits integer numbers. This is the alias for the domain ListDomain&lt;Integer&gt;
       superDomains:
-        - tech.intellispaces.ixora.data.collection.NumberList:
+        - ixora.data.collection.NumberList:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -133,13 +133,13 @@ ontology:
           rid: a3299ab9-f126-45ce-af23-e2d7be814bce
           description: The list element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
-            instance: tech.intellispaces.ixora.data.Integer32
+            domain: ixora.basic.Domain
+            instance: ixora.data.Integer32
         - asCollection:
           rid: 01909080-8b2e-798a-8467-150465a39848
           description: Downgrade mapping
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
@@ -150,15 +150,15 @@ ontology:
           description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
-          target.domain: tech.intellispaces.ixora.data.Integer32
+              target.domain: ixora.data.Integer32
+          target.domain: ixora.data.Integer32
 
-    tech.intellispaces.ixora.data.collection.Real64List:
+    ixora.data.collection.Real64List:
       rid: 019081ff-e48c-773d-b6af-f6f3ec15ced9
       description: |
         The list of any objects considered as 64-bits float numbers. This is the alias for the domain ListDomain&lt;Double&gt;
       superDomains:
-        - tech.intellispaces.ixora.data.collection.NumberList:
+        - ixora.data.collection.NumberList:
           constraints:
             - equivalence.paths:
                 - $this thru elementDomain
@@ -168,13 +168,13 @@ ontology:
           rid: 7e733832-f05f-46ce-abf3-b13ea4d53316
           description: The list element domain
           target:
-            domain: tech.intellispaces.ixora.basic.Domain
-            instance: tech.intellispaces.ixora.data.Real64
+            domain: ixora.basic.Domain
+            instance: ixora.data.Real64
         - asCollection:
           rid: 01909080-c97f-77f1-9a5a-f20dba6ed8a6
           description: Downgrade mapping
           target:
-            domain: tech.intellispaces.ixora.data.collection.Collection
+            domain: ixora.data.collection.Collection
             constraints:
               - equivalence.paths:
                   - $this thru elementDomain
@@ -185,5 +185,5 @@ ontology:
           description: Returns the value of an element by its index, represented by an Integer32
           qualifiers:
             - index:
-              target.domain: tech.intellispaces.ixora.data.Integer32
-          target.domain: tech.intellispaces.ixora.data.Real64
+              target.domain: ixora.data.Integer32
+          target.domain: ixora.data.Real64

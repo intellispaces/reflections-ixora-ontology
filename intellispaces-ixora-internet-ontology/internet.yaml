@@ -3,98 +3,98 @@ info:
   title: Ixora internet space ontology
 ontology:
   domains:
-    tech.intellispaces.ixora.internet.uri.Uri:
+    ixora.internet.uri.Uri:
       rid: a6b707b6-21e8-4fee-9d0d-ac09469a8542
       description: The URI
       channels:
         - path:
           rid: 47ba7add-d4d0-4091-9fcb-04d9858129a5
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - query:
           rid: bb1f65a5-03dd-4b0b-9b0a-31e38ed83e67
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - toString:
           rid: 5dc5206c-4fa5-44b6-871e-23ce3efab4cf
           name: UriToStringChannel
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
 
-    tech.intellispaces.ixora.internet.WebReflectionView:
+    ixora.internet.WebReflectionView:
       rid: 411ebc42-cdb1-425f-b07e-9e619bdbc666
       superDomains:
-        - tech.intellispaces.ixora.basic.ReflectionView
-        - tech.intellispaces.ixora.data.Dataset
+        - ixora.basic.ReflectionView
+        - ixora.data.Dataset
       channels:
         - asReflectionView:
           rid: 521d909a-2396-4f80-9965-83facbbdc835
-          target.domain: tech.intellispaces.ixora.basic.ReflectionView
+          target.domain: ixora.basic.ReflectionView
         - asDataset:
           rid: f9ca7127-a5d4-4c4f-9cf8-1ff421cd0f69
-          target.domain: tech.intellispaces.ixora.data.Dataset
+          target.domain: ixora.data.Dataset
         - htmlString:
           rid: b5718f85-66f9-4328-aca5-9f14fc4e0d69
           name: WebReflectionViewToHtmlStringChannel
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - jsString:
           rid: f1b1861c-db49-4118-884b-27ec9541d86a
           name: WebReflectionViewToJsStringChannel
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - cssString:
           rid: 8ffd6f76-8760-42a3-92ea-3b565b209212
           name: WebReflectionViewToCssStringChannel
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
 
-    tech.intellispaces.ixora.internet.JsonReflectionView:
+    ixora.internet.JsonReflectionView:
       rid: d8004a3b-9bdf-47b3-88cc-2197ef0ef000
       superDomains:
-        - tech.intellispaces.ixora.basic.ReflectionView
+        - ixora.basic.ReflectionView
       channels:
         - asReflectionView:
           rid: 81324c6b-6f35-46fc-a98e-da0587fa30fb
-          target.domain: tech.intellispaces.ixora.basic.ReflectionView
+          target.domain: ixora.basic.ReflectionView
         - jsonText:
           rid: 7313fd1b-8316-4fa6-b4b1-fc40c50ed981
           name: JsonReflectionViewToTextChannel
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
 
   channels:
-    tech.intellispaces.ixora.internet.uri.JoinBasePathStringWithEndpointString:
+    ixora.internet.uri.JoinBasePathStringWithEndpointString:
       rid: 3fe84a44-7f40-4df9-95d1-f1d857c1a5b8
       source:
-        domain: tech.intellispaces.ixora.basic.String
+        domain: ixora.basic.String
       qualifiers:
           - endpoint:
-            target.domain: tech.intellispaces.ixora.basic.String
-      target.domain: tech.intellispaces.ixora.basic.String
+            target.domain: ixora.basic.String
+      target.domain: ixora.basic.String
 
-    tech.intellispaces.ixora.internet.uri.GetUriQueryParam:
+    ixora.internet.uri.GetUriQueryParam:
       rid: f613bc2a-3a2a-4a8a-b184-80480aa819d5
       source:
-        domain: tech.intellispaces.ixora.internet.uri.Uri
+        domain: ixora.internet.uri.Uri
       qualifiers:
         - paramName:
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
       target:
-        domain: tech.intellispaces.ixora.data.collection.List
+        domain: ixora.data.collection.List
         immobilityType: Unmovable
         constraints:
           - equivalence:
             paths:
               - $this thru elementDomain
             instance:
-              domain: tech.intellispaces.ixora.basic.Domain
-              name: tech.intellispaces.ixora.basic.String
+              domain: ixora.basic.Domain
+              name: ixora.basic.String
 
-    tech.intellispaces.ixora.internet.uri.SplitUriPathStringToParts:
+    ixora.internet.uri.SplitUriPathStringToParts:
       rid: 9bf5861b-1af9-4f83-a39f-5c44d9e451d0
       source:
-        domain: tech.intellispaces.ixora.basic.String
+        domain: ixora.basic.String
       target:
-        domain: tech.intellispaces.ixora.data.collection.List
+        domain: ixora.data.collection.List
         immobilityType: Unmovable
         constraints:
           - equivalence:
             paths:
               - $this thru elementDomain
             instance:
-              domain: tech.intellispaces.ixora.basic.Domain
-              name: tech.intellispaces.ixora.basic.String
+              domain: ixora.basic.Domain
+              name: ixora.basic.String

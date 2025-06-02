@@ -1,86 +1,86 @@
 intellispaces: "0.1"
 ontology:
   domains:
-    tech.intellispaces.ixora.java.JavaObject:
+    ixora.java.JavaObject:
       rid: f20a7a3c-0e85-48d2-a6bb-a7b92e99690d
       channels:
         - objectGraph:
           rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
-          target.domain: tech.intellispaces.ixora.java.ObjectGraph
+          target.domain: ixora.java.ObjectGraph
         - erLikeJavaObjectGraphWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
-          target.domain: tech.intellispaces.ixora.java.ErLikeJavaObjectGraphWebView
+          target.domain: ixora.java.ErLikeJavaObjectGraphWebView
 
-    tech.intellispaces.ixora.java.ObjectContractBySupplierSourceCode:
+    ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
 
-    tech.intellispaces.ixora.java.ObjectGraph:
+    ixora.java.ObjectGraph:
       description: The internal graph of the Java object
       rid: 4b60546b-85f7-4790-ac8f-de777026c590
       superDomains:
-        - tech.intellispaces.ixora.data.Dataset
+        - ixora.data.Dataset
       channels:
         - asDataset:
           rid: dee22b90-067f-462b-8a02-42d8d7a828d1
-          target.domain: tech.intellispaces.ixora.data.Dataset
+          target.domain: ixora.data.Dataset
         - nodes:
           rid: 90c4184a-1158-463e-b5f2-be70a3102859
           target:
-            domain: tech.intellispaces.ixora.data.collection.List
+            domain: ixora.data.collection.List
             immobilityType: Unmovable
             constraints:
               - equivalence:
                 paths:
                   - $this thru elementDomain
                 instance:
-                  domain: tech.intellispaces.ixora.basic.Domain
-                  name: tech.intellispaces.ixora.java.ObjectGraphNode
+                  domain: ixora.basic.Domain
+                  name: ixora.java.ObjectGraphNode
 
-    tech.intellispaces.ixora.java.ObjectGraphNode:
+    ixora.java.ObjectGraphNode:
       rid: 662e6c5e-033f-4b8f-8d32-1ed0f614b965
       superDomains:
-        - tech.intellispaces.ixora.data.Dataset
+        - ixora.data.Dataset
       channels:
         - asDataset:
           rid: bb7849e3-b1ae-459a-b0d3-cea62039d37c
-          target.domain: tech.intellispaces.ixora.data.Dataset
+          target.domain: ixora.data.Dataset
         - label:
           rid: 9430f6f1-8ec3-4417-a212-559a282c4405
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
         - typename:
           rid: 0e0a993d-37bb-4cc1-9336-f6ad7fc01bfc
-          target.domain: tech.intellispaces.ixora.basic.String
+          target.domain: ixora.basic.String
 
-    tech.intellispaces.ixora.java.ObjectGraphIntegerNode:
+    ixora.java.ObjectGraphIntegerNode:
       rid: 6a89765b-e455-424b-a535-f33fbf670a5b
       superDomains:
-        - tech.intellispaces.ixora.java.ObjectGraphNode
+        - ixora.java.ObjectGraphNode
       channels:
         - asObjectGraphNode:
           rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
-          target.domain: tech.intellispaces.ixora.java.ObjectGraphNode
+          target.domain: ixora.java.ObjectGraphNode
         - value:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
-          target.domain: tech.intellispaces.ixora.data.Integer32
+          target.domain: ixora.data.Integer32
 
-    tech.intellispaces.ixora.java.ErLikeJavaObjectGraphWebView:
+    ixora.java.ErLikeJavaObjectGraphWebView:
       description: The simple ER-like graph web view of Java object
       rid: 3e045a8b-1bfa-434d-bad3-87f3eeabf82f
       superDomains:
-        - tech.intellispaces.ixora.internet.WebReflectionView
+        - ixora.internet.WebReflectionView
       channels:
         - asWebReflectionView:
           rid: aebb9456-2cda-462e-a787-ca5810310811
-          target.domain: tech.intellispaces.ixora.internet.WebReflectionView
+          target.domain: ixora.internet.WebReflectionView
 
-    tech.intellispaces.ixora.java.Collection:
+    ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
 
-    tech.intellispaces.ixora.java.r21.java.util.ArrayList:
+    ixora.java.r21.java.util.ArrayList:
       rid: 0314e65f-7077-462f-ad77-dc8eda2f1043
       superDomains:
-        - tech.intellispaces.ixora.java.JavaObject
+        - ixora.java.JavaObject
       channels:
         - asJavaObject:
           rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
-          target.domain: tech.intellispaces.ixora.java.JavaObject
+          target.domain: ixora.java.JavaObject

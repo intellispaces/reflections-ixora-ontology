@@ -4,41 +4,41 @@ info:
 
 ontology:
   domains:
-    tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSourceFactory:
+    ixora.rdb.hikaricp.datasource.HikariDataSourceFactory:
       rid: 7aae1f0c-1d54-43a3-a9f8-fc32bbb6891e
       channels:
         - create:
           rid: 16b62a7e-4c8c-4d41-bd44-36581db13589
-          target.domain: tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSource
+          target.domain: ixora.rdb.hikaricp.datasource.HikariDataSource
           qualifiers:
             - settings:
-              target.domain: tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSourceSettings
+              target.domain: ixora.rdb.hikaricp.datasource.HikariDataSourceSettings
           target:
-            domain: tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSource
+            domain: ixora.rdb.hikaricp.datasource.HikariDataSource
             immobilityType: Movable
           allowedTraverses: [ MappingOfMoving ]
 
-    tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSource:
+    ixora.rdb.hikaricp.datasource.HikariDataSource:
       rid: 01908c4f-942b-7715-a5a0-0d89c9aaebaf
       superDomains:
-        - tech.intellispaces.ixora.rdb.datasource.DataSource
+        - ixora.rdb.datasource.DataSource
       channels:
         - asDataSource:
           rid: 29dff81b-c679-49e2-9f0a-60e24ecfc342
-          target.domain: tech.intellispaces.ixora.rdb.datasource.DataSource
+          target.domain: ixora.rdb.datasource.DataSource
         - settings:
           rid: 4167089f-3759-4187-85fb-5b324fcc2565
-          target.domain: tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSourceSettings
+          target.domain: ixora.rdb.hikaricp.datasource.HikariDataSourceSettings
 
-    tech.intellispaces.ixora.rdb.hikaricp.datasource.HikariDataSourceSettings:
+    ixora.rdb.hikaricp.datasource.HikariDataSourceSettings:
       rid: 3094f25e-798b-4bf9-a84c-7e581522060a
       superDomains:
-        - tech.intellispaces.ixora.data.Dataset
-        - tech.intellispaces.ixora.rdb.datasource.DataSourceSettings
+        - ixora.data.Dataset
+        - ixora.rdb.datasource.DataSourceSettings
       channels:
         - asDataset:
           rid: 24c018ee-b4b6-48f8-8f93-607008777be4
-          target.domain: tech.intellispaces.ixora.data.Dataset
+          target.domain: ixora.data.Dataset
         - asDataSourceSettings:
           rid: c6a1f862-1752-4e60-acf6-880c29cfd727
-          target.domain: tech.intellispaces.ixora.rdb.datasource.DataSourceSettings
+          target.domain: ixora.rdb.datasource.DataSourceSettings
