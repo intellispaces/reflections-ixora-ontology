@@ -90,6 +90,6 @@ ontology:
       superDomains:
         - ixora.java.collection.ArrayList
       channels:
-        - asJavaObject:
+        - asArrayList:
           rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
           target.domain: ixora.java.collection.ArrayList
