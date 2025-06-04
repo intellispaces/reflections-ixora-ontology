@@ -76,11 +76,20 @@ ontology:
     ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
 
-    ixora.java.r21.java.util.ArrayList:
-      rid: 0314e65f-7077-462f-ad77-dc8eda2f1043
+    ixora.java.collection.ArrayList:
+      rid: 5d32f0a7-18d3-4478-997c-eb566176ed7a
       superDomains:
         - ixora.java.JavaObject
       channels:
         - asJavaObject:
-          rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
+          rid: 434498e2-1763-4708-8ad9-46669c2b3601
           target.domain: ixora.java.JavaObject
+
+    ixora.java.r21.java.util.ArrayList:
+      rid: 0314e65f-7077-462f-ad77-dc8eda2f1043
+      superDomains:
+        - ixora.java.collection.ArrayList
+      channels:
+        - asJavaObject:
+          rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
+          target.domain: ixora.java.collection.ArrayList
