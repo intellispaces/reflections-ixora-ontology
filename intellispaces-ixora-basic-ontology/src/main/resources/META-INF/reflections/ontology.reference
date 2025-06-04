@@ -1,7 +1,15 @@
-notion.domainName = tech.intellispaces.ixora.basic.Point
-domain.domainName = tech.intellispaces.ixora.basic.Domain
-number.domainName = tech.intellispaces.ixora.basic.Number
-string.domainName = tech.intellispaces.ixora.basic.String
-boolean.domainName = tech.intellispaces.ixora.basic.Boolean
+notionDomain.name = ixora.basic.Point
+notionDomain.class = tech.intellispaces.ixora.basic.PointDomain
+notionToDomainChannel.alias = domain
 
-notionToDomain.channelAlias = domain
+domainDomain.name = ixora.basic.Domain
+domainDomain.class = tech.intellispaces.ixora.basic.DomainDomain
+
+numberDomain.name = ixora.basic.Number
+numberDomain.class = tech.intellispaces.ixora.basic.NumberDomain
+
+stringDomain.name = ixora.basic.String
+stringDomain.class = tech.intellispaces.ixora.basic.StringDomain
+
+booleanDomain.name = ixora.basic.Boolean
+booleanDomain.class = tech.intellispaces.ixora.basic.BooleanDomain

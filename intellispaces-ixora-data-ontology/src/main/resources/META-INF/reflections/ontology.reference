@@ -1,11 +1,26 @@
-short.domainName = tech.intellispaces.ixora.data.Integer16
-integer.domainName = tech.intellispaces.ixora.data.Integer32
-long.domainName = tech.intellispaces.ixora.data.Integer64
-float.domainName = tech.intellispaces.ixora.data.Real32
-double.domainName = tech.intellispaces.ixora.data.Real64
-byte.domainName = tech.intellispaces.ixora.data.Byte
-propertiesSet.domainName = tech.intellispaces.ixora.data.association.PropertiesSet
-dataset.domainName = tech.intellispaces.ixora.data.Dataset
-yamlStringToPropertiesSet.channelId = 1830e924-2c78-4f18-b9eb-39f002cbeea6
-propertiesSetToValue.channelId = ea111b97-c025-4d74-8466-d462c4c87efd
-propertiesSetToData.channelId = cafc0a2e-a1da-44e1-997f-2db62f7e385c
+shortDomain.name = ixora.data.Integer16
+shortDomain.class = tech.intellispaces.ixora.data.Integer16Domain
+
+integerDomain.name = ixora.data.Integer32
+integerDomain.class = tech.intellispaces.ixora.data.Integer32Domain
+
+longDomain.name = ixora.data.Integer64
+longDomain.class = tech.intellispaces.ixora.data.Integer64Domain
+
+floatDomain.name = ixora.data.Real32
+floatDomain.class = tech.intellispaces.ixora.data.Real32Domain
+
+doubleDomain.name = ixora.data.Real64
+doubleDomain.class = tech.intellispaces.ixora.data.Real64Domain
+
+byteDomain.name = ixora.data.Byte
+byteDomain.class = tech.intellispaces.ixora.data.ByteDomain
+
+propertiesSetDomain.name = ixora.data.association.PropertiesSet
+propertiesSetDomain.class = tech.intellispaces.ixora.data.association.PropertiesSetDomain
+propertiesSetToValueChannel.rid = ea111b97-c025-4d74-8466-d462c4c87efd
+propertiesSetToDataChannel.rid = cafc0a2e-a1da-44e1-997f-2db62f7e385c
+yamlStringToPropertiesSetChannel.rid = 1830e924-2c78-4f18-b9eb-39f002cbeea6
+
+datasetDomain.name = ixora.data.Dataset
+datasetDomain.class = tech.intellispaces.ixora.data.DatasetDomain

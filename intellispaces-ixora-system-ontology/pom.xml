@@ -24,6 +24,7 @@
                     </execution>
                 </executions>
                 <configuration>
+                    <basePackage>tech.intellispaces.</basePackage>
                     <inputSpec>${project.basedir}/system.yaml</inputSpec>
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
