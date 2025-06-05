@@ -1,5 +1,5 @@
-notionDomain.name = ixora.basic.Point
-notionDomain.class = tech.intellispaces.ixora.basic.PointDomain
+notionDomain.name = ixora.basic.Notion
+notionDomain.class = tech.intellispaces.ixora.basic.NotionDomain
 notionToDomainChannel.alias = domain
 
 domainDomain.name = ixora.basic.Domain
