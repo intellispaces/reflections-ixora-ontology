@@ -3,9 +3,9 @@ info:
   title: Ixora basic ontology
 ontology:
   domains:
-    ixora.basic.Point:
+    ixora.basic.Notion:
       rid: c83ce3d6-19cf-4e40-99c9-53596acfe1c4
-      description: The domain of any objects
+      description: The domain of notions
 
     ixora.basic.Domain:
       rid: 1a243181-9d2b-48d2-bbcf-cd1f18311011

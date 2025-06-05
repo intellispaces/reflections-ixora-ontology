@@ -85,7 +85,7 @@ ontology:
             - path:
               target.domain: ixora.basic.String
           target:
-            domain: ixora.basic.Point
+            domain: ixora.basic.Notion
         - integer32Value:
           rid: 4e01aa7a-3fd4-4509-9387-921c30ecf5f9
           description: The channel to a 32-bit integer value

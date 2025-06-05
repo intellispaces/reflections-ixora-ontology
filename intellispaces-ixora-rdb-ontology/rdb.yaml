@@ -285,7 +285,7 @@ ontology:
                       - $this thru valueDomain
                     instance:
                       domain: ixora.basic.Domain
-                      name: ixora.basic.Point
+                      name: ixora.basic.Notion
           target:
             constraints:
               - equivalence.paths:
