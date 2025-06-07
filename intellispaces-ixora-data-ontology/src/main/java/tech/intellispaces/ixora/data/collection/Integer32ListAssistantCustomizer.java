@@ -5,11 +5,11 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(Integer32ListDomain.class)
 public interface Integer32ListAssistantCustomizer {
 
-  UnmovableInteger32ListReflection create(int value1, int value2);
+  Integer32List create(int value1, int value2);
 
-  UnmovableInteger32ListReflection create(int value1, int value2, int value3);
+  Integer32List create(int value1, int value2, int value3);
 
-  UnmovableInteger32ListReflection reflectionOf(int[] array);
+  Integer32List reflectionOf(int[] array);
 
-  UnmovableInteger32ListReflection reflectionOf(java.util.List<Integer> list);
+  Integer32List reflectionOf(java.util.List<Integer> list);
 }

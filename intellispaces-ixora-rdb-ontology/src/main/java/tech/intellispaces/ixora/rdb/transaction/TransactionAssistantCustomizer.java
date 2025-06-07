@@ -5,5 +5,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(TransactionDomain.class)
 public interface TransactionAssistantCustomizer {
 
-  MovableTransactionReflection current();
+  MovableTransaction current();
 }

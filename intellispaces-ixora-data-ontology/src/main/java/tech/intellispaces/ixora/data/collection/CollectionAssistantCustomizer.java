@@ -14,7 +14,7 @@ public interface CollectionAssistantCustomizer {
    * @return the reflection.
    * @param <E> the element type.
    */
-  <E> UnmovableCollectionReflection<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
+  <E> Collection<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
    * Returns unmovable reflection of the Java list.
@@ -24,5 +24,5 @@ public interface CollectionAssistantCustomizer {
    * @return the reflection.
    * @param <E> the element type.
    */
-  <E> UnmovableCollectionReflection<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
+  <E> Collection<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
 }

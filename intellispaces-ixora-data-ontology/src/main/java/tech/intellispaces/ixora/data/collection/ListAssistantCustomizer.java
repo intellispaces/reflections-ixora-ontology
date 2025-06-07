@@ -6,19 +6,19 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(ListDomain.class)
 public interface ListAssistantCustomizer {
 
-  default UnmovableListReflection<Byte> create(byte value1, byte value2) {
+  default List<Byte> create(byte value1, byte value2) {
     return ByteLists.create(value1, value2);
   }
 
-  default UnmovableListReflection<Byte> create(byte value1, byte value2, byte value3) {
+  default List<Byte> create(byte value1, byte value2, byte value3) {
     return ByteLists.create(value1, value2, value3);
   }
 
-  default UnmovableListReflection<Integer> create(int value1, int value2) {
+  default List<Integer> create(int value1, int value2) {
     return Integer32Lists.create(value1, value2);
   }
 
-  default UnmovableListReflection<Integer> create(int value1, int value2, int value3) {
+  default List<Integer> create(int value1, int value2, int value3) {
     return Integer32Lists.create(value1, value2, value3);
   }
 
@@ -29,7 +29,7 @@ public interface ListAssistantCustomizer {
    * @return the list reflection.
    * @param <E> the list element type.
    */
-  <E> UnmovableListReflection<E> empty(Class<E> elementClass);
+  <E> List<E> empty(Class<E> elementClass);
 
   /**
    * Returns unmovable reflection of the Java list.
@@ -39,7 +39,7 @@ public interface ListAssistantCustomizer {
    * @return the list reflection.
    * @param <E> the list element type.
    */
-  <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
+  <E> List<E> reflectionOf(java.util.List<E> list, Class<E> elementClass);
 
   /**
    * Returns unmovable reflection of the Java list.
@@ -49,33 +49,33 @@ public interface ListAssistantCustomizer {
    * @return the list reflection.
    * @param <E> the list element type.
    */
-  <E> UnmovableListReflection<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
+  <E> List<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
 
-  default UnmovableListReflection<Byte> reflectionOf(byte[] array) {
+  default List<Byte> reflectionOf(byte[] array) {
     return ByteLists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Integer> reflectionOf(int[] array) {
+  default List<Integer> reflectionOf(int[] array) {
     return Integer32Lists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Double> reflectionOf(double[] array) {
+  default List<Double> reflectionOf(double[] array) {
     return Real64Lists.reflectionOf(array);
   }
 
-  default UnmovableListReflection<Byte> reflectionOfByteList(java.util.List<Byte> list) {
+  default List<Byte> reflectionOfByteList(java.util.List<Byte> list) {
     return ByteLists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<Integer> reflectionOfIntegerList(java.util.List<Integer> list) {
+  default List<Integer> reflectionOfIntegerList(java.util.List<Integer> list) {
     return Integer32Lists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<Double> reflectionOfDoubleList(java.util.List<Double> list) {
+  default List<Double> reflectionOfDoubleList(java.util.List<Double> list) {
     return Real64Lists.reflectionOf(list);
   }
 
-  default UnmovableListReflection<String> reflectionOfStringList(java.util.List<String> list) {
+  default List<String> reflectionOfStringList(java.util.List<String> list) {
     return reflectionOf(list, String.class);
   }
 }

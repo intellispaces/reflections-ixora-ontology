@@ -5,7 +5,7 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(PropertiesSetDomain.class)
 public interface PropertiesSetAssistantCustomizer {
 
-  UnmovablePropertiesSetReflection reflectionOf(java.util.Map<String, Object> map);
+  PropertiesSet reflectionOf(java.util.Map<String, Object> map);
 
   /**
    * Returns a native object representing given reflection.
@@ -13,7 +13,7 @@ public interface PropertiesSetAssistantCustomizer {
    * @param reflection the reflection.
    * @return instance of the {@link tech.intellispaces.commons.properties.PropertiesSet}.
    */
-  default tech.intellispaces.commons.properties.PropertiesSet asNative(PropertiesSetReflection reflection) {
+  default tech.intellispaces.commons.properties.PropertiesSet asNative(PropertiesSet reflection) {
     if (NativePropertiesSetPresentable.class.isAssignableFrom(reflection.getClass())) {
       return ((NativePropertiesSetPresentable) reflection).asNativePropertiesSet();
     }

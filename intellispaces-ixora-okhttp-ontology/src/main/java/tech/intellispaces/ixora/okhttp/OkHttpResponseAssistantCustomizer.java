@@ -7,5 +7,5 @@ import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 @AssistantCustomizer(OkHttpResponseDomain.class)
 public interface OkHttpResponseAssistantCustomizer {
 
-  UnmovableOkHttpResponseReflection reflectionOf(Response response);
+  OkHttpResponse reflectionOf(Response response);
 }

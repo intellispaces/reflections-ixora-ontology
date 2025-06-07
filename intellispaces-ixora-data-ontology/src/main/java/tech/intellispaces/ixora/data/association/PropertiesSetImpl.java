@@ -8,9 +8,9 @@ import tech.intellispaces.commons.exception.NotImplementedExceptions;
 import tech.intellispaces.commons.properties.PropertiesSet;
 
 class PropertiesSetImpl implements PropertiesSet {
-  private final PropertiesSetReflection reflection;
+  private final tech.intellispaces.ixora.data.association.PropertiesSet reflection;
 
-  PropertiesSetImpl(PropertiesSetReflection reflection) {
+  PropertiesSetImpl(tech.intellispaces.ixora.data.association.PropertiesSet reflection) {
     this.reflection = reflection;
   }
 

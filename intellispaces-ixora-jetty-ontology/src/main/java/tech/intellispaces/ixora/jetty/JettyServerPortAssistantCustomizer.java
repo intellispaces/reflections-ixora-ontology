@@ -7,9 +7,9 @@ import tech.intellispaces.reflections.framework.reflection.MovableReflection;
 @AssistantCustomizer(JettyServerPortDomain.class)
 public interface JettyServerPortAssistantCustomizer {
 
-  MovableJettyServerPortReflection create(int portNumber, MovableReflection<?> overlyingReflection);
+  MovableJettyServerPort create(int portNumber, MovableReflection overlyingReflection);
 
-  default DownwardObjectFactory<MovableJettyServerPortReflection> factory(int portNumber) {
+  default DownwardObjectFactory<MovableJettyServerPort> factory(int portNumber) {
     return overlyingReflection -> create(portNumber, overlyingReflection);
   }
 }
