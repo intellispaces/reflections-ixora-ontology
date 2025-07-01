@@ -1,6 +1,7 @@
 package tech.intellispaces.ixora.data.collection;
 
 import tech.intellispaces.commons.type.Type;
+import tech.intellispaces.core.Point;
 import tech.intellispaces.reflections.framework.annotation.AssistantCustomizer;
 
 @AssistantCustomizer(ListDomain.class)
@@ -50,6 +51,8 @@ public interface ListAssistantCustomizer {
    * @param <E> the list element type.
    */
   <E> List<E> reflectionOf(java.util.List<E> list, Type<E> elementType);
+
+  List<Point> of(Point point);
 
   default List<Byte> reflectionOf(byte[] array) {
     return ByteLists.reflectionOf(array);
