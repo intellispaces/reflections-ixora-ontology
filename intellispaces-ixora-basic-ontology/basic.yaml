@@ -7,9 +7,17 @@ ontology:
       rid: c83ce3d6-19cf-4e40-99c9-53596acfe1c4
       description: The domain of notions
 
+    ixora.basic.Space:
+      rid: c0e2eafe-3e82-4aff-b35d-4555d63636cd
+      description: The domain of semantic spaces
+      channels:
+        - name:
+          rid: f5746774-3139-464a-bfe7-d7f8bdfc7e9a
+          target.domain: ixora.basic.String
+
     ixora.basic.Domain:
       rid: 1a243181-9d2b-48d2-bbcf-cd1f18311011
-      description: The domain of objects representing semantic space domains
+      description: The domain of semantic space domains
       channels:
         - name:
           rid: 8776e3d7-2327-4936-b4be-4a916b44cb16
@@ -17,7 +25,7 @@ ontology:
 
     ixora.basic.Channel:
       rid: cfb5a7d8-6812-4dbe-81f6-14ff4855e6d1
-      description: The domain of objects representing semantic space channel
+      description: The domain of semantic space channels
       channels:
         - sourceDomain:
           rid: e38873a2-2e49-46bc-849d-b56f76bdb9d5
@@ -34,7 +42,7 @@ ontology:
 
     ixora.basic.Number:
       rid: b4fef548-b446-4cae-ae98-63883a6326b8
-      description: The domain of objects considered as numbers
+      description: The domain of numbers
 
     ixora.basic.IntegerNumber:
       rid: 4299693b-abf1-4785-9377-bfcbd596dbc3
