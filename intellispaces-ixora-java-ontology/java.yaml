@@ -47,11 +47,11 @@ ontology:
         - label:
           rid: 9430f6f1-8ec3-4417-a212-559a282c4405
           target.domain: ixora.basic.String
-        - typename:
+        - nodeType:
           rid: 0e0a993d-37bb-4cc1-9336-f6ad7fc01bfc
           target.domain: ixora.basic.String
 
-    ixora.java.ObjectGraphIntegerNode:
+    ixora.java.ObjectGraphPrimitiveNode:
       rid: 6a89765b-e455-424b-a535-f33fbf670a5b
       superDomains:
         - ixora.java.ObjectGraphNode
@@ -61,7 +61,27 @@ ontology:
           target.domain: ixora.java.ObjectGraphNode
         - value:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
-          target.domain: ixora.data.Integer32
+          target.domain: ixora.basic.Notion
+        - typename:
+          rid: 72bc8457-754b-4065-bce4-6daac752b617
+          target.domain: ixora.basic.String
+
+    ixora.java.ObjectGraphSpecification:
+      description: Specification describing the requirements for building an object graph
+      rid: 97f6be11-7a10-4385-8439-4b431d70f4bf
+      superDomains:
+        - ixora.data.Dataset
+        - asDataset:
+          rid: da8b53f8-5922-4d14-adc7-a787e21607e2
+          target.domain: ixora.data.Dataset
+
+    ixora.java.SimpleObjectGraphSpecification:
+      rid: 476d8652-d79a-4e2b-ae84-819145dba93b
+      superDomains:
+        - ixora.java.ObjectGraphSpecification
+        - asObjectGraphSpecification:
+          rid: a84aafc8-a0bb-49ad-8f0f-30c3b5e88094
+          target.domain: ixora.java.ObjectGraphSpecification
 
     ixora.java.ErLikeJavaObjectGraphWebView:
       description: The simple ER-like graph web view of Java object
@@ -72,6 +92,22 @@ ontology:
         - asWebReflectionView:
           rid: aebb9456-2cda-462e-a787-ca5810310811
           target.domain: ixora.internet.WebReflectionView
+
+    ixora.java.ErLikeJavaObjectGraphWebViewQualifier:
+      rid: cc1b6b2c-0927-4ce8-a7b4-f583727b0ed0
+      superDomains:
+        - ixora.basic.ReflectionViewQualifier
+        - ixora.data.Dataset
+      channels:
+        - asReflectionViewQualifier:
+          rid: 2090e658-a8e2-4b26-bace-aa06a97de6a8
+          target.domain: ixora.basic.ReflectionViewQualifier
+        - asDataset:
+          rid: 990d337e-b931-4a05-9d36-c7e9fdb792c6
+          target.domain: ixora.data.Dataset
+        - specification:
+          rid: 7a767f39-1fff-404b-b952-b72398ce8a6f
+          target.domain: ixora.java.ObjectGraphSpecification
 
     ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac

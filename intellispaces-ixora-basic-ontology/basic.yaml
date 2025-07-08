@@ -67,3 +67,6 @@ ontology:
 
     ixora.basic.ReflectionView:
       rid: da56844f-46ec-4eb6-9df2-3e028188f4c3
+
+    ixora.basic.ReflectionViewQualifier:
+      rid: b4844515-4672-45a3-86ca-72cf35928e3e
