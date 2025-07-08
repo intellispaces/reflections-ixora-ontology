@@ -71,6 +71,7 @@ ontology:
       rid: 97f6be11-7a10-4385-8439-4b431d70f4bf
       superDomains:
         - ixora.data.Dataset
+      channels:
         - asDataset:
           rid: da8b53f8-5922-4d14-adc7-a787e21607e2
           target.domain: ixora.data.Dataset
