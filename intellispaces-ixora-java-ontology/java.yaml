@@ -80,6 +80,7 @@ ontology:
       rid: 476d8652-d79a-4e2b-ae84-819145dba93b
       superDomains:
         - ixora.java.ObjectGraphSpecification
+      channels:
         - asObjectGraphSpecification:
           rid: a84aafc8-a0bb-49ad-8f0f-30c3b5e88094
           target.domain: ixora.java.ObjectGraphSpecification
