@@ -59,12 +59,27 @@ ontology:
         - asObjectGraphNode:
           rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
           target.domain: ixora.java.ObjectGraphNode
-        - value:
-          rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
-          target.domain: ixora.basic.Notion
         - typename:
           rid: 72bc8457-754b-4065-bce4-6daac752b617
           target.domain: ixora.basic.String
+        - value:
+          rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
+          target.domain: ixora.basic.Notion
+
+    ixora.java.ObjectGraphObjectNode:
+      rid: 178a1ca1-2b7c-4b2b-b35e-57d41269d475
+      superDomains:
+        - ixora.java.ObjectGraphNode
+      channels:
+        - asObjectGraphNode:
+          rid: 977fe581-b397-410e-aafb-9b006342a6f2
+          target.domain: ixora.java.ObjectGraphNode
+        - className:
+          rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
+          target.domain: ixora.basic.String
+        - value:
+          rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
+          target.domain: ixora.basic.Notion
 
     ixora.java.ObjectGraphSpecification:
       description: Specification describing the requirements for building an object graph
