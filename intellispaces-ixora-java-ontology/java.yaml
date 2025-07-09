@@ -123,7 +123,7 @@ ontology:
       channels:
         - asJsonReflectionView:
           rid: 803e7118-d986-4fe2-9412-30a72e7705e7
-          target.domain: ixora.internet.WebReflectionView
+          target.domain: ixora.internet.JsonReflectionView
 
     ixora.java.ErLikeJavaObjectGraphWebView:
       description: The simple ER-like graph web view of Java object
