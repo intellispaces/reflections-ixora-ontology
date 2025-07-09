@@ -51,9 +51,9 @@ ontology:
         - asReflectionView:
           rid: 81324c6b-6f35-46fc-a98e-da0587fa30fb
           target.domain: ixora.basic.ReflectionView
-        - jsonText:
+        - json:
           rid: 7313fd1b-8316-4fa6-b4b1-fc40c50ed981
-          name: JsonReflectionViewToTextChannel
+          name: JsonReflectionViewToValueChannel
           target.domain: ixora.basic.String
 
   channels:

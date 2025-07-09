@@ -74,8 +74,11 @@ ontology:
         - asObjectGraphNode:
           rid: 977fe581-b397-410e-aafb-9b006342a6f2
           target.domain: ixora.java.ObjectGraphNode
-        - className:
+        - classFullName:
           rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
+          target.domain: ixora.basic.String
+        - classShortName:
+          rid: d7314363-6b54-4e9f-8700-e791b82943bf
           target.domain: ixora.basic.String
         - value:
           rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
@@ -99,6 +102,28 @@ ontology:
         - asObjectGraphSpecification:
           rid: a84aafc8-a0bb-49ad-8f0f-30c3b5e88094
           target.domain: ixora.java.ObjectGraphSpecification
+        - graphPaths:
+          rid: f60b77bd-5914-4f14-ac57-08ca2ce25285
+          target:
+            domain: ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: ixora.basic.Domain
+                  name: ixora.basic.String
+
+    ixora.java.DirectJavaObjectGraphJsonView:
+      description: The simple JSON view of Java object graph. This view contains a direct JSON representation of the ixora.java.ObjectGraph.
+      rid: cf8e30f8-749e-43d2-b8ee-e6266482aa39
+      superDomains:
+        - ixora.internet.JsonReflectionView
+      channels:
+        - asJsonReflectionView:
+          rid: 803e7118-d986-4fe2-9412-30a72e7705e7
+          target.domain: ixora.internet.WebReflectionView
 
     ixora.java.ErLikeJavaObjectGraphWebView:
       description: The simple ER-like graph web view of Java object
@@ -110,7 +135,7 @@ ontology:
           rid: aebb9456-2cda-462e-a787-ca5810310811
           target.domain: ixora.internet.WebReflectionView
 
-    ixora.java.ErLikeJavaObjectGraphWebViewQualifier:
+    ixora.java.SimpleJavaObjectGraphJsonViewQualifier:
       rid: cc1b6b2c-0927-4ce8-a7b4-f583727b0ed0
       superDomains:
         - ixora.basic.ReflectionViewQualifier
