@@ -4,9 +4,9 @@ ontology:
     ixora.java.JavaObject:
       rid: f20a7a3c-0e85-48d2-a6bb-a7b92e99690d
       channels:
-        - objectGraph:
+        - dataGraphNode:
           rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
-          target.domain: ixora.java.ObjectGraph
+          target.domain: ixora.java.DataGraphObjectNode
         - erLikeJavaObjectGraphWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
           target.domain: ixora.java.ErLikeJavaObjectGraphWebView
@@ -14,29 +14,8 @@ ontology:
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
 
-    ixora.java.ObjectGraph:
-      description: The internal graph of the Java object
-      rid: 4b60546b-85f7-4790-ac8f-de777026c590
-      superDomains:
-        - ixora.data.Dataset
-      channels:
-        - asDataset:
-          rid: dee22b90-067f-462b-8a02-42d8d7a828d1
-          target.domain: ixora.data.Dataset
-        - nodes:
-          rid: 90c4184a-1158-463e-b5f2-be70a3102859
-          target:
-            domain: ixora.data.collection.List
-            immobilityType: Unmovable
-            constraints:
-              - equivalence:
-                paths:
-                  - $this thru elementDomain
-                instance:
-                  domain: ixora.basic.Domain
-                  name: ixora.java.ObjectGraphNode
-
-    ixora.java.ObjectGraphNode:
+    ixora.java.DataGraphNode:
+      description: Java object data graph node.
       rid: 662e6c5e-033f-4b8f-8d32-1ed0f614b965
       superDomains:
         - ixora.data.Dataset
@@ -51,14 +30,14 @@ ontology:
           rid: 0e0a993d-37bb-4cc1-9336-f6ad7fc01bfc
           target.domain: ixora.basic.String
 
-    ixora.java.ObjectGraphPrimitiveNode:
+    ixora.java.DataGraphPrimitiveNode:
       rid: 6a89765b-e455-424b-a535-f33fbf670a5b
       superDomains:
-        - ixora.java.ObjectGraphNode
+        - ixora.java.DataGraphNode
       channels:
-        - asObjectGraphNode:
+        - asDataGraphNode:
           rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
-          target.domain: ixora.java.ObjectGraphNode
+          target.domain: ixora.java.DataGraphNode
         - typename:
           rid: 72bc8457-754b-4065-bce4-6daac752b617
           target.domain: ixora.basic.String
@@ -66,25 +45,37 @@ ontology:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
           target.domain: ixora.basic.Notion
 
-    ixora.java.ObjectGraphObjectNode:
+    ixora.java.DataGraphObjectNode:
       rid: 178a1ca1-2b7c-4b2b-b35e-57d41269d475
       superDomains:
-        - ixora.java.ObjectGraphNode
+        - ixora.java.DataGraphNode
       channels:
-        - asObjectGraphNode:
+        - asDataGraphNode:
           rid: 977fe581-b397-410e-aafb-9b006342a6f2
-          target.domain: ixora.java.ObjectGraphNode
+          target.domain: ixora.java.DataGraphNode
         - classFullName:
           rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
           target.domain: ixora.basic.String
         - classShortName:
           rid: d7314363-6b54-4e9f-8700-e791b82943bf
           target.domain: ixora.basic.String
-        - value:
+        - isSpecified:
           rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
-          target.domain: ixora.basic.Notion
+          target.domain: ixora.basic.Boolean
+        - outgoingNodes:
+          rid: 90c4184a-1158-463e-b5f2-be70a3102859
+          target:
+            domain: ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: ixora.basic.Domain
+                  name: ixora.java.DataGraphNode
 
-    ixora.java.ObjectGraphSpecification:
+    ixora.java.ObjectDataGraphSpecification:
       description: Specification describing the requirements for building an object graph
       rid: 97f6be11-7a10-4385-8439-4b431d70f4bf
       superDomains:
@@ -94,14 +85,14 @@ ontology:
           rid: da8b53f8-5922-4d14-adc7-a787e21607e2
           target.domain: ixora.data.Dataset
 
-    ixora.java.SimpleObjectGraphSpecification:
+    ixora.java.SimpleObjectDataGraphSpecification:
       rid: 476d8652-d79a-4e2b-ae84-819145dba93b
       superDomains:
-        - ixora.java.ObjectGraphSpecification
+        - ixora.java.ObjectDataGraphSpecification
       channels:
-        - asObjectGraphSpecification:
+        - asObjectDataGraphSpecification:
           rid: a84aafc8-a0bb-49ad-8f0f-30c3b5e88094
-          target.domain: ixora.java.ObjectGraphSpecification
+          target.domain: ixora.java.ObjectDataGraphSpecification
         - graphPaths:
           rid: f60b77bd-5914-4f14-ac57-08ca2ce25285
           target:
@@ -115,8 +106,8 @@ ontology:
                   domain: ixora.basic.Domain
                   name: ixora.basic.String
 
-    ixora.java.DirectJavaObjectGraphJsonView:
-      description: The simple JSON view of Java object graph. This view contains a direct JSON representation of the ixora.java.ObjectGraph.
+    ixora.java.DirectDataGraphJsonView:
+      description: The simple JSON view of Java object graph. This view contains a direct JSON representation of the ixora.java.DataGraphObjectNode.
       rid: cf8e30f8-749e-43d2-b8ee-e6266482aa39
       superDomains:
         - ixora.internet.JsonReflectionView
@@ -135,7 +126,7 @@ ontology:
           rid: aebb9456-2cda-462e-a787-ca5810310811
           target.domain: ixora.internet.WebReflectionView
 
-    ixora.java.SimpleJavaObjectGraphJsonViewQualifier:
+    ixora.java.SimpleObjectDataGraphJsonViewQualifier:
       rid: cc1b6b2c-0927-4ce8-a7b4-f583727b0ed0
       superDomains:
         - ixora.basic.ReflectionViewQualifier
@@ -149,7 +140,7 @@ ontology:
           target.domain: ixora.data.Dataset
         - specification:
           rid: 7a767f39-1fff-404b-b952-b72398ce8a6f
-          target.domain: ixora.java.ObjectGraphSpecification
+          target.domain: ixora.java.ObjectDataGraphSpecification
 
     ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
@@ -171,3 +162,18 @@ ontology:
         - asArrayList:
           rid: a5da25c2-e13b-4076-8b11-cd4fc6dc61dd
           target.domain: ixora.java.collection.ArrayList
+
+#todo: Moving these channels from ixora.java.JavaObject domain declaration makes it impossible for the traverse analyzer to find them
+#todo: Solutions: runtime class scanning; add to META-INF ontology description files
+#  channels:
+#    ixora.java.ObjectToDataGraph:
+#      rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
+#      source:
+#        domain: ixora.java.JavaObject
+#      target.domain: ixora.java.DataGraphObjectNode
+#
+#    ixora.java.ObjectToErLikeJavaObjectGraphWebView:
+#      rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
+#      source:
+#        domain: ixora.java.JavaObject
+#      target.domain: ixora.java.ErLikeJavaObjectGraphWebView
