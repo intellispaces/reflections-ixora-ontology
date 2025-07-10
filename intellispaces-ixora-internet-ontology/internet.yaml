@@ -47,10 +47,14 @@ ontology:
       rid: d8004a3b-9bdf-47b3-88cc-2197ef0ef000
       superDomains:
         - ixora.basic.ReflectionView
+        - ixora.data.Dataset
       channels:
         - asReflectionView:
           rid: 81324c6b-6f35-46fc-a98e-da0587fa30fb
           target.domain: ixora.basic.ReflectionView
+        - asDataset:
+          rid: 23d9b817-3646-40e4-8a90-c0be189ee65b
+          target.domain: ixora.data.Dataset
         - json:
           rid: 7313fd1b-8316-4fa6-b4b1-fc40c50ed981
           name: JsonReflectionViewToValueChannel
@@ -62,8 +66,8 @@ ontology:
       source:
         domain: ixora.basic.String
       qualifiers:
-          - endpoint:
-            target.domain: ixora.basic.String
+        - endpoint:
+          target.domain: ixora.basic.String
       target.domain: ixora.basic.String
 
     ixora.internet.uri.GetUriQueryParam:

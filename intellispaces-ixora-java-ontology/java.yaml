@@ -140,7 +140,7 @@ ontology:
           target.domain: ixora.data.Dataset
         - specification:
           rid: 7a767f39-1fff-404b-b952-b72398ce8a6f
-          target.domain: ixora.java.ObjectDataGraphSpecification
+          target.domain: ixora.java.SimpleObjectDataGraphSpecification
 
     ixora.java.Collection:
       rid: 6c74479e-6297-4fdf-bc94-785de980d0ac
