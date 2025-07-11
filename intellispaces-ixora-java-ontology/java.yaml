@@ -106,7 +106,7 @@ ontology:
                   domain: ixora.basic.Domain
                   name: ixora.basic.String
 
-    ixora.java.DirectDataGraphJsonView:
+    ixora.java.SimpleDataGraphJsonView:
       description: The simple JSON view of Java object graph. This view contains a direct JSON representation of the ixora.java.DataGraphObjectNode.
       rid: cf8e30f8-749e-43d2-b8ee-e6266482aa39
       superDomains:
