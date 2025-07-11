@@ -12,7 +12,7 @@ ontology:
           target.domain: ixora.java.ErLikeJavaObjectGraphWebView
         - simpleDataGraphJsonView:
           rid: c535ca71-f969-4a92-93c4-011e61b438c2
-          target.domain: SimpleDataGraphJsonView
+          target.domain: ixora.java.SimpleDataGraphJsonView
 
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
