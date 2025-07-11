@@ -126,7 +126,7 @@ ontology:
           rid: aebb9456-2cda-462e-a787-ca5810310811
           target.domain: ixora.internet.WebReflectionView
 
-    ixora.java.SimpleObjectDataGraphJsonViewQualifier:
+    ixora.java.SimpleObjectDataGraphViewQualifier:
       rid: cc1b6b2c-0927-4ce8-a7b4-f583727b0ed0
       superDomains:
         - ixora.basic.ReflectionViewQualifier
