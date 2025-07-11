@@ -10,6 +10,9 @@ ontology:
         - erLikeJavaObjectGraphWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
           target.domain: ixora.java.ErLikeJavaObjectGraphWebView
+        - simpleDataGraphJsonView:
+          rid: c535ca71-f969-4a92-93c4-011e61b438c2
+          target.domain: SimpleDataGraphJsonView
 
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
@@ -177,3 +180,10 @@ ontology:
 #      source:
 #        domain: ixora.java.JavaObject
 #      target.domain: ixora.java.ErLikeJavaObjectGraphWebView
+
+#    ixora.java.JavaObjectToSimpleDataGraphJsonView:
+#      rid: c535ca71-f969-4a92-93c4-011e61b438c2
+#      source:
+#        domain: ixora.java.JavaObject
+#      target.domain: SimpleDataGraphJsonView
+
