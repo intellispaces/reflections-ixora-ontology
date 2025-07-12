@@ -4,18 +4,46 @@ ontology:
     ixora.java.JavaObject:
       rid: f20a7a3c-0e85-48d2-a6bb-a7b92e99690d
       channels:
-        - dataGraphNode:
+        - dataGraph:
           rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
-          target.domain: ixora.java.DataGraphObjectNode
+          target.domain: ixora.java.DataGraph
         - erLikeJavaObjectGraphWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
           target.domain: ixora.java.ErLikeJavaObjectGraphWebView
         - simpleDataGraphJsonView:
           rid: c535ca71-f969-4a92-93c4-011e61b438c2
+          qualifiers:
+            - viewQualifier:
+              target.domain: ixora.java.SimpleObjectDataGraphViewQualifier
           target.domain: ixora.java.SimpleDataGraphJsonView
 
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
+
+    ixora.java.DataGraph:
+      description: Java object data graph.
+      rid: d223d2ed-65d7-469f-b425-ec83a663eb4d
+      superDomains:
+        - ixora.data.Dataset
+      channels:
+        - asDataset:
+          rid: bee1ac92-4614-41ce-8601-9981c9b40d23
+          target.domain: ixora.data.Dataset
+        - rootNode:
+          rid: 0dda36d0-72c2-42d8-8a77-cd5fdf395d6d
+          target.domain: ixora.java.DataGraphObjectNode
+        - nodes:
+          rid: c6f7b847-59da-4507-9cba-cfc836da7cd3
+          target:
+            domain: ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: ixora.basic.Domain
+                  name: ixora.java.DataGraphNode
 
     ixora.java.DataGraphNode:
       description: Java object data graph node.
@@ -26,9 +54,6 @@ ontology:
         - asDataset:
           rid: bb7849e3-b1ae-459a-b0d3-cea62039d37c
           target.domain: ixora.data.Dataset
-        - label:
-          rid: 9430f6f1-8ec3-4417-a212-559a282c4405
-          target.domain: ixora.basic.String
         - nodeType:
           rid: 0e0a993d-37bb-4cc1-9336-f6ad7fc01bfc
           target.domain: ixora.basic.String
@@ -41,12 +66,39 @@ ontology:
         - asDataGraphNode:
           rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
           target.domain: ixora.java.DataGraphNode
+        - label:
+          rid: 9430f6f1-8ec3-4417-a212-559a282c4405
+          target.domain: ixora.basic.String
         - typename:
           rid: 72bc8457-754b-4065-bce4-6daac752b617
           target.domain: ixora.basic.String
         - value:
           rid: 312043d5-61c3-45fc-b91c-5cab4e107adc
           target.domain: ixora.basic.Notion
+
+    ixora.java.DataGraphReferenceNode:
+      rid: 37587071-8aff-4128-ada2-0c609249bd89
+      superDomains:
+        - ixora.java.DataGraphNode
+      channels:
+        - asDataGraphNode:
+          rid: d0f4951a-1112-48db-91b4-d2a8cdb7fbf3
+          target.domain: ixora.java.DataGraphNode
+        - label:
+          rid: b3421eb3-d40d-4e5b-b920-e7a8708c693e
+          target.domain: ixora.basic.String
+        - referencedNodeClassFullName:
+          rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
+          target.domain: ixora.basic.String
+        - referencedNodeClassShortName:
+          rid: d7314363-6b54-4e9f-8700-e791b82943bf
+          target.domain: ixora.basic.String
+        - isReferencedNodeSpecified:
+          rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
+          target.domain: ixora.basic.Boolean
+        - referencedNodeAlias:
+          rid: 842a0d56-67f3-4474-a066-3da9a85fea3b
+          target.domain: ixora.basic.String
 
     ixora.java.DataGraphObjectNode:
       rid: 178a1ca1-2b7c-4b2b-b35e-57d41269d475
@@ -56,15 +108,15 @@ ontology:
         - asDataGraphNode:
           rid: 977fe581-b397-410e-aafb-9b006342a6f2
           target.domain: ixora.java.DataGraphNode
+        - nodeAlias:
+          rid: 4d55df92-dc76-4d27-9161-057fad0b8790
+          target.domain: ixora.basic.String
         - classFullName:
-          rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
+          rid: 023eaea6-b5f0-4efe-82f4-910bfc437f33
           target.domain: ixora.basic.String
         - classShortName:
-          rid: d7314363-6b54-4e9f-8700-e791b82943bf
+          rid: 98681616-f513-4142-8ce5-810957773fe5
           target.domain: ixora.basic.String
-        - isSpecified:
-          rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
-          target.domain: ixora.basic.Boolean
         - outgoingNodes:
           rid: 90c4184a-1158-463e-b5f2-be70a3102859
           target:
@@ -173,7 +225,7 @@ ontology:
 #      rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
 #      source:
 #        domain: ixora.java.JavaObject
-#      target.domain: ixora.java.DataGraphObjectNode
+#      target.domain: ixora.java.DataGraph
 #
 #    ixora.java.ObjectToErLikeJavaObjectGraphWebView:
 #      rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
