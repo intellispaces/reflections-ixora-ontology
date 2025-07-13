@@ -7,6 +7,9 @@ ontology:
         - dataGraph:
           rid: 8df960cd-05fa-43cd-991d-c068b2be34a1
           target.domain: ixora.java.DataGraph
+          qualifiers:
+            - viewQualifier:
+              target.domain: ixora.java.ObjectDataGraphSpecification
         - erLikeJavaObjectGraphWebView:
           rid: 8ab925b1-8c4b-4634-97a3-416c5106d1e7
           target.domain: ixora.java.ErLikeJavaObjectGraphWebView
