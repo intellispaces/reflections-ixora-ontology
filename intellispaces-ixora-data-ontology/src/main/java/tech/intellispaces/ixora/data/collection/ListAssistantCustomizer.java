@@ -26,6 +26,13 @@ public interface ListAssistantCustomizer {
   /**
    * Creates empty list and returns unmovable reflection.
    *
+   * @return the list reflection.
+   */
+  List<Object> empty();
+
+  /**
+   * Creates empty list and returns unmovable reflection.
+   *
    * @param elementClass the list element class.
    * @return the list reflection.
    * @param <E> the list element type.
