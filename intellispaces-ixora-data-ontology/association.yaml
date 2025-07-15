@@ -3,7 +3,7 @@ info:
   title: Ixora data space ontology
 ontology:
   domains:
-    ixora.data.association.KeyValuePair:
+    ixora.data.Association:
       rid: 8f00a2aa-f70d-4064-b517-e7f15642c805
       channels:
         - keyDomain:
@@ -30,7 +30,7 @@ ontology:
           target:
             domain: ixora.basic.Domain
             alias: V
-        - keyValuePairs:
+        - associations:
           rid: b766a35c-b544-4b84-9b5e-51dc8386e3cd
           target:
             domain: ixora.data.collection.Collection
@@ -41,7 +41,7 @@ ontology:
                   - $this thru elementDomain
                 instance:
                   domain: ixora.basic.Domain
-                  name: ixora.data.association.KeyValuePair
+                  name: ixora.data.Association
                   constraints:
                     - equivalence.paths:
                         - $this thru keyDomain
@@ -78,46 +78,46 @@ ontology:
       rid: eccd18a1-ec7a-4949-9acd-2b2fa9576da1
       description: The properties set is a hierarchical set of named properties.
       channels:
-        - value:
+        - property:
           rid: ea111b97-c025-4d74-8466-d462c4c87efd
-          description: The channel to an unqualified value. In fact, the value can be an 32-bit integer value, a 64-bit float value, a list, etc.
+          description: The channel to an unqualified property. In fact, the value can be an 32-bit integer value, a 64-bit float value, a list, etc.
           qualifiers:
             - path:
               target.domain: ixora.basic.String
           target:
             domain: ixora.basic.Notion
-        - integer32Value:
+        - integer32Property:
           rid: 4e01aa7a-3fd4-4509-9387-921c30ecf5f9
-          description: The channel to a 32-bit integer value
+          description: The channel to a 32-bit integer property
           qualifiers:
             - path:
               target.domain: ixora.basic.String
           target:
             domain: ixora.data.Integer32
-        - real64Value:
+        - real64Property:
           rid: ffcd77b5-032f-49db-8dfd-c792a19d1005
-          description: The channel to a 64-bit float value
+          description: The channel to a 64-bit float property
           qualifiers:
             - path:
               target.domain: ixora.basic.String
           target:
             domain: ixora.data.Real64
-        - stringValue:
+        - stringProperty:
           rid: 4cc73514-1a59-4560-ba50-7045360b853c
-          description: The channel to a string value
+          description: The channel to a string property
           qualifiers:
             - path:
               target.domain: ixora.basic.String
           target:
             domain: ixora.basic.String
-        - propertiesSetValue:
+        - propertiesSetProperty:
           rid: e033ddc5-7f4d-4bbd-8958-8b9c34fdfc95
           qualifiers:
             - path:
               target.domain: ixora.basic.String
           target:
             domain: ixora.data.association.PropertiesSet
-        - integer32List:
+        - integer32ListProperty:
           rid: e8e1fb09-b22e-4e66-bee5-34db85e4ada3
           qualifiers:
             - path:
@@ -132,7 +132,7 @@ ontology:
                 instance:
                   domain: ixora.basic.Domain
                   name: ixora.data.Integer32
-        - real64List:
+        - real64ListProperty:
           rid: 101bf792-aa89-4114-ba58-26d78487a4a5
           qualifiers:
             - path:
@@ -147,7 +147,7 @@ ontology:
                 instance:
                   domain: ixora.basic.Domain
                   name: ixora.data.Real64
-        - stringList:
+        - stringListProperty:
           rid: f6d6c228-cfe0-4bcd-80b8-b0bd23e606c7
           qualifiers:
             - path:
@@ -162,7 +162,7 @@ ontology:
                 instance:
                   domain: ixora.basic.Domain
                   name: ixora.basic.String
-        - propertiesSetList:
+        - propertiesSetListProperty:
           rid: b48ef2de-6bbc-4c9c-a0b1-e3f1c6ca33d1
           qualifiers:
             - path:
@@ -182,7 +182,7 @@ ontology:
           target.domain: ixora.data.Integer32
 
   channels:
-    ixora.data.association.PropertiesSetToData:
+    ixora.data.association.PropertiesSetToDataset:
       rid: cafc0a2e-a1da-44e1-997f-2db62f7e385c
       source.domain: ixora.data.association.PropertiesSet
       qualifiers:
