@@ -32,9 +32,9 @@ ontology:
         - asDataset:
           rid: bee1ac92-4614-41ce-8601-9981c9b40d23
           target.domain: ixora.data.Dataset
-        - rootNode:
+        - rootNodeId:
           rid: 0dda36d0-72c2-42d8-8a77-cd5fdf395d6d
-          target.domain: ixora.java.DataGraphObjectNode
+          target.domain: ixora.basic.String
         - nodes:
           rid: c6f7b847-59da-4507-9cba-cfc836da7cd3
           target:
@@ -69,7 +69,7 @@ ontology:
         - asDataGraphNode:
           rid: ddb8a38a-4c62-4dcb-92f4-1f226b73ec89
           target.domain: ixora.java.DataGraphNode
-        - label:
+        - name:
           rid: 9430f6f1-8ec3-4417-a212-559a282c4405
           target.domain: ixora.basic.String
         - typename:
@@ -87,19 +87,21 @@ ontology:
         - asDataGraphNode:
           rid: d0f4951a-1112-48db-91b4-d2a8cdb7fbf3
           target.domain: ixora.java.DataGraphNode
-        - label:
+        - name:
           rid: b3421eb3-d40d-4e5b-b920-e7a8708c693e
           target.domain: ixora.basic.String
-        - referencedNodeClassFullName:
+        - classFullName:
+          description: Referenced node class full name
           rid: 26f07cad-65ac-488c-ae9f-493f47dcf3ee
           target.domain: ixora.basic.String
-        - referencedNodeClassShortName:
+        - classShortName:
+          description: Referenced node class short name
           rid: d7314363-6b54-4e9f-8700-e791b82943bf
           target.domain: ixora.basic.String
-        - isReferencedNodeSpecified:
+        - isReferenceSpecified:
           rid: 7106e929-2962-4c40-a5c3-898f3a14e58c
           target.domain: ixora.basic.Boolean
-        - referencedNodeAlias:
+        - referencedNodeId:
           rid: 842a0d56-67f3-4474-a066-3da9a85fea3b
           target.domain: ixora.basic.String
 
@@ -111,7 +113,8 @@ ontology:
         - asDataGraphNode:
           rid: 977fe581-b397-410e-aafb-9b006342a6f2
           target.domain: ixora.java.DataGraphNode
-        - nodeAlias:
+        - id:
+          description: Object node unique identifier
           rid: 4d55df92-dc76-4d27-9161-057fad0b8790
           target.domain: ixora.basic.String
         - classFullName:
@@ -120,7 +123,8 @@ ontology:
         - classShortName:
           rid: 98681616-f513-4142-8ce5-810957773fe5
           target.domain: ixora.basic.String
-        - outgoingNodes:
+        - members:
+          description: Embedded nodes.
           rid: 90c4184a-1158-463e-b5f2-be70a3102859
           target:
             domain: ixora.data.collection.List
