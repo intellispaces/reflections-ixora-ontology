@@ -19,9 +19,29 @@ ontology:
             - viewQualifier:
               target.domain: ixora.java.SimpleObjectDataGraphViewQualifier
           target.domain: ixora.java.SimpleDataGraphJsonView
+        - modify:
+          rid: 27dd84ff-fccf-4e91-be9d-03a9e7579249
+          name: ixora.java.ModifyJavaObjectChannel
+          qualifiers:
+            - sourceCode:
+              target.domain: ixora.java.ObjectModificationSourceCode
+          target.domain: ixora.java.JavaObject
+          allowedTraverses: [ Moving ]
 
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
+
+    ixora.java.ObjectModificationSourceCode:
+      rid: 84d89590-c8ab-4b02-8531-ae8a2cdcaa77
+      superDomains:
+        - ixora.data.Dataset
+      channels:
+        - asDataset:
+          rid: 51475c83-4b64-44e1-b7f9-113cc17122e3
+          target.domain: ixora.data.Dataset
+        - sourceCode:
+          rid: 23544642-db5b-4d91-992c-1679e1026a61
+          target.domain: ixora.basic.String
 
     ixora.java.DataGraph:
       description: Java object data graph.
