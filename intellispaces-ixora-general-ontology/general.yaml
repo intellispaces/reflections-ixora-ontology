@@ -1,0 +1,13 @@
+intellispaces: "0.1"
+info:
+  title: Ixora general space ontology
+ontology:
+  domains:
+    ixora.general.ReflectionContract:
+      rid: 0d890976-3720-44a1-bf8b-186222861d01
+      superDomains:
+        - ixora.data.Dataset
+      channels:
+        - asDataset:
+          rid: 98aad065-ee2e-408f-83f4-39e82e53def1
+          target.domain: ixora.data.Dataset

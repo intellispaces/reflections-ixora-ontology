@@ -30,6 +30,15 @@ ontology:
 
     ixora.java.ObjectContractBySupplierSourceCode:
       rid: f0125837-f702-440f-97a5-7a8f6b27c936
+      superDomains:
+        - ixora.general.ReflectionContract
+      channels:
+        - asReflectionContract:
+          rid: 510a65fb-28d4-4469-8798-c14a9601f67f
+          target.domain: ixora.general.ReflectionContract
+        - sourceCode:
+          rid: 4ddec356-52a6-4c7d-b772-9a966d6e8dc6
+          target.domain: ixora.basic.String
 
     ixora.java.ObjectModificationSourceCode:
       rid: 84d89590-c8ab-4b02-8531-ae8a2cdcaa77

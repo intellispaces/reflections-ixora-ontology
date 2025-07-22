@@ -55,4 +55,5 @@ ontology:
       rid: e4a84070-ae6e-424e-90d3-0441c0e91a5b
 
     ixora.data.Dataset:
+      description: The dataset is a set of simple data types, collections of them, or other datasets.
       rid: 8d32c26c-70b6-4698-9d2f-a3d698f1d069

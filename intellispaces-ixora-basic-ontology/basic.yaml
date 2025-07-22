@@ -40,6 +40,40 @@ ontology:
             domain: ixora.basic.Domain
             alias: T
 
+    ixora.basic.ConceptProjection:
+      rid: 58c14bac-0046-4f0d-a433-0d5171a5dd21
+      channels:
+        - sourceConcept:
+          rid: ed50f950-8ae1-46eb-a77b-7f4ebbe9c636
+          target.domain: ixora.basic.Notion
+        - targetConceptDomain:
+          rid: ad57256e-b935-49f7-986c-ce00eeef3ff1
+          target.domain: ixora.basic.Notion
+
+    ixora.basic.FocusedConceptProjection:
+      rid: f747e1b2-85ae-48bf-850e-f5f248aa5224
+      superDomains:
+        - ixora.basic.ConceptProjection
+      channels:
+        - asConceptProjection:
+          rid: f242a804-e7e6-4741-83f0-ed8e4ac2a6ad
+          target.domain: ixora.basic.ConceptProjection
+        - targetConcept:
+          rid: c0540594-bd55-4366-bcae-bcf5bbeba841
+          target.domain: ixora.basic.Notion
+
+    ixora.basic.FuzzyConceptProjection:
+      rid: b0295b72-d715-4ce2-88a1-d3604f0790f4
+      superDomains:
+        - ixora.basic.ConceptProjection
+      channels:
+        - asConceptProjection:
+          rid: 9e942d90-7635-4be5-ba05-424587d02759
+          target.domain: ixora.basic.ConceptProjection
+        - collectiveTargetConcept:
+          rid: d03bb430-982e-41ed-9212-c8f371e74c36
+          target.domain: ixora.basic.Notion
+
     ixora.basic.Number:
       rid: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of numbers
