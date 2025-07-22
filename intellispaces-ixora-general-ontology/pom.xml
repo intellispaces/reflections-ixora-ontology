@@ -7,7 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>reflections-ixora-java-ontology</artifactId>
+    <artifactId>reflections-ixora-general-ontology</artifactId>
     <packaging>jar</packaging>
 	
     <build>
@@ -25,12 +25,10 @@
                 </executions>
                 <configuration>
                     <basePackage>tech.intellispaces.</basePackage>
-                    <inputSpec>${project.basedir}/java.yaml</inputSpec>
+                    <inputSpec>${project.basedir}/general.yaml</inputSpec>
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-basic-ontology/basic.yaml</repository>
-                        <repository>file:///${project.basedir}/../intellispaces-ixora-general-ontology/general.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
-                        <repository>file:///${project.basedir}/../intellispaces-ixora-internet-ontology/internet.yaml</repository>
                     </repositories>
                 </configuration>
             </plugin>
@@ -56,15 +54,7 @@
         </dependency>
         <dependency>
             <groupId>tech.intellispaces.reflections</groupId>
-            <artifactId>reflections-ixora-general-ontology</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>tech.intellispaces.reflections</groupId>
             <artifactId>reflections-ixora-data-ontology</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>tech.intellispaces.reflections</groupId>
-            <artifactId>reflections-ixora-internet-ontology</artifactId>
         </dependency>
     </dependencies>
 </project>
