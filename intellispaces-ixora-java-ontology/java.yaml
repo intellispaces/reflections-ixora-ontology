@@ -152,6 +152,9 @@ ontology:
         - classShortName:
           rid: 98681616-f513-4142-8ce5-810957773fe5
           target.domain: ixora.basic.String
+        - value:
+          rid: f4a801ae-61d9-4120-b512-594202084b08
+          target.domain: ixora.basic.String
         - members:
           description: Embedded nodes.
           rid: 90c4184a-1158-463e-b5f2-be70a3102859
