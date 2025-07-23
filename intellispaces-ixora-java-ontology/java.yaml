@@ -166,6 +166,45 @@ ontology:
                   domain: ixora.basic.Domain
                   name: ixora.java.DataGraphNode
 
+    ixora.java.DataGraphArrayNode:
+      rid: fd85ab7a-d9b8-4393-bacf-e6c1bc0fa83e
+      superDomains:
+        - ixora.java.DataGraphObjectNode
+      channels:
+        - asDataGraphObjectNode:
+          rid: c1098329-0d30-4f87-b347-f3fb2533ed0e
+          target.domain: ixora.java.DataGraphObjectNode
+        - length:
+          rid: e5ac9c33-dbeb-4cb7-8d0a-1a1fbd70d797
+          target.domain: ixora.data.Integer32
+        - elements:
+          rid: cc37a199-04f1-4250-b8f1-d1749ffb3080
+          target:
+            domain: ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: ixora.basic.Domain
+                  name: ixora.java.DataGraphArrayElementNode
+
+    ixora.java.DataGraphArrayElementNode:
+      rid: 2c202a3f-2b3c-4062-bd7c-213e9c3b4479
+      superDomains:
+        - ixora.java.DataGraphNode
+      channels:
+        - asDataGraphNode:
+          rid: 53431d1d-c8e9-427d-b4b3-379bc2acc8f9
+          target.domain: ixora.java.DataGraphNode
+        - index:
+          rid: e5e904a9-5ecc-4281-b711-452dd0febe5b
+          target.domain: ixora.data.Integer32
+        - value:
+          rid: faaaef77-1ad9-4b81-acb9-1f33ee4a4005
+          target.domain: ixora.basic.Notion
+
     ixora.java.ObjectDataGraphSpecification:
       description: Specification describing the requirements for building an object graph
       rid: 97f6be11-7a10-4385-8439-4b431d70f4bf
