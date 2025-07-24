@@ -25,7 +25,7 @@
                 </executions>
                 <configuration>
                     <basePackage>tech.intellispaces.</basePackage>
-                    <inputSpec>${project.basedir}/rdb.yaml</inputSpec>
+                    <specificationPath>${project.basedir}/rdb.yaml</specificationPath>
                     <repositories>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-basic-ontology/basic.yaml</repository>
                         <repository>file:///${project.basedir}/../intellispaces-ixora-data-ontology/data.yaml</repository>
