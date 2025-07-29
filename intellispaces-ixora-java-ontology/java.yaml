@@ -251,9 +251,31 @@ ontology:
           rid: a88ced6b-1474-4332-baef-bde900209fdc
           target.domain: ixora.basic.String
         - ranges:
-          description: Comma separated list of array element ranges
-          rid: a71d8722-1817-4ab8-878e-a3a2a47a8612
-          target.domain: ixora.basic.String
+          target:
+            domain: ixora.data.collection.List
+            immobilityType: Unmovable
+            constraints:
+              - equivalence:
+                paths:
+                  - $this thru elementDomain
+                instance:
+                  domain: ixora.basic.Domain
+                  name: ixora.java.SimpleObjectDataGraphRangeSpecification
+
+    ixora.java.SimpleObjectDataGraphRangeSpecification:
+      rid:
+      superDomains:
+        - ixora.data.Dataset
+      channels:
+        - asDataset:
+          rid: 38aa0bdb-66b9-46aa-9e35-58878f6a72f2
+          target.domain: ixora.data.Dataset
+        - begin:
+          rid: 14b75961-7a39-4305-a96a-18380d74eacc
+          target.domain: ixora.data.Integer32
+        - end:
+          rid: 546e2861-3a2b-4953-b1d0-7f7d30449cac
+          target.domain: ixora.data.Integer32
 
     ixora.java.SimpleDataGraphJsonView:
       description: The simple JSON view of Java object graph. This view contains a direct JSON representation of the ixora.java.DataGraphObjectNode.
