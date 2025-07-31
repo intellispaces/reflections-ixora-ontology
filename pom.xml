@@ -13,10 +13,11 @@
 
     <modules>
         <module>intellispaces-ixora-basic-ontology</module>
+        <module>intellispaces-ixora-general-ontology</module>
+        <module>intellispaces-ixora-formulation-ontology</module>
         <module>intellispaces-ixora-system-ontology</module>
         <module>intellispaces-ixora-cli-ontology</module>
         <module>intellispaces-ixora-data-ontology</module>
-        <module>intellispaces-ixora-general-ontology</module>
         <module>intellispaces-ixora-rdb-ontology</module>
         <module>intellispaces-ixora-hikaricp-ontology</module>
         <module>intellispaces-ixora-internet-ontology</module>
