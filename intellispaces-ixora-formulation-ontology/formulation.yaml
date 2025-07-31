@@ -1,0 +1,71 @@
+intellispaces: "0.1"
+info:
+  title: Ixora text formulation space ontology
+
+ontology:
+  domains:
+    ixora.Formulation:
+      rid: 3f88777a-9d76-4420-a9a9-bfb62488611d
+
+    ixora.formulation.ConceptDefinition:
+      rid: aa8202ff-6c9d-4e75-9e26-7ae56044f20e
+      description: Description of what it is.
+      superDomains:
+        - ixora.Formulation
+      channels:
+        - asFormulation:
+          rid: 41616b61-1c1d-4d83-83cd-e625c70c48db
+          target.domain: ixora.Formulation
+
+    ixora.formulation.EnglishConceptDefinition:
+      rid: a70d0096-b430-49cb-93e1-e6bbaec9b202
+      superDomains:
+        - ixora.formulation.ConceptDefinition
+      channels:
+        - asConceptDefinition:
+          rid: db13c7a7-8b32-44a6-8fcc-cd6247f22e2a
+          target.domain: ixora.formulation.ConceptDefinition
+
+    ixora.formulation.MiddleEnglishConceptDefinition:
+      rid: 8534b2e8-cd74-4a98-9684-a9a7e4944ead
+      superDomains:
+        - ixora.formulation.EnglishConceptDefinition
+      channels:
+        - asEnglishConceptDefinition:
+          rid: 0147cf4d-5ad5-4183-aab4-4ebc3668ccf2
+          target.domain: ixora.formulation.EnglishConceptDefinition
+
+    ixora.formulation.ConceptDescription:
+      rid: dbeb17ca-b099-495c-aaba-136ea822a840
+      description: Description of the concept, as it is arranged inside, "as is". Without any evaluation of the pros and cons and explanations.
+      superDomains:
+        - ixora.Formulation
+      channels:
+        - asFormulation:
+          rid: 4dd8a301-e9b1-4bd2-8803-379c3ce51b31
+          target.domain: ixora.Formulation
+
+    ixora.formulation.EnglishConceptDescription:
+      rid: fdee49a6-6bbd-4f70-a26b-b08589d27509
+      superDomains:
+        - ixora.formulation.ConceptDescription
+      channels:
+        - asConceptDescription:
+          rid: 6bbbd641-d30a-41cc-933b-62566a97c8a7
+          target.domain: ixora.formulation.ConceptDescription
+
+    ixora.formulation.MiddleEnglishConceptDescription:
+      rid: b12a51d9-c6d3-4722-9f10-c6e9814287f0
+      superDomains:
+        - ixora.formulation.EnglishConceptDescription
+      channels:
+        - asEnglishConceptDescription:
+          rid: eb8b0c2c-7c54-405e-8a2a-079cc74eb309
+          target.domain: ixora.formulation.EnglishConceptDescription
+
+  channels:
+    ixora.formulation.ConceptToMiddleEnglishConceptDefinition:
+      rid: de3c747e-4161-4c61-ac30-d4f83d777b62
+      source:
+        domain: ixora.basic.Notion
+      target.domain: ixora.formulation.MiddleEnglishConceptDefinition
