@@ -74,6 +74,10 @@ ontology:
           rid: d03bb430-982e-41ed-9212-c8f371e74c36
           target.domain: ixora.basic.Notion
 
+    ixora.basic.NotionAlias:
+      rid: e4fdcb0c-51f7-4cef-b043-dbaab6bc3e0e
+      description: The context alias of notion
+
     ixora.basic.Number:
       rid: b4fef548-b446-4cae-ae98-63883a6326b8
       description: The domain of numbers
