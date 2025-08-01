@@ -7,6 +7,42 @@ ontology:
     ixora.Formulation:
       rid: 3f88777a-9d76-4420-a9a9-bfb62488611d
 
+    ixora.formulation.ConceptName:
+      rid: 0639b232-e942-4357-8c6d-87836ace4952
+      superDomains:
+        - ixora.Formulation
+      channels:
+        - asFormulation:
+          rid: 17d63116-16b6-4c1d-9f5b-bdb38adf6ec2
+          target.domain: ixora.Formulation
+
+    ixora.formulation.EnglishConceptName:
+      rid: c82c3df1-df48-41d5-b591-cf49f27f93be
+      superDomains:
+        - ixora.formulation.ConceptName
+      channels:
+        - asConceptName:
+          rid: a99eb3e1-feda-4cef-891b-9a7c1b5b6965
+          target.domain: ixora.formulation.ConceptName
+
+    ixora.formulation.ContextConceptName:
+      rid: f2f54c3e-40a2-40e3-986f-ec099d827034
+      superDomains:
+        - ixora.Formulation
+      channels:
+        - asFormulation:
+          rid: 2a132c1b-7796-4b44-98d8-08b0aeb33164
+          target.domain: ixora.Formulation
+
+    ixora.formulation.EnglishContextConceptName:
+      rid: 7fbcff61-4b3c-470e-91c2-23c677c7eaef
+      superDomains:
+        - ixora.formulation.ContextConceptName
+      channels:
+        - asContextConceptName:
+          rid: de9f4b3e-6eb3-4dd1-a282-1b73bec33255
+          target.domain: ixora.formulation.ContextConceptName
+
     ixora.formulation.ConceptDefinition:
       rid: aa8202ff-6c9d-4e75-9e26-7ae56044f20e
       description: Description of what it is.
@@ -64,8 +100,17 @@ ontology:
           target.domain: ixora.formulation.EnglishConceptDescription
 
   channels:
+    ixora.formulation.ConceptToEnglishConceptName:
+      rid: e2166f98-d194-4657-8b0a-ce98cd7023a0
+      source.domain: ixora.basic.Notion
+      target.domain: ixora.formulation.EnglishConceptName
+
+    ixora.formulation.ConceptToEnglishContextConceptName:
+      rid: 279663d8-36c2-41d9-883a-d647ee0e100f
+      source.domain: ixora.basic.Notion
+      target.domain: ixora.formulation.EnglishContextConceptName
+
     ixora.formulation.ConceptToMiddleEnglishConceptDefinition:
       rid: de3c747e-4161-4c61-ac30-d4f83d777b62
-      source:
-        domain: ixora.basic.Notion
+      source.domain: ixora.basic.Notion
       target.domain: ixora.formulation.MiddleEnglishConceptDefinition

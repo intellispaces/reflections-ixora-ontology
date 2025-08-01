@@ -2,3 +2,6 @@ intellispaces: "0.1"
 info:
   title: Ixora space ontology
 ontology:
+  space:
+    name: ixora
+    rid: c15f4a67-eb26-4ab8-90ee-6e08e37dd885
