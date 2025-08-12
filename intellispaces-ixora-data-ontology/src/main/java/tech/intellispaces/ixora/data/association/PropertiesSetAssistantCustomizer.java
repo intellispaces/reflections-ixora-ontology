@@ -14,8 +14,8 @@ public interface PropertiesSetAssistantCustomizer {
    * @return instance of the {@link tech.intellispaces.commons.properties.PropertiesSet}.
    */
   default tech.intellispaces.commons.properties.PropertiesSet asNative(PropertiesSet reflection) {
-    if (NativePropertiesSetPresentable.class.isAssignableFrom(reflection.getClass())) {
-      return ((NativePropertiesSetPresentable) reflection).asNativePropertiesSet();
+    if (reflection instanceof tech.intellispaces.commons.properties.PropertiesSet nativePropertiesSet) {
+      return nativePropertiesSet;
     }
     return new PropertiesSetImpl(reflection);
   }
